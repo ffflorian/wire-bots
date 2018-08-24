@@ -1,0 +1,18 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "devDependencies": {
+    "lerna": "^3.1.4",
+    "prettier": "1.14.2"
+  },
+  "name": "wire-bots",
+  "private": true,
+  "scripts": {
+    "boot": "lerna bootstrap --reject-cycles",
+    "clean": "lerna run clean",
+    "dist": "yarn clean && lerna run dist",
+    "test": "yarn && yarn dist && lerna run test"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
