@@ -1,7 +1,7 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
   "devDependencies": {
-    "lerna": "^3.1.4",
+    "lerna": "3.1.4",
     "prettier": "1.14.2"
   },
   "name": "wire-bots",
