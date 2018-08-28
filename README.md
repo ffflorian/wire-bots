@@ -3,6 +3,6 @@
 My [Wire](https://wire.com) bots using the [Wire Bot API](https://npmjs.com/@wireapp/bot-api).
 
 ## Available bots
-* [wire-xkcd-bot](./packages/wire-xkcd-bot)
-* [wire-packages-bot](./packages/wire-packages-bot)
-* [wire-weather-bot](./packages/wire-weather-bot)
+* [wire-xkcd-bot](./packages/wire-xkcd-bot/)
+* [wire-packages-bot](./packages/wire-packages-bot/)
+* [wire-weather-bot](./packages/wire-weather-bot/)

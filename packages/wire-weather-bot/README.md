@@ -1,4 +1,4 @@
-# wire-weather-bot [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/wire-bots)](https://dependabot.com)
+# wire-weather-bot [![Build Status](https://api.travis-ci.org/ffflorian/wire-bots.svg?branch=master)](https://travis-ci.org/ffflorian/wire-bots/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/wire-bots)](https://dependabot.com)
 
 A weather bot running on [Wire](https://wire.com).
 

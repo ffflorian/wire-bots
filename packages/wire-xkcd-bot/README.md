@@ -1,4 +1,4 @@
-# wire-xkcd-bot [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/wire-bots)](https://dependabot.com)
+# wire-xkcd-bot [![Build Status](https://api.travis-ci.org/ffflorian/wire-bots.svg?branch=master)](https://travis-ci.org/ffflorian/wire-bots/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/wire-bots)](https://dependabot.com)
 
 An [xkcd](https://xkcd.com) bot running on [Wire](https://wire.com).
 
