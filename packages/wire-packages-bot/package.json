@@ -2,7 +2,7 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
     "@types/dotenv": "4.0.3",
-    "@types/node": "10.9.3",
+    "@types/node": "10.9.4",
     "@types/request": "2.47.1",
     "@wireapp/bot-api": "0.3.17",
     "dotenv": "6.0.0",
