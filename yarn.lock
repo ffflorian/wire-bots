@@ -649,10 +649,6 @@
   version "10.9.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.2.tgz#f0ab8dced5cd6c56b26765e1c0d9e4fdcc9f2a00"
 
-"@types/node@10.9.3":
-  version "10.9.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.3.tgz#85f288502503ade0b3bfc049fe1777b05d0327d5"
-
 "@types/node@^8.9.4":
   version "8.10.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.27.tgz#667d03fcd44d8683de5459b8ecd80506eee65f0e"
@@ -684,15 +680,15 @@
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.3.tgz#7f226d67d654ec9070e755f46daebf014628e9d9"
 
-"@wireapp/api-client@1.15.3":
-  version "1.15.3"
-  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-1.15.3.tgz#0518ad30f97a108f55db57af5d201314e21d7a8a"
+"@wireapp/api-client@1.15.4":
+  version "1.15.4"
+  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-1.15.4.tgz#5a10d2b3a8530fcbcb0b66da1c2176245986d1e6"
   dependencies:
-    "@types/node" "10.9.3"
+    "@types/node" "10.9.4"
     "@types/spark-md5" "3.0.1"
     "@types/tough-cookie" "2.3.3"
-    "@wireapp/priority-queue" "0.2.10"
-    "@wireapp/store-engine" "0.12.10"
+    "@wireapp/priority-queue" "0.2.11"
+    "@wireapp/store-engine" "0.12.11"
     axios "0.18.0"
     html5-websocket "2.0.3"
     logdown "3.2.7"
@@ -700,41 +696,41 @@
     spark-md5 "3.0.0"
     tough-cookie "2.4.3"
 
-"@wireapp/bot-api@0.3.18":
-  version "0.3.18"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-0.3.18.tgz#7cf3717bbc0a141409f91b51b47268795bf0b1bc"
+"@wireapp/bot-api@0.3.19":
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-0.3.19.tgz#c31156725e9895303bfcdbcfac4329fa5a95fff1"
   dependencies:
-    "@wireapp/core" "5.9.16"
-    pure-uuid "1.5.3"
+    "@wireapp/core" "5.9.17"
+    pure-uuid "1.5.4"
 
-"@wireapp/cbor@3.0.77":
-  version "3.0.77"
-  resolved "https://registry.yarnpkg.com/@wireapp/cbor/-/cbor-3.0.77.tgz#acd6e560f00e671fb1a561058457e09097d3f651"
+"@wireapp/cbor@3.0.78":
+  version "3.0.78"
+  resolved "https://registry.yarnpkg.com/@wireapp/cbor/-/cbor-3.0.78.tgz#96a9de3cb03e654f53b3b52b6211e6c723c9e7a5"
 
-"@wireapp/core@5.9.16":
-  version "5.9.16"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-5.9.16.tgz#952e06108abd10a967e8e32626913f3c80e4ffb9"
+"@wireapp/core@5.9.17":
+  version "5.9.17"
+  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-5.9.17.tgz#d3d7ae1e45f9c6d85d9cb3adc10f354cdaa5f1f2"
   dependencies:
-    "@types/node" "10.9.3"
-    "@wireapp/api-client" "1.15.3"
-    "@wireapp/cryptobox" "8.7.10"
+    "@types/node" "10.9.4"
+    "@wireapp/api-client" "1.15.4"
+    "@wireapp/cryptobox" "8.7.11"
     "@wireapp/protocol-messaging" "1.20.1"
-    "@wireapp/store-engine" "0.12.10"
+    "@wireapp/store-engine" "0.12.11"
     bazinga64 "5.3.7"
     logdown "3.2.7"
     protobufjs "6.8.8"
-    pure-uuid "1.5.3"
+    pure-uuid "1.5.4"
 
-"@wireapp/cryptobox@8.7.10":
-  version "8.7.10"
-  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-8.7.10.tgz#18f876fa5b6691c82153048adf9080a1aad08bd8"
+"@wireapp/cryptobox@8.7.11":
+  version "8.7.11"
+  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-8.7.11.tgz#1c7c861198604d8cd8be4746fc708471f2a4a4fe"
   dependencies:
     "@types/fs-extra" "5.0.4"
-    "@types/node" "10.9.3"
+    "@types/node" "10.9.4"
     "@wireapp/lru-cache" "2.1.51"
-    "@wireapp/priority-queue" "0.2.10"
-    "@wireapp/proteus" "7.3.21"
-    "@wireapp/store-engine" "0.12.10"
+    "@wireapp/priority-queue" "0.2.11"
+    "@wireapp/proteus" "7.3.22"
+    "@wireapp/store-engine" "0.12.11"
     bazinga64 "5.3.7"
     dexie "2.0.4"
     fs-extra "7.0.0"
@@ -744,21 +740,21 @@
   version "2.1.51"
   resolved "https://registry.yarnpkg.com/@wireapp/lru-cache/-/lru-cache-2.1.51.tgz#3b37f55d23058890e2a094895c8a34b107cc8007"
 
-"@wireapp/priority-queue@0.2.10":
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/@wireapp/priority-queue/-/priority-queue-0.2.10.tgz#5d411799a3d4cecbb22cc21d6134d4096ab073c8"
+"@wireapp/priority-queue@0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@wireapp/priority-queue/-/priority-queue-0.2.11.tgz#d9a7e3b86fd5a3a3e1c7fbcf7fe76844af663b05"
   dependencies:
-    "@types/node" "10.9.3"
-    pure-uuid "1.5.3"
+    "@types/node" "10.9.4"
+    pure-uuid "1.5.4"
 
-"@wireapp/proteus@7.3.21":
-  version "7.3.21"
-  resolved "https://registry.yarnpkg.com/@wireapp/proteus/-/proteus-7.3.21.tgz#64dc94838756972870ce16d2b6da5fca10067260"
+"@wireapp/proteus@7.3.22":
+  version "7.3.22"
+  resolved "https://registry.yarnpkg.com/@wireapp/proteus/-/proteus-7.3.22.tgz#16455fcbe27a6b38f69afe58e27d401692c186ab"
   dependencies:
     "@types/chai" "4.1.4"
     "@types/ed2curve" "0.2.2"
-    "@types/node" "10.9.3"
-    "@wireapp/cbor" "3.0.77"
+    "@types/node" "10.9.4"
+    "@wireapp/cbor" "3.0.78"
     ed2curve "0.2.1"
     libsodium-wrappers-sumo "0.7.3"
 
@@ -768,13 +764,13 @@
   dependencies:
     protobufjs "6.8.6"
 
-"@wireapp/store-engine@0.12.10":
-  version "0.12.10"
-  resolved "https://registry.yarnpkg.com/@wireapp/store-engine/-/store-engine-0.12.10.tgz#b531654368e26bf12c4eac2f0d4e263ab4419f2b"
+"@wireapp/store-engine@0.12.11":
+  version "0.12.11"
+  resolved "https://registry.yarnpkg.com/@wireapp/store-engine/-/store-engine-0.12.11.tgz#bb8dcf0d7da7b044b7b5eae076dc9104f1ca5f00"
   dependencies:
     "@types/bro-fs" "0.4.1"
     "@types/filesystem" "0.0.29"
-    "@types/node" "10.9.3"
+    "@types/node" "10.9.4"
     bro-fs "0.4.0"
     dexie "2.0.4"
     fs-extra "7.0.0"
@@ -3243,9 +3239,9 @@ punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
-pure-uuid@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/pure-uuid/-/pure-uuid-1.5.3.tgz#cafee7e95b5ff96d7fb737346214967e009d5bce"
+pure-uuid@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/pure-uuid/-/pure-uuid-1.5.4.tgz#e762f4950773d81d7a42f8003b948f3510a30925"
 
 q@^1.5.1:
   version "1.5.1"
