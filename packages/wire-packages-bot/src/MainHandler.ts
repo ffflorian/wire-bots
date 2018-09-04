@@ -5,7 +5,7 @@ import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/c
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
-import {toHHMMSS} from './utils';
+import {formatUptime} from './utils';
 import {SearchService} from './SearchService';
 
 const {version}: {version: string} = require('../package.json');
@@ -130,7 +130,7 @@ class MainHandler extends MessageHandler {
         );
       }
       case CommandType.UPTIME: {
-        return this.sendText(conversationId, `Current uptime: ${toHHMMSS(process.uptime().toString())}`);
+        return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
       }
       case CommandType.BOWER: {
         if (!parsedArguments) {

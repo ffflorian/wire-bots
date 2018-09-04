@@ -1,3 +1,5 @@
+import * as moment from 'moment';
+
 const mapIconToEmoji = (weatherId: number): string => {
   if (
     weatherId.toString().startsWith('2') ||
@@ -27,15 +29,9 @@ const mapIconToEmoji = (weatherId: number): string => {
   return '😎';
 };
 
-const toHHMMSS = (input: string): string => {
-  const pad = (t: number) => (t < 10 ? '0' + t : t);
+function formatUptime(uptime: number): string {
+  const duration = moment.duration(uptime, 'seconds').asMilliseconds();
+  return moment.utc(duration).format('HH:mm:ss');
+}
 
-  const uptime = parseInt(input, 10);
-  const hours = Math.floor(uptime / 3600);
-  const minutes = Math.floor((uptime - hours * 3600) / 60);
-  const seconds = uptime - hours * 3600 - minutes * 60;
-
-  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-};
-
-export {mapIconToEmoji, toHHMMSS};
+export {formatUptime, mapIconToEmoji};

@@ -6,6 +6,7 @@
     "@wireapp/bot-api": "0.3.19",
     "dotenv": "6.0.0",
     "logdown": "3.2.7",
+    "moment": "2.22.2",
     "openweathermap-api-client": "1.0.3"
   },
   "devDependencies": {

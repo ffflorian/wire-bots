@@ -1,12 +1,8 @@
-const toHHMMSS = (input: string): string => {
-  const pad = (t: number) => (t < 10 ? '0' + t : t);
+import * as moment from 'moment';
 
-  const uptime = parseInt(input, 10);
-  const hours = Math.floor(uptime / 3600);
-  const minutes = Math.floor((uptime - hours * 3600) / 60);
-  const seconds = uptime - hours * 3600 - minutes * 60;
+function formatUptime(uptime: number): string {
+  const duration = moment.duration(uptime, 'seconds').asMilliseconds();
+  return moment.utc(duration).format('HH:mm:ss');
+}
 
-  return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-};
-
-export {toHHMMSS};
+export {formatUptime};

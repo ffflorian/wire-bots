@@ -7,7 +7,7 @@ import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/co
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {WeatherService} from './WeatherService';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
-import * as Utils from './Utils';
+import {formatUptime} from './utils';
 
 const {version}: {version: string} = require('../package.json');
 
@@ -94,7 +94,7 @@ class MainHandler extends MessageHandler {
         return this.sendText(conversationId, this.helpText);
       }
       case CommandType.UPTIME: {
-        return this.sendText(conversationId, `Current uptime: ${Utils.toHHMMSS(process.uptime().toString())}`);
+        return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
       }
       case CommandType.WEATHER: {
         if (!parsedArguments) {

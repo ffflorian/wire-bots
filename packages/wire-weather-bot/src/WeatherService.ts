@@ -1,6 +1,6 @@
 import * as logdown from 'logdown';
 import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
-import * as Utils from './Utils';
+import {mapIconToEmoji} from './utils';
 
 class WeatherService {
   private readonly logger: logdown.Logger;
@@ -39,7 +39,7 @@ class WeatherService {
       const maxTemp = temp_max.toFixed(0);
       const temperature = minTemp === maxTemp ? temp_avg.toFixed(0) : `between ${minTemp} °C and ${maxTemp}`;
 
-      const emoji = Utils.mapIconToEmoji(weatherId);
+      const emoji = mapIconToEmoji(weatherId);
 
       return result + `- **${weekday}:** ${description}, ${temperature} °C. ${emoji}\n`;
     }, '');
@@ -65,7 +65,7 @@ class WeatherService {
 
     this.logger.info(`Received "${cityName}, ${countryName}" for query "${location}".`);
 
-    const emoji = Utils.mapIconToEmoji(weatherId);
+    const emoji = mapIconToEmoji(weatherId);
 
     return `Current weather in **${cityName}, ${countryName}**: ${description}, ${temperature.toFixed(0)} °C. ${emoji}`;
   }
