@@ -8,6 +8,7 @@
     "logdown": "3.2.7",
     "moment": "2.22.2",
     "omggif": "1.0.9",
+    "pm2": "3.0.4",
     "png.js": "0.2.1"
   },
   "devDependencies": {
@@ -32,11 +33,11 @@
     "clean": "rimraf dist",
     "deploy": "yarn dist && yarn zip && eb deploy",
     "dist": "yarn clean && yarn build",
-    "prettier": "prettier --single-quote --write src/*.ts",
-    "start": "node dist/index.js",
+    "prettier": "prettier --single-quote --write src/**/*.ts",
+    "start": "pm2 start && pm2 logs",
     "start:dev": "cross-env NODE_DEBUG=\"@wireapp/*,wire-xkcd-bot/*\" node dist/index.js",
     "test": "yarn dist && exit 0",
-    "zip": "jszip-cli add dist .ebextensions package.json -q -o dist/wire-xkcd-bot.zip"
+    "zip": "jszip-cli add dist .ebextensions package.json ecosystem.config.js -q -o dist/wire-xkcd-bot.zip"
   },
   "version": "1.0.0"
 }
