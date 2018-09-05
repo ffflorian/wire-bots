@@ -1,5 +1,11 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
+process.on('uncaughtException', error => console.error(`Uncaught exception: ${error.message}`, error));
+process.on('unhandledRejection', error =>
+  console.error(`Uncaught rejection "${error.constructor.name}": ${error.message}`, error)
+);
+
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config();
+}
 
 import {Bot} from '@wireapp/bot-api';
 import {MainHandler} from './MainHandler';

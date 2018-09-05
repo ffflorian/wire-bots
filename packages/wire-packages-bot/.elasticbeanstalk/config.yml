@@ -1,0 +1,12 @@
+branch-defaults:
+  master:
+    environment: wire-packages-bot
+deploy:
+  artifact: dist/wire-packages-bot.zip
+global:
+  application_name: WireBots
+  default_platform: Node.js
+  default_region: eu-central-1
+  profile: florian
+  sc: git
+  workspace_type: Application
