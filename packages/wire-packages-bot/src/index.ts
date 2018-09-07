@@ -22,8 +22,8 @@ const bot = new Bot({
 });
 
 const mainHandler = new MainHandler({
-  librariesIOApiKey: process.env.LIBRARIES_IO_API_KEY!,
   feedbackConversationId: process.env.WIRE_FEEDBACK_CONVERSATION_ID,
+  librariesIOApiKey: process.env.LIBRARIES_IO_API_KEY!,
 });
 
 bot.addHandler(mainHandler);

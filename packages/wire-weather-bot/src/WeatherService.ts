@@ -41,7 +41,7 @@ class WeatherService {
 
       const emoji = mapIconToEmoji(weatherId);
 
-      return result + `- **${weekday}:** ${description}, ${temperature} °C. ${emoji}\n`;
+      return `${result}- **${weekday}:** ${description}, ${temperature} °C. ${emoji}\n`;
     }, '');
 
     return `5-day forecast for **${cityName}, ${countryName}** (each at 12:00 local time):\n\n${daysList}`;

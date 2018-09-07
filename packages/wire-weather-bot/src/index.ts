@@ -8,8 +8,8 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 import {Bot} from '@wireapp/bot-api';
-import {MainHandler} from './MainHandler';
 import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
+import {MainHandler} from './MainHandler';
 
 ['WIRE_EMAIL', 'WIRE_PASSWORD', 'OPEN_WEATHER_API_KEY'].forEach(envVar => {
   if (!process.env[envVar]) {
@@ -29,8 +29,8 @@ const weatherAPI = new WeatherAPI({
 });
 
 const mainHandler = new MainHandler({
-  weatherAPI,
   feedbackConversationId: process.env.WIRE_FEEDBACK_CONVERSATION_ID,
+  weatherAPI,
 });
 
 bot.addHandler(mainHandler);

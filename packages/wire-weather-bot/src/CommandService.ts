@@ -69,9 +69,9 @@ const CommandService = {
   formatCommands(): string {
     return basicCommands.sort((a, b) => a.command.localeCompare(b.command)).reduce((prev, command) => {
       const {argumentName, command: commandName, description, parseArguments} = command;
-      return (
-        prev + `\n- **/${commandName}${parseArguments && argumentName ? ` <${argumentName}>` : ''}**: ${description}`
-      );
+      return `${prev}\n- **/${commandName}${
+        parseArguments && argumentName ? ` <${argumentName}>` : ''
+      }**: ${description}`;
     }, '');
   },
   parseCommand(message: string): ParsedCommand {
@@ -97,11 +97,11 @@ const CommandService = {
         rawCommand: parsedCommand,
       };
     }
-    logger.info(`No command found for "${message.length > 10 ? message.substr(0, 10) + '...' : message}".`);
+    logger.info(`No command found for "${message.length > 10 ? `${message.substr(0, 10)}...` : message}".`);
     return {
+      commandType: CommandType.NO_COMMAND,
       parsedArguments: message,
       rawCommand: message,
-      commandType: CommandType.NO_COMMAND,
     };
   },
 };

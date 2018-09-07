@@ -10,7 +10,7 @@ interface SearchResult {
 }
 
 class SearchService {
-  private librariesIO: LibrariesIO;
+  private readonly librariesIO: LibrariesIO;
   private readonly resultsPerPage: number;
   constructor(LIBRARIES_API_KEY: string) {
     this.resultsPerPage = 10;
@@ -27,17 +27,17 @@ class SearchService {
           : '';
       const hasBrackets = language && hasStars ? ` (${language}${hasStars})` : '';
       const hasHomepage = homepage ? ` (${homepage})` : '';
-      return prev + `\n- **${name}**${hasBrackets}: ${description || ''}${hasHomepage}`;
+      return `${prev}\n- **${name}**${hasBrackets}: ${description || ''}${hasHomepage}`;
     }, '');
   }
 
   async searchBower(query: string, page: number): Promise<SearchResult> {
     const {data, totalResults} = await this.librariesIO.api.project.search(query, {
-      page,
-      perPage: this.resultsPerPage,
       filter: {
         platforms: ['bower'],
       },
+      page,
+      perPage: this.resultsPerPage,
     });
 
     return {
@@ -49,11 +49,11 @@ class SearchService {
 
   async searchNpm(query: string, page: number): Promise<SearchResult> {
     const {data, totalResults} = await this.librariesIO.api.project.search(query, {
-      page,
-      perPage: this.resultsPerPage,
       filter: {
         platforms: ['npm'],
       },
+      page,
+      perPage: this.resultsPerPage,
     });
 
     return {
@@ -65,11 +65,11 @@ class SearchService {
 
   async searchCrates(query: string, page: number): Promise<SearchResult> {
     const {data, totalResults} = await this.librariesIO.api.project.search(query, {
-      page,
-      perPage: this.resultsPerPage,
       filter: {
         platforms: ['cargo'],
       },
+      page,
+      perPage: this.resultsPerPage,
     });
 
     return {

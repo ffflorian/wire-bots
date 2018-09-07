@@ -1,12 +1,12 @@
 import * as logdown from 'logdown';
 
-import {MessageHandler} from '@wireapp/bot-api';
-import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
-import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
+import {MessageHandler} from '@wireapp/bot-api';
+import {TextContent} from '@wireapp/core/dist/conversation/content/';
+import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
-import {formatUptime} from './utils';
 import {SearchService} from './SearchService';
+import {formatUptime} from './utils';
 
 const {version}: {version: string} = require('../package.json');
 
@@ -17,10 +17,10 @@ interface Config {
 
 class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
-  private searchService: SearchService;
+  private readonly searchService: SearchService;
   private readonly feedbackConversationId?: string;
   private readonly helpText = `**Hello!** 😎 This is packages bot v${version} speaking.\nHere you can search for all the packages on Bower, npm, TypeSearch and crates.io. 📦\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-packages-bot`;
-  private answerCache: {
+  private readonly answerCache: {
     [conversationId: string]: {
       parsedArguments?: string;
       page: number;
@@ -63,9 +63,9 @@ class MainHandler extends MessageHandler {
 
   private static morePagesText(moreResults: number, resultsPerPage: number): string {
     const isOne = moreResults === 1;
-    return `\n\nThere ${isOne ? 'is' : 'are'} ${moreResults} more result${
-      isOne ? '' : 's'
-    }. Would you like to see ${resultsPerPage > moreResults ? moreResults : resultsPerPage} more? Answer with "yes" or "no".`;
+    return `\n\nThere ${isOne ? 'is' : 'are'} ${moreResults} more result${isOne ? '' : 's'}. Would you like to see ${
+      resultsPerPage > moreResults ? moreResults : resultsPerPage
+    } more? Answer with "yes" or "no".`;
   }
 
   async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
@@ -153,13 +153,14 @@ class MainHandler extends MessageHandler {
           return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
         }
 
-        let {result, moreResults, resultsPerPage} = searchResult;
+        const {moreResults, resultsPerPage} = searchResult;
+        let result = searchResult.result;
 
         if (moreResults > 0) {
           result += MainHandler.morePagesText(moreResults, resultsPerPage);
           this.answerCache[conversationId] = {
-            parsedArguments,
             page,
+            parsedArguments,
             type: CommandType.BOWER,
             waitingForContent: false,
           };
@@ -189,13 +190,14 @@ class MainHandler extends MessageHandler {
           return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
         }
 
-        let {result, moreResults, resultsPerPage} = searchResult;
+        const {moreResults, resultsPerPage} = searchResult;
+        let result = searchResult.result;
 
         if (moreResults > 0) {
           result += MainHandler.morePagesText(moreResults, resultsPerPage);
           this.answerCache[conversationId] = {
-            parsedArguments,
             page,
+            parsedArguments,
             type: CommandType.NPM,
             waitingForContent: false,
           };
@@ -225,13 +227,14 @@ class MainHandler extends MessageHandler {
           return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
         }
 
-        let {result, moreResults, resultsPerPage} = searchResult;
+        const {moreResults, resultsPerPage} = searchResult;
+        let result = searchResult.result;
 
         if (moreResults > 0) {
           result += MainHandler.morePagesText(moreResults, resultsPerPage);
           this.answerCache[conversationId] = {
-            parsedArguments,
             page,
+            parsedArguments,
             type: CommandType.CRATES,
             waitingForContent: false,
           };
