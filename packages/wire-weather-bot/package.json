@@ -9,7 +9,7 @@
     "pm2": "3.0.4"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "1.4.1",
+    "@ffflorian/jszip-cli": "1.4.2",
     "@types/node": "10.9.4",
     "cross-env": "5.2.0",
     "prettier": "1.14.2",
