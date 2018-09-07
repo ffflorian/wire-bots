@@ -8,6 +8,7 @@
   "scripts": {
     "boot": "lerna bootstrap --reject-cycles",
     "clean": "lerna run clean",
+    "deploy": "lerna run deploy",
     "dist": "yarn clean && lerna run dist",
     "test": "yarn && yarn dist && lerna run test"
   },
