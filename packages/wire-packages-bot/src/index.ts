@@ -27,4 +27,4 @@ const mainHandler = new MainHandler({
 });
 
 bot.addHandler(mainHandler);
-bot.start();
+bot.start().catch(error => console.error(error));
