@@ -746,20 +746,20 @@
     spark-md5 "3.0.0"
     tough-cookie "2.4.3"
 
-"@wireapp/bot-api@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-1.0.6.tgz#71f77cdde366a0bede9da378139f662bd8bad169"
+"@wireapp/bot-api@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-1.0.8.tgz#30aa34d80961b49c32df3a278302c89134290e8a"
   dependencies:
-    "@wireapp/core" "6.2.0"
+    "@wireapp/core" "6.3.0"
     pure-uuid "1.5.4"
 
 "@wireapp/cbor@3.0.82":
   version "3.0.82"
   resolved "https://registry.yarnpkg.com/@wireapp/cbor/-/cbor-3.0.82.tgz#9f593ec2953094bd2b351903187199e729abce86"
 
-"@wireapp/core@6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-6.2.0.tgz#c4a09a821a73c6411f4c18b9b84159ce80218c5f"
+"@wireapp/core@6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-6.3.0.tgz#8d301bcc0af5db30cc42732b08005e6dba4b5e7a"
   dependencies:
     "@types/node" "10.10.1"
     "@wireapp/api-client" "1.15.16"
