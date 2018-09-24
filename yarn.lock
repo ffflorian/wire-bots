@@ -2,14 +2,13 @@
 # yarn lockfile v1
 
 
-"@ffflorian/jszip-cli@1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-1.4.2.tgz#025df11032bcd1a9223ed53bc74d5c121cd9c43e"
+"@ffflorian/jszip-cli@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-2.1.0.tgz#422ca2c3a896194fdd401b9953538a11e8341095"
   dependencies:
-    "@types/jszip" "3.1.4"
-    "@types/node" "10.9.4"
-    "@types/progress" "2.0.1"
     commander "2.18.0"
+    cosmiconfig "5.0.6"
+    fs-extra "7.0.0"
     jszip "3.1.5"
     logdown "3.2.7"
     progress "2.0.0"
@@ -675,12 +674,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jszip@3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@types/jszip/-/jszip-3.1.4.tgz#9b81e3901a6988e9459ac27abf483e6b892251af"
-  dependencies:
-    "@types/node" "*"
-
 "@types/long@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
@@ -697,10 +690,6 @@
   version "10.9.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.2.tgz#f0ab8dced5cd6c56b26765e1c0d9e4fdcc9f2a00"
 
-"@types/node@10.9.4":
-  version "10.9.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
-
 "@types/omggif@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/omggif/-/omggif-1.0.0.tgz#342e69c0299bb23da0f29bc2805bbc8b4bc4a781"
@@ -710,12 +699,6 @@
 "@types/png.js@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@types/png.js/-/png.js-0.2.0.tgz#f90f5d538e4d608f32ddfc2921b575942277edb9"
-
-"@types/progress@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/progress/-/progress-2.0.1.tgz#af866001a836dbd28a6656e4b335d333bad7faf2"
-  dependencies:
-    "@types/node" "*"
 
 "@types/request@2.47.1":
   version "2.47.1"
@@ -1488,7 +1471,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cosmiconfig@^5.0.2:
+cosmiconfig@5.0.6, cosmiconfig@^5.0.2:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.0.6.tgz#dca6cf680a0bd03589aff684700858c81abeeb39"
   dependencies:
