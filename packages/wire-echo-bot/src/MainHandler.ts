@@ -2,10 +2,11 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {TextContent} from '@wireapp/core/dist/conversation/content/';
+import {TextContent, LocationContent} from '@wireapp/core/dist/conversation/content/';
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
+import { Typing } from '@wireapp/api-client/dist/commonjs/conversation';
 
 const {version}: {version: string} = require('../package.json');
 
@@ -23,6 +24,7 @@ class MainHandler extends MessageHandler {
       waitingForContent: boolean;
     };
   };
+  private readonly confirmTypes: PayloadBundleType[];
 
   constructor({feedbackConversationId}: Config) {
     super();
@@ -32,6 +34,13 @@ class MainHandler extends MessageHandler {
       logger: console,
       markdown: false,
     });
+    this.confirmTypes = [
+      PayloadBundleType.ASSET,
+      PayloadBundleType.ASSET_IMAGE,
+      PayloadBundleType.LOCATION,
+      PayloadBundleType.PING,
+      PayloadBundleType.TEXT,
+    ];
 
     if (!this.feedbackConversationId) {
       this.logger.warn('You did not specify a feedback conversation ID and will not be able to receive feedback.');
@@ -39,18 +48,39 @@ class MainHandler extends MessageHandler {
   }
 
   async handleEvent(payload: PayloadBundleIncoming) {
+    if (this.confirmTypes.includes(payload.type)) {
+      await this.sendConfirmation(payload.conversation, payload.id);
+    }
+
+    console.log({payload})
+
     switch (payload.type) {
+      case PayloadBundleType.CONNECTION_REQUEST: {
+        const connectRequest = payload.content as Connection;
+        if (payload.conversation && connectRequest.status !== ConnectionStatus.CANCELLED) {
+          return this.handleConnectionRequest(connectRequest.to, payload.conversation);
+        }
+      }
       case PayloadBundleType.TEXT: {
         if (payload.conversation) {
           const messageContent = payload.content as TextContent;
           return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
         }
       }
-      case PayloadBundleType.CONNECTION_REQUEST: {
-        const connectRequest = payload.content as Connection;
-        if (payload.conversation && connectRequest.status !== ConnectionStatus.CANCELLED) {
-          return this.handleConnectionRequest(connectRequest.to, payload.conversation);
+      case PayloadBundleType.LOCATION: {
+        if (payload.conversation) {
+          const locationContent = payload.content as LocationContent;
+          return this.sendLocation(payload.conversation, locationContent);
         }
+      }
+      case PayloadBundleType.PING: {
+        if (payload.conversation) {
+          return this.sendPing(payload.conversation);
+        }
+      }
+      case PayloadBundleType.TYPING: {
+        const {status} = payload.content as Typing;
+        await this.sendTyping(payload.conversation, status);
       }
     }
   }
