@@ -1,0 +1,12 @@
+{
+  "entries": [
+    ".ebextensions",
+    "ecosystem.config.js",
+    "dist",
+    "package.json"
+  ],
+  "force": true,
+  "mode": "add",
+  "outputEntry": "dist/wire-packages-bot.zip",
+  "quiet": true
+}

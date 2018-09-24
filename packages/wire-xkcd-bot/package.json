@@ -38,7 +38,7 @@
     "start": "pm2 start && pm2 logs",
     "start:dev": "cross-env NODE_DEBUG=\"@wireapp/*,wire-xkcd-bot/*\" node dist/index.js",
     "test": "yarn dist && exit 0",
-    "zip": "jszip-cli add dist .ebextensions package.json ecosystem.config.js -q -o dist/wire-xkcd-bot.zip"
+    "zip": "jszip-cli"
   },
   "version": "1.0.0"
 }
