@@ -5,6 +5,7 @@ process.on('unhandledRejection', error =>
 
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config();
+  process.env.NODE_DEBUG="@wireapp/*,wire-xkcd-bot/*"
 }
 
 import {Bot} from '@wireapp/bot-api';

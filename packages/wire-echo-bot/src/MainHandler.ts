@@ -16,7 +16,7 @@ interface Config {
 class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot.`;
+  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.\n\nSend me anything and I will send it right back!\n\nFurther available commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot.`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;
@@ -66,23 +66,24 @@ class MainHandler extends MessageHandler {
           if (waitingForContent) {
             await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
             delete this.answerCache[conversationId];
-            return this.answer(conversationId, {commandType: cachedCommandType, parsedArguments, rawCommand}, senderId);
+            return this.answer(conversationId, {commandType: cachedCommandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
           }
         }
-        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
+        return this.answer(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
       }
       default: {
         await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
         if (this.answerCache[conversationId]) {
           delete this.answerCache[conversationId];
         }
-        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
+        return this.answer(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
       }
     }
   }
 
   async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string) {
-    const {parsedArguments, rawCommand, commandType} = parsedCommand;
+    const {originalMessage, parsedArguments, commandType} = parsedCommand;
+
     switch (commandType) {
       case CommandType.HELP: {
         return this.sendText(conversationId, this.helpText);
@@ -109,14 +110,8 @@ class MainHandler extends MessageHandler {
         delete this.answerCache[conversationId];
         return this.sendText(conversationId, 'Thank you for your feedback.');
       }
-      case CommandType.UNKNOWN_COMMAND: {
-        return this.sendText(conversationId, `Sorry, I don't know the command "${rawCommand}" yet.`);
-      }
-      case CommandType.NO_COMMAND: {
-        return;
-      }
       default: {
-        return this.sendText(conversationId, `Sorry, "${rawCommand}" is not implemented yet.`);
+        return this.sendText(conversationId, originalMessage);
       }
     }
   }
