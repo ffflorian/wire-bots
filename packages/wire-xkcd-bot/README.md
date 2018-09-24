@@ -16,5 +16,6 @@ An [xkcd](https://xkcd.com) bot running on [Wire](https://wire.com).
     yarn dist
     yarn start
     ```
+
 ## Want more?
-Check out the [Wire weather bot](../wire-weather-bot) and the [Wire package search bot](../wire-packages-bot).
+Check out the [Wire weather bot](../wire-weather-bot), the [Wire package search bot](../wire-packages-bot) and the [Wire echo bot](../wire-echo-bot).

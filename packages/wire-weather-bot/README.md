@@ -18,4 +18,4 @@ A weather bot running on [Wire](https://wire.com).
     ```
 
 ## Want more?
-Check out the [Wire xkcd bot](../wire-xkcd-bot) and the [Wire package search bot](../wire-packages-bot).
+Check out the [Wire xkcd bot](../wire-xkcd-bot), the [Wire package search bot](../wire-packages-bot) and the [Wire echo bot](../wire-echo-bot).
