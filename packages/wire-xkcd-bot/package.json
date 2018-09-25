@@ -14,7 +14,7 @@
   "devDependencies": {
     "@ffflorian/jszip-cli": "2.1.0",
     "@types/jpeg-js": "0.3.0",
-    "@types/node": "10.10.3",
+    "@types/node": "10.11.0",
     "@types/omggif": "1.0.0",
     "@types/png.js": "0.2.0",
     "@types/request": "2.47.1",
