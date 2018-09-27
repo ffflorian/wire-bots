@@ -6,7 +6,6 @@ import {TextContent, LocationContent} from '@wireapp/core/dist/conversation/cont
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
-import { Typing } from '@wireapp/api-client/dist/commonjs/conversation';
 
 const {version}: {version: string} = require('../package.json');
 
@@ -79,7 +78,7 @@ class MainHandler extends MessageHandler {
         }
       }
       case PayloadBundleType.TYPING: {
-        const {status} = payload.content as Typing;
+        const {status} = payload.content as any;
         await this.sendTyping(payload.conversation, status);
       }
     }
