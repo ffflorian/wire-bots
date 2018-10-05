@@ -94,7 +94,11 @@ class MainHandler extends MessageHandler {
           if (waitingForContent) {
             await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
             delete this.answerCache[conversationId];
-            return this.answer(conversationId, {commandType: cachedCommandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
+            return this.answer(
+              conversationId,
+              {commandType: cachedCommandType, originalMessage: text, parsedArguments, rawCommand},
+              senderId
+            );
           }
         }
         return this.answer(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);

@@ -5,11 +5,12 @@ process.on('unhandledRejection', error =>
 
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config();
-  process.env.NODE_DEBUG="@wireapp/*,wire-packages-bot/*"
+  process.env.NODE_DEBUG = '@wireapp/*,wire-packages-bot/*';
 }
 
-import {Bot} from '@wireapp/bot-api';
+import {Bot, BotConfig, BotCredentials} from '@wireapp/bot-api';
 import {MainHandler} from './MainHandler';
+import {ClientType} from '@wireapp/api-client/dist/commonjs/client';
 
 ['WIRE_EMAIL', 'WIRE_PASSWORD', 'LIBRARIES_IO_API_KEY'].forEach(envVar => {
   if (!process.env[envVar]) {
@@ -17,10 +18,16 @@ import {MainHandler} from './MainHandler';
   }
 });
 
-const bot = new Bot({
+const credentials: BotCredentials = {
   email: process.env.WIRE_EMAIL!,
   password: process.env.WIRE_PASSWORD!,
-});
+};
+
+const config: BotConfig = {
+  clientType: ClientType.PERMANENT,
+};
+
+const bot = new Bot(credentials, config);
 
 const mainHandler = new MainHandler({
   feedbackConversationId: process.env.WIRE_FEEDBACK_CONVERSATION_ID,
