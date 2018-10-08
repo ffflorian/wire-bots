@@ -1,8 +1,9 @@
 {
   "entries": [
+    "../../.npmrc",
     ".ebextensions",
-    "ecosystem.config.js",
     "dist",
+    "ecosystem.config.js",
     "package.json"
   ],
   "force": true,
