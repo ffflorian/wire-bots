@@ -6,7 +6,7 @@ deploy:
 global:
   application_name: WireBots
   default_platform: Node.js
-  default_region: eu-central-1
+  default_region: eu-west-1
   profile: florian
   sc: git
   workspace_type: Application

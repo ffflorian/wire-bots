@@ -64,7 +64,6 @@ class MainHandler extends MessageHandler {
           return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
         }
       }
-
       case PayloadBundleType.LOCATION: {
         if (payload.conversation) {
           const locationContent = payload.content as LocationContent;
