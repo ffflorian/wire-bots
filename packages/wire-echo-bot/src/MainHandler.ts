@@ -2,7 +2,7 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {TextContent, LocationContent} from '@wireapp/core/dist/conversation/content/';
+import {TextContent, LocationContent, AssetContent} from '@wireapp/core/dist/conversation/content/';
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
@@ -46,6 +46,11 @@ class MainHandler extends MessageHandler {
     }
   }
 
+  async handleConnectionRequest(userId: string, conversationId: string): Promise<void> {
+    await this.sendConnectionResponse(userId, true);
+    await this.sendText(conversationId, this.helpText);
+  }
+
   async handleEvent(payload: PayloadBundleIncoming) {
     if (this.confirmTypes.includes(payload.type)) {
       await this.sendConfirmation(payload.conversation, payload.id);
@@ -62,6 +67,12 @@ class MainHandler extends MessageHandler {
         if (payload.conversation) {
           const messageContent = payload.content as TextContent;
           return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
+        }
+      }
+      case PayloadBundleType.ASSET_IMAGE: {
+        if (payload.conversation) {
+          const messageContent = payload.content as AssetContent;
+          return this.handleImage(payload.conversation, messageContent, payload.id, payload.from);
         }
       }
       case PayloadBundleType.LOCATION: {
@@ -82,6 +93,20 @@ class MainHandler extends MessageHandler {
     }
   }
 
+  async handleImage(conversationId: string, messageContent: AssetContent, messageId: string, senderId: string): Promise<void> {
+    const {original, uploaded} = messageContent;
+    if (this.account && this.account.service && original && original.image && uploaded) {
+      const imageBuffer = await this.account.service.conversation.getAsset(uploaded);
+
+      await this.sendImage(conversationId, {
+        data: imageBuffer,
+        height: original.image.height,
+        type: original.mimeType,
+        width: original.image.width,
+      });
+    }
+  }
+
   async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
     const {commandType, parsedArguments, rawCommand} = CommandService.parseCommand(text);
 
@@ -93,26 +118,26 @@ class MainHandler extends MessageHandler {
           if (waitingForContent) {
             await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
             delete this.answerCache[conversationId];
-            return this.answer(
+            return this.answerText(
               conversationId,
               {commandType: cachedCommandType, originalMessage: text, parsedArguments, rawCommand},
               senderId
             );
           }
         }
-        return this.answer(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
+        return this.answerText(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
       }
       default: {
         await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
         if (this.answerCache[conversationId]) {
           delete this.answerCache[conversationId];
         }
-        return this.answer(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
+        return this.answerText(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
       }
     }
   }
 
-  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string) {
+  async answerText(conversationId: string, parsedCommand: ParsedCommand, senderId: string) {
     const {originalMessage, parsedArguments, commandType} = parsedCommand;
 
     switch (commandType) {
@@ -145,11 +170,6 @@ class MainHandler extends MessageHandler {
         return this.sendText(conversationId, originalMessage);
       }
     }
-  }
-
-  async handleConnectionRequest(userId: string, conversationId: string): Promise<void> {
-    await this.sendConnectionResponse(userId, true);
-    await this.sendText(conversationId, this.helpText);
   }
 }
 
