@@ -2,7 +2,7 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {TextContent} from '@wireapp/core/dist/conversation/content/';
+import {TextContent, LocationContent} from '@wireapp/core/dist/conversation/content/';
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/root';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
@@ -48,7 +48,7 @@ class MainHandler extends MessageHandler {
 
   async handleEvent(payload: PayloadBundleIncoming) {
     if (this.confirmTypes.includes(payload.type)) {
-      //await this.sendConfirmation(payload.conversation, payload.id);
+      await this.sendConfirmation(payload.conversation, payload.id);
     }
 
     switch (payload.type) {
@@ -64,7 +64,7 @@ class MainHandler extends MessageHandler {
           return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
         }
       }
-      /*
+
       case PayloadBundleType.LOCATION: {
         if (payload.conversation) {
           const locationContent = payload.content as LocationContent;
@@ -79,7 +79,7 @@ class MainHandler extends MessageHandler {
       case PayloadBundleType.TYPING: {
         const {status} = payload.content as any;
         await this.sendTyping(payload.conversation, status);
-      }*/
+      }
     }
   }
 

@@ -826,10 +826,10 @@
     spark-md5 "3.0.0"
     tough-cookie "2.4.3"
 
-"@wireapp/bot-api@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-1.1.1.tgz#47d12d7e256581fd6ac633598d063f2aebf24f16"
-  integrity sha512-UR4Yf9Mfc1OWrfFs/zLdb26F6KHQIk66PrBwI+9EqVimz5/vkTThKuV2vD/bPV4a8Wp/2CwKNjttBlMH4Uj+fA==
+"@wireapp/bot-api@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-1.2.0.tgz#13be8c709160b4284cefd507380e59ca9aa4bc07"
+  integrity sha512-tvwqvLusOPbPx7nBWBnaccNtEcdW0EDxP7CPFF+vYBfWzbmhDeKySdVVMW/uLPC2VLmnjiS0dchHtRJi+LUOfw==
   dependencies:
     "@wireapp/core" "6.5.8"
     pure-uuid "1.5.4"
