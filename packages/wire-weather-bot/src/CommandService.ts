@@ -75,7 +75,7 @@ const CommandService = {
     }, '');
   },
   parseCommand(message: string): ParsedCommand {
-    const messageMatch = message.match(/\/(\w+)(?: (.*))?/);
+    const messageMatch = message.match(/^\/(\w+)(?: (.*))?/);
 
     if (messageMatch && messageMatch.length) {
       const parsedCommand = messageMatch[1].toLowerCase();

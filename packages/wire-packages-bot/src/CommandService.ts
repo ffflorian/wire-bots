@@ -116,7 +116,7 @@ const CommandService = {
     }, '');
   },
   parseCommand(message: string): ParsedCommand {
-    const messageMatch = message.match(/\/(\w+)(?: (.*))?/);
+    const messageMatch = message.match(/^\/(\w+)(?: (.*))?/);
 
     for (const answerCommand of answerCommands) {
       if (message.toLowerCase() === answerCommand.command) {
