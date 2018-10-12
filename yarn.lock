@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@ffflorian/jszip-cli@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-2.1.0.tgz#422ca2c3a896194fdd401b9953538a11e8341095"
-  integrity sha512-Sf1EzmBamS7UWpS6qVhu7fJzzuMM7qESTSse+QDalfhSTDEzwvE+4IPOCmzdmQ/XsyaiTj4MyJJzzzypa+ipRg==
+"@ffflorian/jszip-cli@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-2.1.1.tgz#a1ea3ff54d7385ef1c00c52260db31a773417bdc"
+  integrity sha512-05DhHBc9gFGTfRIk/lNu2j1f7pCQN07eVoUkzSRZzXP1NbcPr00vTcaVuQxA9WC4ovwL711kptU4nLcn8ZLsZw==
   dependencies:
-    commander "2.18.0"
+    commander "2.19.0"
     cosmiconfig "5.0.6"
     fs-extra "7.0.0"
     jszip "3.1.5"
@@ -1530,7 +1530,12 @@ commander@2.17.1, commander@~2.17.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   integrity sha512-wPMUt6FnH2yzG95SA6mzjQOEKUU3aLaDEmzs1ti+1E9h+CsrZghRlqEM/EJ4KscsQVG8uNN4uVreUeT8+drlgg==
 
-commander@2.18.0, commander@^2.12.1:
+commander@2.19.0:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
+
+commander@^2.12.1:
   version "2.18.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.18.0.tgz#2bf063ddee7c7891176981a2cc798e5754bc6970"
   integrity sha512-6CYPa+JP2ftfRU2qkDK+UTVeQYosOg/2GbcjIcKPHfinyOLPVGXu/ovN86RP49Re5ndJK1N0kuiidFFuepc4ZQ==
