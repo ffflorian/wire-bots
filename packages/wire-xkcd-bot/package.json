@@ -19,7 +19,7 @@
     "@types/png.js": "0.2.0",
     "@types/request": "2.48.1",
     "cross-env": "5.2.0",
-    "prettier": "1.14.3",
+    "prettier": "1.15.1",
     "rimraf": "2.6.2",
     "typescript": "3.1.6"
   },
