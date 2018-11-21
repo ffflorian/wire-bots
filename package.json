@@ -13,8 +13,8 @@
     "clean": "lerna run clean",
     "deploy": "lerna run deploy",
     "dist": "yarn clean && lerna run dist",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.ts\"",
     "lint": "tslint -p tsconfig.json --fix \"**/*.ts\" ",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.ts\"",
     "test": "yarn && yarn dist && lerna run test"
   },
   "workspaces": [
