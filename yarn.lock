@@ -793,6 +793,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.10.tgz#4fa76e6598b7de3f0cb6ec3abacc4f59e5b3a2ce"
   integrity sha512-8xZEYckCbUVgK8Eg7lf5Iy4COKJ5uXlnIOnePN0WUwSQggy9tolM+tDJf7wMOnT/JT/W9xDYIaYggt3mRV2O5w==
 
+"@types/node@10.12.7":
+  version "10.12.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.7.tgz#195808b2d4b2e7c33e75e7d9b24aeee88f94660d"
+  integrity sha512-Zh5Z4kACfbeE8aAOYh9mqotRxaZMro8MbBQtR8vEXOMiZo2rGEh2LayJijKdlu48YnS6y2EFU/oo2NCe5P6jGw==
+
 "@types/node@10.9.2":
   version "10.9.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.2.tgz#f0ab8dced5cd6c56b26765e1c0d9e4fdcc9f2a00"
@@ -3334,12 +3339,12 @@ libnpmaccess@^3.0.0:
     npm-package-arg "^6.1.0"
     npm-registry-fetch "^3.8.0"
 
-libraries.io@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.0.tgz#6c314600dee27661c23dc9e516590254694d8ef9"
-  integrity sha512-H6t0DV08PDylJOrQLGvPZkxqhjknyWueG3FYvBYScnflAY1ffTCUuz05sM048uP+zvQ4VphyfEypyA1YL9kXkg==
+libraries.io@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.1.tgz#b75dfad7df25dbc2977dc41eeafb3fce306c6bb6"
+  integrity sha512-JMuGGlW8zdZT8rbg8iquET0VtkRflu4xSUHPZq2w01BRNiryj7SqlrKhDo2MNEunUyZeIA6Om9OKEAAId5Gs5Q==
   dependencies:
-    "@types/node" "10.9.2"
+    "@types/node" "10.12.7"
     axios "0.18.0"
 
 libsodium-sumo@0.7.3:
