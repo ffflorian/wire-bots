@@ -841,16 +841,16 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.4.tgz#821878b81bfab971b93a265a561d54ea61f9059f"
   integrity sha512-Set5ZdrAaKI/qHdFlVMgm/GsAv/wkXhSTuZFkJ+JI7HK+wIkIlOaUXSXieIvJ0+OvGIqtREFoE+NHJtEq0gtEw==
 
-"@wireapp/api-client@3.2.7":
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-3.2.7.tgz#f642e870688fc4020a72a9dd9091e7874d23d712"
-  integrity sha512-SEwM551gBbYuhh83VhIRFCYIFwPO7GlpW3snyRK1eb53WjL6HdqiIfnIioOhrmk7kzRJAfub17aHdJqGVHPs4w==
+"@wireapp/api-client@3.2.9":
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-3.2.9.tgz#7841235de5c9044e24d93029add68affbc652a43"
+  integrity sha512-f1viHes4UkKgXVLYgyJmXqPEEA1rz8PtBcq++YvtEanhtgz/CNwm28jyUl/lGf1ZfvXk3USL5W02AzPLVq5m1Q==
   dependencies:
     "@types/node" "10.12.10"
     "@types/spark-md5" "3.0.1"
     "@types/tough-cookie" "2.3.4"
     "@wireapp/priority-queue" "0.2.47"
-    "@wireapp/store-engine" "1.1.7"
+    "@wireapp/store-engine" "1.1.8"
     axios "0.18.0"
     html5-websocket "2.0.4"
     logdown "3.2.7"
@@ -858,12 +858,12 @@
     spark-md5 "3.0.0"
     tough-cookie "2.5.0"
 
-"@wireapp/bot-api@2.1.43":
-  version "2.1.43"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-2.1.43.tgz#f5b048fe0bb3c298dc205793d94979be9fa0f1a0"
-  integrity sha512-H9PklmQ3sJUd+/upyGHdPVcMPnvGHbHgLnFp91Rm502b4YOTirY+s9jtJVNfEjOo5O5sImSlFjl3v9goc21ODQ==
+"@wireapp/bot-api@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-3.0.2.tgz#4ec2dcb5bbd84b3fcff409294899d696a76d2efe"
+  integrity sha512-78vOtbj5X3B67Xohp+UcnjRxX4fRAqnpbSZFm1j3q3etoKCri9eKKwZ8hz0cruiI/HeH4gQ4l4Yr8M7iGA/2XA==
   dependencies:
-    "@wireapp/core" "7.3.8"
+    "@wireapp/core" "8.0.2"
     pure-uuid "1.5.5"
 
 "@wireapp/cbor@3.0.107":
@@ -871,32 +871,33 @@
   resolved "https://registry.yarnpkg.com/@wireapp/cbor/-/cbor-3.0.107.tgz#52647ae59a52f78995f6bfdd986c58f597ac6100"
   integrity sha512-A5AzGWNghavKrZfubZbpMDqyWg1klAgo4NwaUon9hKy6mHRBTk323rjqhfQSup3bPcEvJUKG5Z9gHtVMO3vxAQ==
 
-"@wireapp/core@7.3.8":
-  version "7.3.8"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-7.3.8.tgz#ea323a1d6b633143209844796efdbacb0b512bed"
-  integrity sha512-kgCd6NriuntvSt4QFw9+jGUng8kHj8idlDIT0voezE6KGhyKvba8xj9Cf5P0SJAWPmpO0MyowClJH2vvgxfpIA==
+"@wireapp/core@8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-8.0.2.tgz#9ee4be169d2a8e5b034499cde542552904478200"
+  integrity sha512-DVxjJ6aUQEo+HhBk1+XWnuEhY83mloZEUUgAUScITyorzALXQ2qPk5JO79/7KMsPEWlN66ZEd81w/8pSNSgSzw==
   dependencies:
     "@types/node" "10.12.10"
-    "@wireapp/api-client" "3.2.7"
-    "@wireapp/cryptobox" "9.0.29"
-    "@wireapp/protocol-messaging" "1.22.1"
-    "@wireapp/store-engine" "1.1.7"
+    "@wireapp/api-client" "3.2.9"
+    "@wireapp/cryptobox" "9.0.30"
+    "@wireapp/protocol-messaging" "1.23.0"
+    "@wireapp/store-engine" "1.1.8"
     bazinga64 "5.3.30"
+    hash.js "1.1.5"
     logdown "3.2.7"
     protobufjs "6.8.8"
     pure-uuid "1.5.5"
 
-"@wireapp/cryptobox@9.0.29":
-  version "9.0.29"
-  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-9.0.29.tgz#37e71b51c44475c94474c657bd3af3411c00dc51"
-  integrity sha512-4SEft/vFCetdi5WUF+GOvbj3MMA6A08aqhIKS/KZnU5A4m8g/ZKwJsrGRIGJ9qHQS9HuKR7F2cFRgozM4RKXXA==
+"@wireapp/cryptobox@9.0.30":
+  version "9.0.30"
+  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-9.0.30.tgz#a35915a22121353ea3b2b8205c1663efb1494cdb"
+  integrity sha512-dUSTP46EyF1IULwN4bisYXc8O3SNL8NS2XbiFz4yKpNDC/4WgA/mY7PjqpG0xETVgv81G8okz4L6RsD2oieQtA==
   dependencies:
     "@types/fs-extra" "5.0.4"
     "@types/node" "10.12.10"
     "@wireapp/lru-cache" "3.0.17"
     "@wireapp/priority-queue" "0.2.47"
     "@wireapp/proteus" "8.0.19"
-    "@wireapp/store-engine" "1.1.7"
+    "@wireapp/store-engine" "1.1.8"
     bazinga64 "5.3.30"
     dexie "2.0.4"
     fs-extra "7.0.1"
@@ -927,17 +928,17 @@
     ed2curve "0.2.1"
     libsodium-wrappers-sumo "0.7.3"
 
-"@wireapp/protocol-messaging@1.22.1":
-  version "1.22.1"
-  resolved "https://registry.yarnpkg.com/@wireapp/protocol-messaging/-/protocol-messaging-1.22.1.tgz#2cdfde7ce51487fd38a52c2cce1ec2f4c100372e"
-  integrity sha512-yw95stCSbaBcAU8iXBXle5xDpJecpbhO6GEeMV4huA2hlNTtZIe3i+V4zpUu9QpeXQhIAKTnJMVDZh3TQN9lKw==
+"@wireapp/protocol-messaging@1.23.0":
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/@wireapp/protocol-messaging/-/protocol-messaging-1.23.0.tgz#aa26b96eb0933c9b95d34d9502098d7c582036a0"
+  integrity sha512-/B+xvw/3EmSGE4Ej63FOzNSxWnCPdNdrzetVY0BNiVdj3sioW8+EPcOltjgI2PPDTDKZnTu9+cnsJclYx7HA2Q==
   dependencies:
     protobufjs "6.8.8"
 
-"@wireapp/store-engine@1.1.7":
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@wireapp/store-engine/-/store-engine-1.1.7.tgz#cc740ef1469a1270e7898a6f0a043710c88f09a9"
-  integrity sha512-ILYsDyo17aQ4CSxK2/tbAEavBDKm1QfYfbe3IkwfSjODrG/v1QMRWL5GyNP8f4boCfs2BehUmYuWPtEmm4Th4w==
+"@wireapp/store-engine@1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@wireapp/store-engine/-/store-engine-1.1.8.tgz#94f3bcb636046006851dcba7aad0e207110c74e5"
+  integrity sha512-YocpcM8P5pnnu1vydiKyO0GJJnA/PfFUN8cOTO7ajDwrx6KdqnLIPmJRso686zv9OGuAJE7dmCoVmqB4XbScuw==
   dependencies:
     "@types/bro-fs" "0.4.1"
     "@types/filesystem" "0.0.29"
@@ -2711,6 +2712,14 @@ has-values@^1.0.0:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
+hash.js@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.5.tgz#e38ab4b85dfb1e0c40fe9265c0e9b54854c23812"
+  integrity sha512-eWI5HG9Np+eHV1KQhisXWwM+4EPPYe5dFX1UZZH7k/E3JzDEazVH+VGlZi6R94ZqImq+A3D1mCEtrFIfg/E7sA==
+  dependencies:
+    inherits "^2.0.3"
+    minimalistic-assert "^1.0.1"
+
 hosted-git-info@^2.1.4, hosted-git-info@^2.6.0:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
@@ -3745,6 +3754,11 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
+
+minimalistic-assert@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
+  integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
