@@ -1,7 +1,7 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
   "devDependencies": {
-    "husky": "1.2.0",
+    "husky": "1.2.1",
     "lerna": "3.6.0",
     "lint-staged": "8.1.0",
     "tslint": "5.11.0",
