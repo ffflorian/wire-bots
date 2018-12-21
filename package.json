@@ -30,9 +30,11 @@
     "clean": "lerna run clean",
     "deploy": "lerna run deploy",
     "dist": "yarn clean && lerna run dist",
-    "lint": "tslint -p tsconfig.json --fix \"**/*.ts\" ",
+    "lint": "yarn lint:ts && yarn lint:other",
+    "lint:other": "yarn prettier --list-different",
+    "lint:ts": "tslint --config tslint.json --project tsconfig.json \"**/*.ts\"",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.ts\"",
-    "test": "yarn && yarn dist && lerna run test"
+    "test": "lerna run test"
   },
   "workspaces": [
     "packages/*"
