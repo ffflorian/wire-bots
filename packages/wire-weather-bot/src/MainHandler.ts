@@ -3,8 +3,8 @@ import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
+import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
 import {WeatherService} from './WeatherService';

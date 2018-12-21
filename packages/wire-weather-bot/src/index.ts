@@ -8,10 +8,10 @@ if (process.env.NODE_ENV === 'development') {
   process.env.NODE_DEBUG = '@wireapp/*,wire-weather-bot/*';
 }
 
-import {Bot, BotCredentials, BotConfig} from '@wireapp/bot-api';
+import {ClientType} from '@wireapp/api-client/dist/commonjs/client';
+import {Bot, BotConfig, BotCredentials} from '@wireapp/bot-api';
 import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
 import {MainHandler} from './MainHandler';
-import {ClientType} from '@wireapp/api-client/dist/commonjs/client';
 
 ['WIRE_EMAIL', 'WIRE_PASSWORD', 'OPEN_WEATHER_API_KEY'].forEach(envVar => {
   if (!process.env[envVar]) {

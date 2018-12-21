@@ -2,8 +2,8 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {TextContent, LocationContent, AssetContent} from '@wireapp/core/dist/conversation/content/';
 import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
+import {AssetContent, LocationContent, TextContent} from '@wireapp/core/dist/conversation/content/';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
 
@@ -93,7 +93,12 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async handleImage(conversationId: string, messageContent: AssetContent, messageId: string, senderId: string): Promise<void> {
+  async handleImage(
+    conversationId: string,
+    messageContent: AssetContent,
+    messageId: string,
+    senderId: string
+  ): Promise<void> {
     const {original, uploaded} = messageContent;
     if (this.account && this.account.service && original && original.image && uploaded) {
       const imageBuffer = await this.account.service.conversation.getAsset(uploaded);
@@ -125,14 +130,22 @@ class MainHandler extends MessageHandler {
             );
           }
         }
-        return this.answerText(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
+        return this.answerText(
+          conversationId,
+          {commandType, originalMessage: text, parsedArguments, rawCommand},
+          senderId
+        );
       }
       default: {
         await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
         if (this.answerCache[conversationId]) {
           delete this.answerCache[conversationId];
         }
-        return this.answerText(conversationId, {commandType, originalMessage: text, parsedArguments, rawCommand}, senderId);
+        return this.answerText(
+          conversationId,
+          {commandType, originalMessage: text, parsedArguments, rawCommand},
+          senderId
+        );
       }
     }
   }

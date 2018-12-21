@@ -55,12 +55,14 @@ const basicCommands: BasicCommand[] = [
 
 const CommandService = {
   formatCommands(): string {
-    return basicCommands.sort((a, b) => a.command.localeCompare(b.command)).reduce((prev, command) => {
-      const {argumentName, command: commandName, description, parseArguments} = command;
-      return `${prev}\n- **/${commandName}${
-        parseArguments && argumentName ? ` <${argumentName}>` : ''
-      }**: ${description}`;
-    }, '');
+    return basicCommands
+      .sort((a, b) => a.command.localeCompare(b.command))
+      .reduce((prev, command) => {
+        const {argumentName, command: commandName, description, parseArguments} = command;
+        return `${prev}\n- **/${commandName}${
+          parseArguments && argumentName ? ` <${argumentName}>` : ''
+        }**: ${description}`;
+      }, '');
   },
   parseCommand(message: string): ParsedCommand {
     const messageMatch = message.match(/^\/(\w+)(?: (.*))?/);

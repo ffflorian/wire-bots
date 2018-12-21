@@ -8,9 +8,9 @@ if (process.env.NODE_ENV === 'development') {
   process.env.NODE_DEBUG = '@wireapp/*,wire-xkcd-bot/*';
 }
 
-import {Bot, BotCredentials, BotConfig} from '@wireapp/bot-api';
-import {MainHandler} from './MainHandler';
 import {ClientType} from '@wireapp/api-client/dist/commonjs/client';
+import {Bot, BotConfig, BotCredentials} from '@wireapp/bot-api';
+import {MainHandler} from './MainHandler';
 
 ['WIRE_EMAIL', 'WIRE_PASSWORD'].forEach(envVar => {
   if (!process.env[envVar]) {
