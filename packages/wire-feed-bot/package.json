@@ -1,0 +1,36 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "dependencies": {
+    "@wireapp/bot-api": "3.1.6",
+    "dotenv": "6.2.0",
+    "logdown": "3.2.7",
+    "moment": "2.23.0",
+    "pm2": "3.2.4"
+  },
+  "devDependencies": {
+    "@ffflorian/jszip-cli": "2.1.3",
+    "@types/node": "10.12.8",
+    "cross-env": "5.2.0",
+    "prettier": "1.15.3",
+    "rimraf": "2.6.2",
+    "typescript": "3.2.2"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@ffflorian/wire-feed-bot",
+  "private": true,
+  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-feed-bot",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "deploy": "yarn dist && yarn zip && eb deploy -nh",
+    "dist": "yarn clean && yarn build",
+    "lint": "tslint -p tsconfig.json --fix",
+    "prettier": "prettier --single-quote --write src/**/*.ts",
+    "start": "pm2 start && pm2 logs",
+    "start:dev": "cross-env NODE_ENV=\"development\" node dist/index.js",
+    "test": "yarn dist && exit 0",
+    "zip": "jszip-cli"
+  },
+  "version": "1.0.0"
+}
