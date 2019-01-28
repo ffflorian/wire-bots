@@ -3542,10 +3542,10 @@ libnpmteam@^1.0.1:
     get-stream "^4.0.0"
     npm-registry-fetch "^3.8.0"
 
-libraries.io@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.1.tgz#b75dfad7df25dbc2977dc41eeafb3fce306c6bb6"
-  integrity sha512-JMuGGlW8zdZT8rbg8iquET0VtkRflu4xSUHPZq2w01BRNiryj7SqlrKhDo2MNEunUyZeIA6Om9OKEAAId5Gs5Q==
+libraries.io@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.2.tgz#e2661496428b7d4abf97e41bcd09e57f1d4a374d"
+  integrity sha512-91Rk8WugD+MigT0VVQ85XYndLEsxsXA5loxnBpUknfSPXXq9wI3FSEULb2vaSt6+wsplQUPk7My6mti/GxSv+g==
   dependencies:
     "@types/node" "10.12.7"
     axios "0.18.0"
