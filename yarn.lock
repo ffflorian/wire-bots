@@ -817,12 +817,7 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
   integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
 
-"@types/node@*", "@types/node@10.12.8", "@types/node@^10.1.0":
-  version "10.12.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.8.tgz#d0a3ab5a6e61458c492304e2776ac136b81db927"
-  integrity sha512-INamyRZG4rW3lDCUmwVd5Xho/bXvQm/v1yP8V0UN1RuInU7RoWoaO570b+yLX4Ia/0szsx1wa8VzcsVlsvbWLA==
-
-"@types/node@10.12.18":
+"@types/node@*", "@types/node@10.12.18", "@types/node@^10.1.0":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
@@ -831,6 +826,11 @@
   version "10.12.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.7.tgz#195808b2d4b2e7c33e75e7d9b24aeee88f94660d"
   integrity sha512-Zh5Z4kACfbeE8aAOYh9mqotRxaZMro8MbBQtR8vEXOMiZo2rGEh2LayJijKdlu48YnS6y2EFU/oo2NCe5P6jGw==
+
+"@types/node@10.12.8":
+  version "10.12.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.8.tgz#d0a3ab5a6e61458c492304e2776ac136b81db927"
+  integrity sha512-INamyRZG4rW3lDCUmwVd5Xho/bXvQm/v1yP8V0UN1RuInU7RoWoaO570b+yLX4Ia/0szsx1wa8VzcsVlsvbWLA==
 
 "@types/omggif@1.0.0":
   version "1.0.0"
@@ -3542,10 +3542,10 @@ libnpmteam@^1.0.1:
     get-stream "^4.0.0"
     npm-registry-fetch "^3.8.0"
 
-libraries.io@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.1.tgz#b75dfad7df25dbc2977dc41eeafb3fce306c6bb6"
-  integrity sha512-JMuGGlW8zdZT8rbg8iquET0VtkRflu4xSUHPZq2w01BRNiryj7SqlrKhDo2MNEunUyZeIA6Om9OKEAAId5Gs5Q==
+libraries.io@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.2.tgz#e2661496428b7d4abf97e41bcd09e57f1d4a374d"
+  integrity sha512-91Rk8WugD+MigT0VVQ85XYndLEsxsXA5loxnBpUknfSPXXq9wI3FSEULb2vaSt6+wsplQUPk7My6mti/GxSv+g==
   dependencies:
     "@types/node" "10.12.7"
     axios "0.18.0"
