@@ -14,10 +14,10 @@
     logdown "3.2.7"
     progress "2.0.3"
 
-"@ffflorian/xkcdjs@1.3.5":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.3.5.tgz#ca6858195375d22d2b866354757730d14846b3a7"
-  integrity sha512-7JTbG5p+/aAamXzHyEIwMYc/Y+RZu8d8aqrGiBFnoSYvbW7Jc/m6iPnm+dh25PvjkhZd3UE7n58SUeGA58sgyw==
+"@ffflorian/xkcdjs@1.3.6":
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.3.6.tgz#ad7fc995d0c88c44dd3c41ccd30f59cf5d41dae7"
+  integrity sha512-IzIJI1kYb429Wqbiy5Ik5gz6g6/ucQhIGhiJTR2m6dYkcp9h0LN7ZyZKjF0g7FRfD7p2+mExVSAMKkyjxVgDGw==
   dependencies:
     "@types/node" "10.12.7"
     axios "0.18.0"
@@ -817,12 +817,7 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
   integrity sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q==
 
-"@types/node@*", "@types/node@10.12.8", "@types/node@^10.1.0":
-  version "10.12.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.8.tgz#d0a3ab5a6e61458c492304e2776ac136b81db927"
-  integrity sha512-INamyRZG4rW3lDCUmwVd5Xho/bXvQm/v1yP8V0UN1RuInU7RoWoaO570b+yLX4Ia/0szsx1wa8VzcsVlsvbWLA==
-
-"@types/node@10.12.18":
+"@types/node@*", "@types/node@10.12.18", "@types/node@^10.1.0":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
@@ -831,6 +826,11 @@
   version "10.12.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.7.tgz#195808b2d4b2e7c33e75e7d9b24aeee88f94660d"
   integrity sha512-Zh5Z4kACfbeE8aAOYh9mqotRxaZMro8MbBQtR8vEXOMiZo2rGEh2LayJijKdlu48YnS6y2EFU/oo2NCe5P6jGw==
+
+"@types/node@10.12.8":
+  version "10.12.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.8.tgz#d0a3ab5a6e61458c492304e2776ac136b81db927"
+  integrity sha512-INamyRZG4rW3lDCUmwVd5Xho/bXvQm/v1yP8V0UN1RuInU7RoWoaO570b+yLX4Ia/0szsx1wa8VzcsVlsvbWLA==
 
 "@types/omggif@1.0.0":
   version "1.0.0"
