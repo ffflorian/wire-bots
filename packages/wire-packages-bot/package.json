@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@ffflorian/jszip-cli": "2.1.4",
-    "@types/node": "10.12.8",
+    "@types/node": "11.9.0",
     "@types/request": "2.48.1",
     "cross-env": "5.2.0",
     "dotenv": "6.2.0",
