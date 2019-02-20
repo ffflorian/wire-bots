@@ -8,7 +8,7 @@
     "logdown": "3.2.7",
     "moment": "2.24.0",
     "omggif": "1.0.9",
-    "pm2": "3.3.0",
+    "pm2": "3.3.1",
     "png.js": "0.2.1"
   },
   "devDependencies": {
