@@ -1,7 +1,10 @@
 process.on('uncaughtException', error => console.error(`Uncaught exception: ${error.message}`, error));
-process.on('unhandledRejection', error =>
-  console.error(`Uncaught rejection "${error.constructor.name}": ${error.message}`, error)
-);
+process.on('unhandledRejection', (reason, promise) => {
+  if (reason) {
+    console.error(`Uncaught rejection: ${reason.toString()}`, reason);
+  }
+  promise.catch(console.error);
+});
 
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config();
