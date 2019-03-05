@@ -4,26 +4,26 @@ workflow "Build, lint and test" {
 }
 
 action "Build" {
-  uses = "docker://node:10"
+  uses = "docker://node:11"
   runs = "yarn"
 }
 
 action "Boot" {
-  uses = "docker://node:10"
+  uses = "docker://node:11"
   needs = ["Build"]
   runs = "yarn"
   args = "boot"
 }
 
 action "Test" {
-  uses = "docker://node:10"
+  uses = "docker://node:11"
   needs = ["Boot"]
   runs = "yarn"
   args = "test"
 }
 
 action "Lint" {
-  uses = "docker://node:10"
+  uses = "docker://node:11"
   needs = ["Boot"]
   runs = "yarn"
   args = "lint"
