@@ -3650,12 +3650,12 @@ libnpmpublish@^1.1.1:
     semver "^5.5.1"
     ssri "^6.0.1"
 
-libraries.io@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.2.tgz#e2661496428b7d4abf97e41bcd09e57f1d4a374d"
-  integrity sha512-91Rk8WugD+MigT0VVQ85XYndLEsxsXA5loxnBpUknfSPXXq9wI3FSEULb2vaSt6+wsplQUPk7My6mti/GxSv+g==
+libraries.io@1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.5.tgz#8fb2e70ca1cae67f5cb712a1280778944c13609f"
+  integrity sha512-c9z//ieD4fNhsJpPW04mL7tfc2Kzn8VJ+kb0TmEXwU+vgTHTr4qM9IdY5wqolkpK0MnN7g+FUdqkDRU6n+E6wg==
   dependencies:
-    "@types/node" "10.12.7"
+    "@types/node" "11.10.5"
     axios "0.18.0"
 
 libsodium-sumo@0.7.4:
