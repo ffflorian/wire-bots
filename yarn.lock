@@ -21,12 +21,12 @@
     logdown "3.2.7"
     progress "2.0.3"
 
-"@ffflorian/xkcdjs@1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.2.tgz#fc8d4875d81fcdfe2782a0094111c2e76fb6f2e9"
-  integrity sha512-0JYAIAYY6oXe4kLBWxnoCu+XMkUNlWCCKecKlnTclZEVCezm24HSYGqKls2zc5z6XC54153n+PcVRahrI5nTfw==
+"@ffflorian/xkcdjs@1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.3.tgz#86a8a77168072e3ce64c5b7d8c9a36c4ab31fdfb"
+  integrity sha512-BGthF4sF0+cgAnWb1IifXUj1a5JuVk6ZOgjaqOK1V5mftpizQ+maVoGBxQGtcYoSFgYEozCWoTDi22a0vUtDKA==
   dependencies:
-    "@types/node" "11.10.5"
+    "@types/node" "11.11.0"
     axios "0.18.0"
     commander "2.19.0"
 
@@ -907,11 +907,6 @@
   version "11.11.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.0.tgz#070e9ce7c90e727aca0e0c14e470f9a93ffe9390"
   integrity sha512-D5Rt+HXgEywr3RQJcGlZUCTCx1qVbCZpVk3/tOOA6spLNZdGm8BU+zRgdRYDoF1pO3RuXLxADzMrF903JlQXqg==
-
-"@types/node@11.10.5":
-  version "11.10.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.10.5.tgz#fbaca34086bdc118011e1f05c47688d432f2d571"
-  integrity sha512-DuIRlQbX4K+d5I+GMnv+UfnGh+ist0RdlvOp+JZ7ePJ6KQONCFQv/gKYSU1ZzbVdFSUCKZOltjmpFAGGv5MdYA==
 
 "@types/node@^10.1.0":
   version "10.12.19"
