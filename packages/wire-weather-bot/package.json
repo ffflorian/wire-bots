@@ -3,7 +3,7 @@
   "dependencies": {
     "@wireapp/bot-api": "3.3.3",
     "dotenv": "7.0.0",
-    "logdown": "3.2.7",
+    "logdown": "3.2.8",
     "moment": "2.24.0",
     "openweathermap-api-client": "1.0.3",
     "pm2": "3.4.0"
