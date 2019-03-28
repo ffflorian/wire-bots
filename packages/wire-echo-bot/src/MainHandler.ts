@@ -2,7 +2,7 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
+import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {AssetContent, LocationContent, TextContent} from '@wireapp/core/dist/conversation/content/';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
@@ -51,7 +51,7 @@ class MainHandler extends MessageHandler {
     await this.sendText(conversationId, this.helpText);
   }
 
-  async handleEvent(payload: PayloadBundleIncoming) {
+  async handleEvent(payload: PayloadBundle) {
     if (this.confirmTypes.includes(payload.type)) {
       await this.sendConfirmation(payload.conversation, payload.id);
     }

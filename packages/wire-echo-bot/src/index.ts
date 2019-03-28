@@ -1,6 +1,6 @@
 process.on('uncaughtException', error => console.error(`Uncaught exception: ${error.message}`, error));
 process.on('unhandledRejection', (reason, promise) =>
-  console.log('Unhandled Rejection at:', promise, 'reason:', reason)
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason)
 );
 
 if (process.env.NODE_ENV === 'development') {
