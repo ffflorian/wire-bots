@@ -2,7 +2,7 @@ import * as logdown from 'logdown';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {PayloadBundleIncoming, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
+import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {SearchService} from './SearchService';
@@ -44,7 +44,7 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async handleEvent(payload: PayloadBundleIncoming) {
+  async handleEvent(payload: PayloadBundle) {
     switch (payload.type) {
       case PayloadBundleType.TEXT: {
         if (payload.conversation) {
