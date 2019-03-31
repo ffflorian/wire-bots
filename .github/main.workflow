@@ -29,7 +29,7 @@ action "Test projects" {
   uses = "docker://node:11-slim"
   needs = ["Bootstrap projects"]
   runs = "yarn"
-  args = "test"
+  args = "test:all"
 }
 
 action "Lint projects" {

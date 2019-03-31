@@ -1,11 +1,5 @@
 {
-  "entries": [
-    "../../.npmrc",
-    ".ebextensions",
-    "dist",
-    "ecosystem.config.js",
-    "package.json"
-  ],
+  "entries": ["../../.npmrc", ".ebextensions", "dist", "ecosystem.config.js", "package.json"],
   "force": true,
   "mode": "add",
   "outputEntry": "dist/wire-xkcd-bot.zip",

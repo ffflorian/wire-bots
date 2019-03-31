@@ -11,9 +11,8 @@
     "@ffflorian/jszip-cli": "2.1.4",
     "@types/node": "11.12.1",
     "cross-env": "5.2.0",
-    "prettier": "1.16.4",
     "rimraf": "2.6.3",
-    "typescript": "3.3.4000"
+    "typescript": "3.4.1"
   },
   "license": "MIT",
   "main": "dist/index.js",
@@ -26,9 +25,8 @@
     "deploy": "yarn dist && yarn zip && eb deploy -nh",
     "dist": "yarn clean && yarn build",
     "lint": "tslint -p tsconfig.json --fix",
-    "prettier": "prettier --single-quote --write src/**/*.ts",
     "start": "pm2 start && pm2 logs",
-    "start:dev": "cross-env NODE_ENV=\"development\" node dist/index.js",
+    "start:dev": "cross-env NODE_ENV=development node dist/index.js",
     "test": "yarn dist && exit 0",
     "zip": "jszip-cli"
   },
