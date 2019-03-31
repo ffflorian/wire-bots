@@ -1,9 +1,11 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
+  "description": "My Wire bots using the Wire Bot API.",
   "devDependencies": {
     "husky": "1.3.1",
     "lerna": "3.13.1",
     "lint-staged": "8.1.5",
+    "prettier": "1.16.4",
     "tslint": "5.14.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.0.1"
@@ -13,7 +15,7 @@
       "tslint --config tslint.json --project tsconfig.json --fix",
       "git add"
     ],
-    "*.{json,md,css}": [
+    "*.{json,md}": [
       "prettier --write",
       "git add"
     ]
@@ -22,14 +24,19 @@
   "private": true,
   "scripts": {
     "boot": "lerna bootstrap --reject-cycles",
+    "build": "lerna run build",
     "clean": "lerna run clean",
-    "deploy": "lerna run deploy",
-    "dist": "yarn clean && lerna run dist",
-    "lint": "yarn lint:ts && yarn lint:other",
+    "dist": "yarn clean && yarn build",
+    "fix": "yarn fix:other && yarn fix:ts",
+    "fix:other": "yarn prettier --write",
+    "fix:ts": "yarn lint:ts --fix",
+    "lint": "yarn lint:other && yarn lint:ts",
     "lint:other": "yarn prettier --list-different",
-    "lint:ts": "tslint --config tslint.json --project tsconfig.json \"**/*.ts\"",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.ts\"",
-    "test": "lerna run test"
+    "lint:ts": "tslint --project tsconfig.json",
+    "prettier": "prettier \"**/*.{json,md}\"",
+    "release": "lerna publish",
+    "test": "yarn lint:ts && yarn lint:other",
+    "test:all": "yarn lint && lerna run test"
   },
   "workspaces": [
     "packages/*"
