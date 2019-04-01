@@ -21,10 +21,10 @@
     logdown "3.2.7"
     progress "2.0.3"
 
-"@ffflorian/xkcdjs@1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.5.tgz#ec140e970bb8486f5397bd63d2642e8e0ef61cce"
-  integrity sha512-E5sILYXPkx9B5IE1e0dbEEv/bjCWyvuOWkQMZgLxG7g1dViFsG0g5sUl7fKWgP9ieupo+6bKho3If/xh03fS7A==
+"@ffflorian/xkcdjs@1.4.6":
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.6.tgz#62a3c1573c2756ec0f8097abe2f72210c3a8b2ed"
+  integrity sha512-FPXiVlQQ1MsdvJTp2Vwikz+/ot5xa5xMFr9M9Hbj0YL4THulmzoB5DFPMzyYZcXCgrV7wtRpzPcn4mkkRlE8Pg==
   dependencies:
     "@types/node" "11.12.0"
     axios "0.18.0"
