@@ -1,0 +1,33 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "dependencies": {
+    "@wireapp/bot-api": "4.0.14",
+    "dotenv": "7.0.0",
+    "logdown": "3.2.8",
+    "pm2": "3.5.0"
+  },
+  "devDependencies": {
+    "@ffflorian/jszip-cli": "2.1.4",
+    "@types/node": "11.13.2",
+    "cross-env": "5.2.0",
+    "rimraf": "2.6.3",
+    "typescript": "3.4.2"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@ffflorian/wire-hassmelden-bot",
+  "private": true,
+  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-hassmelden-bot",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "deploy": "yarn dist && yarn zip && eb deploy -nh",
+    "dist": "yarn clean && yarn build",
+    "lint": "tslint -p tsconfig.json --fix",
+    "start": "pm2 start && pm2 logs",
+    "start:dev": "cross-env NODE_ENV=development node dist/index.js",
+    "test": "yarn dist && exit 0",
+    "zip": "jszip-cli"
+  },
+  "version": "1.0.0"
+}
