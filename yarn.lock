@@ -9,6 +9,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@ffflorian/api-client@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.3.4.tgz#8c21cce788faf7bb99f60be4fb42fd73f7256ffa"
+  integrity sha512-P+a2/4CB76itU/JR5RqZI39E/LCGPGNnH6aQvXcCzK3D3ItHKyGc4/8BRkUTDA59VBKxaWdmu2snR5PqlSTRWQ==
+  dependencies:
+    axios "0.18.0"
+    http-status-codes "1.3.2"
+
 "@ffflorian/jszip-cli@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-2.1.4.tgz#9de13d2ef03b4b2f87cfe0f7111217dffa4e5948"
@@ -21,14 +29,14 @@
     logdown "3.2.7"
     progress "2.0.3"
 
-"@ffflorian/xkcdjs@1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.7.tgz#82b7996301045fd2b5334a2040e9d953a48954f0"
-  integrity sha512-l5ex1Syf4mFwPLT8Ngw4ATOZg4nGNOOOzI8DPWIAVt1UCXeFJpyT0m3zyVoCp8MDNcKr3d03T1hB+jzkTBqScA==
+"@ffflorian/xkcdjs@1.4.10":
+  version "1.4.10"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.10.tgz#e7915acfcba2c0215653c7c80b4890e0c7dbddf6"
+  integrity sha512-zr0wtdlm5DLFSzX1CpGKGyA7+WkfuWlj+jSaHPGpUpKqbPh1kjcWyfjWBMxMTqzjMyZtkevEBhpptQUa30bmsA==
   dependencies:
-    "@types/node" "11.13.0"
-    axios "0.18.0"
+    "@ffflorian/api-client" "0.3.4"
     commander "2.20.0"
+    fs-extra "7.0.1"
 
 "@lerna/add@3.13.1":
   version "3.13.1"
@@ -3047,6 +3055,11 @@ http-signature@~1.2.0:
     assert-plus "^1.0.0"
     jsprim "^1.2.2"
     sshpk "^1.7.0"
+
+http-status-codes@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-1.3.2.tgz#181dfa4455ef454e5e4d827718fca3936680d10d"
+  integrity sha512-nDUtj0ltIt08tGi2VWSpSzNNFye0v3YSe9lX3lIqLTuVvvRiYCvs4QQBSHo0eomFYw1wlUuofurUAlTm+vHnXg==
 
 https-proxy-agent@^2.2.1:
   version "2.2.1"
