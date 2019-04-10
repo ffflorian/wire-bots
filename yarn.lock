@@ -9,6 +9,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@ffflorian/api-client@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.3.2.tgz#138566a293c51b1e68ba76c3c0d34b03ccb6808b"
+  integrity sha512-rRzvyXntIQyLohpQEpm8P6okFZXt9UlyGm2FJe0I2aCPua7UwECDqePBev0K1178JrGiyt3TuTSyg8CyoHtgNg==
+  dependencies:
+    axios "0.18.0"
+    http-status-codes "1.3.2"
+
 "@ffflorian/jszip-cli@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@ffflorian/jszip-cli/-/jszip-cli-2.1.4.tgz#9de13d2ef03b4b2f87cfe0f7111217dffa4e5948"
@@ -915,11 +923,6 @@
   version "11.13.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.2.tgz#dc85dde46aa8740bb4aed54b8104250f8f849503"
   integrity sha512-HOtU5KqROKT7qX/itKHuTtt5fV0iXbheQvrgbLNXFJQBY/eh+VS5vmmTAVlo3qIGMsypm0G4N1t2AXjy1ZicaQ==
-
-"@types/node@11.12.0":
-  version "11.12.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.0.tgz#ec5594728811dc2797e42396cfcdf786f2052c12"
-  integrity sha512-Lg00egj78gM+4aE0Erw05cuDbvX9sLJbaaPwwRtdCdAMnIudqrQZ0oZX98Ek0yiSK/A2nubHgJfvII/rTT2Dwg==
 
 "@types/node@11.13.0":
   version "11.13.0"
@@ -3048,6 +3051,11 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
+http-status-codes@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-1.3.2.tgz#181dfa4455ef454e5e4d827718fca3936680d10d"
+  integrity sha512-nDUtj0ltIt08tGi2VWSpSzNNFye0v3YSe9lX3lIqLTuVvvRiYCvs4QQBSHo0eomFYw1wlUuofurUAlTm+vHnXg==
+
 https-proxy-agent@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.1.tgz#51552970fa04d723e04c56d04178c3f92592bbc0"
@@ -3672,13 +3680,12 @@ libnpmpublish@^1.1.1:
     semver "^5.5.1"
     ssri "^6.0.1"
 
-libraries.io@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.9.tgz#1b3bac0b083bdece53f2c69946b3a2bada9cb964"
-  integrity sha512-uHDLv97cjm0MCNL7+UkN37pEvdC5cL5glKocbpmL/3Fl7djOBam9MaynDokveouLE7GP/9+kMnoas51gtXt8LA==
+libraries.io@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.4.1.tgz#5b9b7823703467eee0cb4d61e9ea38b184033d8a"
+  integrity sha512-lB3qvWYej9050mj4rxAdRDByfBsq+rdq+QpR2VbcXMbSduMVdWc8+qmSH1KzplbWvYhd1qZM00FSTD/fBF7bag==
   dependencies:
-    "@types/node" "11.12.0"
-    axios "0.18.0"
+    "@ffflorian/api-client" "0.3.2"
 
 libsodium-sumo@0.7.4:
   version "0.7.4"
