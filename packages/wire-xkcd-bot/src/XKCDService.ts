@@ -23,7 +23,7 @@ class XKCDService {
   }
 
   async getRandomComic(): Promise<ComicResult> {
-    const xkcdResult = await this.XKCD.getRandom({withData: true});
+    const xkcdResult = await this.XKCD.api.getRandom({withData: true});
     this.logger.info(`Got random comic with data:`, xkcdResult);
 
     const {alt: comment, data, num: index, title} = xkcdResult;
@@ -38,7 +38,7 @@ class XKCDService {
   }
 
   async getLatestComic(): Promise<ComicResult> {
-    const xkcdResult = await this.XKCD.getLatest({withData: true});
+    const xkcdResult = await this.XKCD.api.getLatest({withData: true});
     this.logger.info(`Got latest comic with data:`, xkcdResult);
 
     const {alt: comment, data, num: index, title} = xkcdResult;
@@ -53,7 +53,7 @@ class XKCDService {
   }
 
   async getComic(index: number): Promise<ComicResult> {
-    const xkcdResult = await this.XKCD.getByIndex(index, {withData: true});
+    const xkcdResult = await this.XKCD.api.getByIndex(index, {withData: true});
     this.logger.info(`Got comic by ID ${index} with data:`, xkcdResult);
 
     const {alt: comment, data, title} = xkcdResult;
