@@ -29,10 +29,10 @@
     logdown "3.2.7"
     progress "2.0.3"
 
-"@ffflorian/xkcdjs@1.4.13":
-  version "1.4.13"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.13.tgz#e32d305b39bbcf9938110695422f86575b479b4a"
-  integrity sha512-f8pvnmgmXJYOsyq4x67N1bjzt2/1A/avWZsoBDqE4zXOMLs6lfkPGRNrP2nd7K0f5X0r8gAMg/Y7yLPfmKC62g==
+"@ffflorian/xkcdjs@1.4.14":
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.14.tgz#d977603333205c2536704fd58da5414b90f7ddc2"
+  integrity sha512-P0ZHM6CIonOFLlWt4QGIXi6GEIl7GEqu738TOPRRnegYkiDckelfSR4+RzODjSS53sSj9Px8hw0o1N4ZlbTwlA==
   dependencies:
     "@ffflorian/api-client" "0.4.2"
     commander "2.20.0"
