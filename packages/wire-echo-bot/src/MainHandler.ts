@@ -16,7 +16,13 @@ interface Config {
 class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.\n\nSend me anything and I will send it right back!\n\nFurther available commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot.`;
+  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.
+Send me anything and I will send it right back!
+
+Further available commands:
+${CommandService.formatCommands()}
+
+You can find more information about this bot [on GitHub](https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot).`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;

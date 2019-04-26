@@ -2,10 +2,11 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
     "@wireapp/bot-api": "4.0.24",
+    "absence.io": "0.4.5",
     "dotenv": "7.0.0",
     "logdown": "3.2.8",
     "moment": "2.24.0",
-    "openweathermap-api-client": "1.0.3",
+    "moment-business-days": "1.1.3",
     "pm2": "3.5.0"
   },
   "devDependencies": {
@@ -18,9 +19,9 @@
   },
   "license": "MIT",
   "main": "dist/index.js",
-  "name": "@ffflorian/wire-weather-bot",
+  "name": "@ffflorian/wire-vacation-bot",
   "private": true,
-  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-weather-bot",
+  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-vacation-bot",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",

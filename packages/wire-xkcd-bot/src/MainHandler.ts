@@ -18,7 +18,14 @@ class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
   private readonly xkcdService: XKCDService;
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot.\n\nPlease also visit https://xkcd.com.`;
+  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.
+
+Available commands:
+${CommandService.formatCommands()}
+
+You can find more information about this bot [on GitHub](https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot.)
+
+Please also visit https://xkcd.com.`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;

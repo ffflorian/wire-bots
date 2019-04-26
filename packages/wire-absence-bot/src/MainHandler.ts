@@ -1,31 +1,35 @@
 import * as logdown from 'logdown';
-import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
+import * as moment from 'moment';
+import 'moment-business-days';
 
 import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
 import {MessageHandler} from '@wireapp/bot-api';
 import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
+
+import {AbsenceService} from './AbsenceService';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
-import {WeatherService} from './WeatherService';
 
 const {version}: {version: string} = require('../package.json');
 
 interface Config {
+  absenceIOApiKey: string;
+  absenceIOApiKeyId: string;
   feedbackConversationId?: string;
-  weatherAPI: WeatherAPI;
 }
 
 class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
+  private readonly absenceService: AbsenceService;
   private readonly feedbackConversationId?: string;
-  private readonly weatherService: WeatherService;
-  private readonly helpText = `**Hello!** 😎 This is weather bot v${version} speaking.
+  private readonly helpText = `**Hello!** 😎 This is Absence bot v${version} speaking.
+Check who is absent today!
 
 Available commands:
 ${CommandService.formatCommands()}
 
-You can find more information about this bot [on GitHub](https://github.com/ffflorian/wire-bots/tree/master/packages/wire-weather-bot).`;
+You can find more information about this bot [on GitHub](https://github.com/ffflorian/wire-bots/tree/master/packages/wire-absence-bot).`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;
@@ -33,15 +37,17 @@ You can find more information about this bot [on GitHub](https://github.com/fffl
     };
   };
 
-  constructor({feedbackConversationId, weatherAPI}: Config) {
+  constructor(config: Config) {
     super();
-
-    this.feedbackConversationId = feedbackConversationId;
-    this.weatherService = new WeatherService(weatherAPI);
+    this.feedbackConversationId = config.feedbackConversationId;
     this.answerCache = {};
-    this.logger = logdown('wire-weather-bot/MainHandler', {
+    this.logger = logdown('wire-absence-bot/MainHandler', {
       logger: console,
       markdown: false,
+    });
+    this.absenceService = new AbsenceService({
+      absenceIOApiKey: config.absenceIOApiKey,
+      absenceIOApiKeyId: config.absenceIOApiKeyId,
     });
 
     if (!this.feedbackConversationId) {
@@ -77,7 +83,7 @@ You can find more information about this bot [on GitHub](https://github.com/fffl
           if (waitingForContent) {
             await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
             delete this.answerCache[conversationId];
-            return this.answer(conversationId, {parsedArguments, commandType: cachedCommandType, rawCommand}, senderId);
+            return this.answer(conversationId, {commandType: cachedCommandType, parsedArguments, rawCommand}, senderId);
           }
         }
         return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
@@ -101,29 +107,36 @@ You can find more information about this bot [on GitHub](https://github.com/fffl
       case CommandType.UPTIME: {
         return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
       }
-      case CommandType.WEATHER: {
-        if (!parsedArguments) {
-          this.answerCache[conversationId] = {
-            type: commandType,
-            waitingForContent: true,
-          };
-          return this.sendText(conversationId, 'For which city would you like to get the weather information?');
+      case CommandType.ABSENCES: {
+        let absences;
+
+        try {
+          absences = await this.absenceService.getAbsentDays();
+        } catch (error) {
+          this.logger.error(error);
+          return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
         }
 
-        const weather = await this.weatherService.getWeather(parsedArguments);
-        return this.sendText(conversationId, weather);
-      }
-      case CommandType.FORECAST: {
-        if (!parsedArguments) {
-          this.answerCache[conversationId] = {
-            type: commandType,
-            waitingForContent: true,
-          };
-          return this.sendText(conversationId, 'For which city would you like to get the weather forecast?');
-        }
+        const sorted = absences
+          .sort((a, b) => a.begin.getTime() - b.begin.getTime())
+          .filter(absence => !moment(absence.end).isBefore(moment()));
 
-        const forecast = await this.weatherService.getForecast(parsedArguments);
-        return this.sendText(conversationId, forecast);
+        return this.sendText(
+          conversationId,
+          sorted
+            .map(absence => {
+              const begin = moment(absence.begin);
+              const end = moment(absence.end);
+              const days = end.businessDiff(begin);
+
+              if (days === 1) {
+                return `${begin.format('YYYY-MM-DD')} (1 working day)`;
+              }
+
+              return `${begin.format('YYYY-MM-DD')} - ${end.format('YYYY-MM-DD')} (${days} working days)`;
+            })
+            .join('\n')
+        );
       }
       case CommandType.FEEDBACK: {
         if (!this.feedbackConversationId) {
@@ -137,6 +150,8 @@ You can find more information about this bot [on GitHub](https://github.com/fffl
           };
           return this.sendText(conversationId, 'What would you like to tell the developer?');
         }
+
+        this.logger.info(`Sending feedback from "${senderId}" to "${this.feedbackConversationId}".`);
 
         await this.sendText(this.feedbackConversationId, `Feedback from user "${senderId}":\n"${parsedArguments}"`);
         delete this.answerCache[conversationId];

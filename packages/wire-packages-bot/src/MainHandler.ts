@@ -19,7 +19,13 @@ class MainHandler extends MessageHandler {
   private readonly logger: logdown.Logger;
   private readonly searchService: SearchService;
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is packages bot v${version} speaking.\nHere you can search for all the packages on Bower, npm, TypeSearch and crates.io. 📦\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-packages-bot`;
+  private readonly helpText = `**Hello!** 😎 This is packages bot v${version} speaking.
+Here you can search for all the packages on Bower, npm, TypeSearch and crates.io. 📦
+
+Available commands:
+${CommandService.formatCommands()}
+
+You can find more information about this bot [on GitHub](https://github.com/ffflorian/wire-bots/tree/master/packages/wire-packages-bot).`;
   private readonly answerCache: {
     [conversationId: string]: {
       parsedArguments?: string;
