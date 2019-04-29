@@ -1002,10 +1002,10 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.5.tgz#9da44ed75571999b65c37b60c9b2b88db54c585d"
   integrity sha512-SCcK7mvGi3+ZNz833RRjFIxrn4gI1PPR3NtuIS+6vMkvmsGjosqTJwRt5bAEFLRz+wtJMWv8+uOnZf2hi2QXTg==
 
-"@wireapp/api-client@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-4.0.1.tgz#39566b85e4a7db810d2da00b31a7a6cd9a98d3fb"
-  integrity sha512-nGS4uqBdABEU7xv/deH7EbmPPDoAhNpgNwn9w+JvAmIuEeMIe9hpV49CmIAtX89H2Y2zuyDqUulqbt/2J84Ptw==
+"@wireapp/api-client@4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-4.0.2.tgz#3581dcb9a3940422e9f74f9583d775b9fd8e0cb2"
+  integrity sha512-jx+Fq5gjwCxycvgBZH9ADUPCdxb2omBpcGM0fzFaZ4rBCATNJ8poyfIDsYAHh2CdAWozow7R67gNX0kOozUNlg==
   dependencies:
     "@types/node" "11.13.7"
     "@types/spark-md5" "3.0.1"
@@ -1019,12 +1019,12 @@
     spark-md5 "3.0.0"
     tough-cookie "3.0.1"
 
-"@wireapp/bot-api@4.0.24":
-  version "4.0.24"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-4.0.24.tgz#f65bb3704db493f68e2e129b4001715cc2991023"
-  integrity sha512-Z2hoixetpSFMXFCEdn9/EBjUREdptP0OU9nlzfaWkaiLzRaNk0zopDFIA5scs4A29/Hin1vXzfCuOpGZiEMfrw==
+"@wireapp/bot-api@4.0.25":
+  version "4.0.25"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-4.0.25.tgz#9c8133ac5291cb6cc388bbd174f26c9333c985b7"
+  integrity sha512-KjoXsuhO/CTsxG1pYa3leRNHZKBd73/kVobvXn35duWC1kwkHSZGWm7H5fojWabUto6BzlYyYp2x/hcFF0tcdA==
   dependencies:
-    "@wireapp/core" "10.0.1"
+    "@wireapp/core" "10.0.2"
     pure-uuid "1.5.7"
 
 "@wireapp/cbor@4.0.0":
@@ -1032,14 +1032,14 @@
   resolved "https://registry.yarnpkg.com/@wireapp/cbor/-/cbor-4.0.0.tgz#ab82848b6bf2903dc7a4153c3ba392aa3acd068d"
   integrity sha512-db8qprRBDqbUvtjlxNq+H/fKEWQHb7wPQlO396BFx3o+ORSkY6QQOvtsENDyMnNK+TfD+yQIL/YI16ZQsQVkQw==
 
-"@wireapp/core@10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-10.0.1.tgz#5bea63b7ec86b8bd88dd6b3995b52f912a430cbe"
-  integrity sha512-fqsx36VfrXpW4N9XiCiLCKOwdCtTu0J7USUKrurawYRPo5I1eBu4hYys0XKgCLsaG9tUb+/6o3tL4Pb5Xjke/w==
+"@wireapp/core@10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-10.0.2.tgz#03213f76254ce0f3653c9cde8cfbe1f3744b5037"
+  integrity sha512-OA8idoupvOiWHlifKtp+vQQaai5WnMXHlWFnChEE0Ur+mEufc3Tt0RGAWdhNTHOKzrrscxa7XL1oKM7p2v9fTg==
   dependencies:
     "@types/node" "11.13.7"
-    "@wireapp/api-client" "4.0.1"
-    "@wireapp/cryptobox" "10.0.0"
+    "@wireapp/api-client" "4.0.2"
+    "@wireapp/cryptobox" "10.0.1"
     "@wireapp/protocol-messaging" "1.23.0"
     "@wireapp/store-engine" "2.0.0"
     bazinga64 "5.3.60"
@@ -1048,10 +1048,10 @@
     protobufjs "6.8.8"
     pure-uuid "1.5.7"
 
-"@wireapp/cryptobox@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-10.0.0.tgz#ac7246c28916ac8fd81465fecf1afc13500dc970"
-  integrity sha512-xmcKhiuang+x035OVlAY3zIDUttbUfq9ea+Ss9ueM2RKDl4tQGRA+cbthUyC/2EqIUiGEKY06G77Fecuc5iN3w==
+"@wireapp/cryptobox@10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-10.0.1.tgz#38ae8c9dd3561ac87e4d2b28b18877b981af46f2"
+  integrity sha512-HZhCw/Put03I0ztEnosfgFJvOrUqU4FLiyHBNnT1ZlLPmVJyCMPkJ07CnW1WGcu7kG/zXUctLzJT1HCXSQyL2A==
   dependencies:
     "@types/fs-extra" "5.0.5"
     "@types/node" "11.13.7"
