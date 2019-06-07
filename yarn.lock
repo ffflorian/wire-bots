@@ -25,6 +25,14 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@ffflorian/api-client@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.3.2.tgz#138566a293c51b1e68ba76c3c0d34b03ccb6808b"
+  integrity sha512-rRzvyXntIQyLohpQEpm8P6okFZXt9UlyGm2FJe0I2aCPua7UwECDqePBev0K1178JrGiyt3TuTSyg8CyoHtgNg==
+  dependencies:
+    axios "0.18.0"
+    http-status-codes "1.3.2"
+
 "@ffflorian/api-client@0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.4.4.tgz#1fc45928936ce7f6afb550b9d19dc839b2f9559c"
@@ -995,11 +1003,6 @@
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.5.tgz#ac14404c33d1a789973c45379a67f7f7e58a01b9"
   integrity sha512-CFLSALoE+93+Hcb5pFjp0J1uMrrbLRe+L1+gFwerJ776R3TACSF0kTVRQ7AvRa7aFx70nqYHAc7wQPlt9kY2Mg==
-
-"@types/node@11.12.0":
-  version "11.12.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.0.tgz#ec5594728811dc2797e42396cfcdf786f2052c12"
-  integrity sha512-Lg00egj78gM+4aE0Erw05cuDbvX9sLJbaaPwwRtdCdAMnIudqrQZ0oZX98Ek0yiSK/A2nubHgJfvII/rTT2Dwg==
 
 "@types/node@^10.1.0", "@types/node@~10":
   version "10.14.6"
@@ -3727,13 +3730,12 @@ libnpmpublish@^1.1.1:
     semver "^5.5.1"
     ssri "^6.0.1"
 
-libraries.io@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.9.tgz#1b3bac0b083bdece53f2c69946b3a2bada9cb964"
-  integrity sha512-uHDLv97cjm0MCNL7+UkN37pEvdC5cL5glKocbpmL/3Fl7djOBam9MaynDokveouLE7GP/9+kMnoas51gtXt8LA==
+libraries.io@1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.4.7.tgz#c82ddb86d1d11224ac9df197ee6ee05099ef1be6"
+  integrity sha512-kEpwgJ1HaRGN6eAcA4NXgLb7+LY75IuiAxiRVgbohfRFLFNGlVFPncXI7TNgACAIb0X8iofCABXIBDqYqijK2g==
   dependencies:
-    "@types/node" "11.12.0"
-    axios "0.18.0"
+    "@ffflorian/api-client" "0.3.2"
 
 libsodium-sumo@0.7.4:
   version "0.7.4"
