@@ -97,10 +97,10 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@ffflorian/api-client@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.4.4.tgz#1fc45928936ce7f6afb550b9d19dc839b2f9559c"
-  integrity sha512-ov3UVj9mVm3LhEXF2ViAnfw8PYNmcHaurv2KgHB1L/2RVO1c5sgibNaz3IfYEBDK85NZDb68b6YDAcVtyhBRrw==
+"@ffflorian/api-client@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.5.0.tgz#4993813b5731b2f3bccb290df2bb59e475ef234d"
+  integrity sha512-4gSTgvuFPfnO2ooYs8xPH6bmzQnV/49OGRUCzAyOQrjEO0BFP786isw+fdThZYtp6h17qGHYV3MBjJ3Y8iFAEg==
   dependencies:
     axios "0.19.0"
     http-status-codes "1.3.2"
@@ -127,12 +127,12 @@
   resolved "https://registry.yarnpkg.com/@ffflorian/tslint-config/-/tslint-config-0.2.2.tgz#5c3d26d14497654fda5235657709df6edd765986"
   integrity sha512-LeESB6Pp/dYHErmPURUT+yLBC2KDG6FHrSTNxlGrvImoScZIx+ZZX0WrfPND2I2PGSmG3d6luPH66XMG3FcS2Q==
 
-"@ffflorian/xkcdjs@1.4.18":
-  version "1.4.18"
-  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.4.18.tgz#b493f30da71d538c271e62f4f8f48ec14d4cf259"
-  integrity sha512-A25QwvYP1kl8GpJH/9ZM+vyI760lEgRsYjZerrNqhcBcygNUau+gqNTsUjVMeCi4nojpI/Ez3Gh5eUMrbFUP2A==
+"@ffflorian/xkcdjs@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/xkcdjs/-/xkcdjs-1.5.0.tgz#2b12c1264968023de83f69d3010dbd85febb1a2e"
+  integrity sha512-A3u6GKyHhVY/YRM4fJbGbABvBBegRGe2eephT0bbEc8X3/pSjMcb0K1+yiB2tSb1IZmPHPMacgauHKIOgj+TZA==
   dependencies:
-    "@ffflorian/api-client" "0.4.4"
+    "@ffflorian/api-client" "0.5.0"
     commander "2.20.0"
     fs-extra "8.0.1"
 
