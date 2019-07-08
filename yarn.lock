@@ -1156,10 +1156,10 @@
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-2.3.5.tgz#9da44ed75571999b65c37b60c9b2b88db54c585d"
   integrity sha512-SCcK7mvGi3+ZNz833RRjFIxrn4gI1PPR3NtuIS+6vMkvmsGjosqTJwRt5bAEFLRz+wtJMWv8+uOnZf2hi2QXTg==
 
-"@wireapp/api-client@5.13.2":
-  version "5.13.2"
-  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-5.13.2.tgz#335612478c96de7e818564cb16b82eb6d0a38b47"
-  integrity sha512-5GXdLna9jWolCdQQQr/0yBNGw2Ko/4Yy6+J5IP9JfpWgYWEvu5Hwi97weCwcNzlK5npndIPGibg8r+1m0TBQFA==
+"@wireapp/api-client@5.13.3":
+  version "5.13.3"
+  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-5.13.3.tgz#41cc7227574a585b2270a25ae6bffb82f2158279"
+  integrity sha512-4DQmttb3u4udNxL6BjvA/hCVp01UOzWXSR1ZBzkw3/98k+gxmWscnwDic/xqmjPThwhd2tVnl52SiXYdlhbiGA==
   dependencies:
     "@types/node" "~10"
     "@types/spark-md5" "3.0.1"
@@ -1174,13 +1174,13 @@
     spark-md5 "3.0.0"
     tough-cookie "3.0.1"
 
-"@wireapp/bot-api@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-4.5.2.tgz#a29b3facafc62046a6def6f04377dcb12b21c50a"
-  integrity sha512-LX5pDzzPt6JtplPjg9LKEO4hUAZe9ZaJSLkUr66pSZSfkDsnfC95LcmybwGRz9xcgG/Ai/4+L4Fj7QIvTcYyPQ==
+"@wireapp/bot-api@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-4.5.3.tgz#ec844d0aee81b9d298f86901885ce725f2b1d6bc"
+  integrity sha512-roI+CDTXx0P9muTGsLl3KwX4JUhqd34BU14FnuYlfhtGh5Oys5JPfF9dNxIUBtQU1N6rRLkuoSH/KxrICfNZRg==
   dependencies:
     "@types/long" "4.0.0"
-    "@wireapp/core" "12.15.2"
+    "@wireapp/core" "12.15.3"
     pure-uuid "1.5.7"
 
 "@wireapp/cbor@4.3.1":
@@ -1204,14 +1204,14 @@
     platform "1.3.5"
     url-search-params-polyfill "7.0.0"
 
-"@wireapp/core@12.15.2":
-  version "12.15.2"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-12.15.2.tgz#be2152f5fd2c0af3423468f3e32a4d754c0302c2"
-  integrity sha512-30mpJfY7MEqIUTjWq2vflo6zNzXgEaHDhb2gY0GG4spc15fQwalcPRL6JPZ2rsUuHnjOKC6Pp99g2cs/Be/wgQ==
+"@wireapp/core@12.15.3":
+  version "12.15.3"
+  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-12.15.3.tgz#785f69afb557e9287f6ede5a0b7ab42d50ed3999"
+  integrity sha512-8iXDmufxwEludkrLVSc9Ga2/NyZBYKEP2SfnoD45PCfQQQ2+ZubiE0QuyzqA+I7xyor6DEHINgVkGm9kjFcs+w==
   dependencies:
     "@types/long" "4.0.0"
     "@types/node" "~10"
-    "@wireapp/api-client" "5.13.2"
+    "@wireapp/api-client" "5.13.3"
     "@wireapp/cryptobox" "11.4.1"
     "@wireapp/protocol-messaging" "1.24.1"
     "@wireapp/store-engine" "3.5.1"
