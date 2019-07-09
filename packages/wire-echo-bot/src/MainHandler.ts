@@ -51,7 +51,7 @@ class MainHandler extends MessageHandler {
     await this.sendText(conversationId, this.helpText);
   }
 
-  async handleEvent(payload: PayloadBundle) {
+  async handleEvent(payload: PayloadBundle): Promise<void> {
     if (this.confirmTypes.includes(payload.type)) {
       await this.sendConfirmation(payload.conversation, payload.id);
     }
@@ -150,7 +150,7 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async answerText(conversationId: string, parsedCommand: ParsedCommand, senderId: string) {
+  async answerText(conversationId: string, parsedCommand: ParsedCommand, senderId: string): Promise<void> {
     const {originalMessage, parsedArguments, commandType} = parsedCommand;
 
     switch (commandType) {

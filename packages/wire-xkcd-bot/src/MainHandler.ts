@@ -41,7 +41,7 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async handleEvent(payload: PayloadBundle) {
+  async handleEvent(payload: PayloadBundle): Promise<void> {
     switch (payload.type) {
       case PayloadBundleType.TEXT: {
         if (payload.conversation) {
@@ -84,7 +84,7 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string) {
+  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string): Promise<void> {
     const {parsedArguments, rawCommand, commandType} = parsedCommand;
     switch (commandType) {
       case CommandType.HELP: {

@@ -16,6 +16,12 @@ interface Config {
 }
 
 class MainHandler extends MessageHandler {
+  private static morePagesText(moreResults: number, resultsPerPage: number): string {
+    const isOne = moreResults === 1;
+    return `\n\nThere ${isOne ? 'is' : 'are'} ${moreResults} more result${isOne ? '' : 's'}. Would you like to see ${
+      resultsPerPage > moreResults ? moreResults : resultsPerPage
+    } more? Answer with "yes" or "no".`;
+  }
   private readonly logger: logdown.Logger;
   private readonly searchService: SearchService;
   private readonly feedbackConversationId?: string;
@@ -44,7 +50,7 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async handleEvent(payload: PayloadBundle) {
+  async handleEvent(payload: PayloadBundle): Promise<void> {
     switch (payload.type) {
       case PayloadBundleType.TEXT: {
         if (payload.conversation) {
@@ -59,13 +65,6 @@ class MainHandler extends MessageHandler {
         }
       }
     }
-  }
-
-  private static morePagesText(moreResults: number, resultsPerPage: number): string {
-    const isOne = moreResults === 1;
-    return `\n\nThere ${isOne ? 'is' : 'are'} ${moreResults} more result${isOne ? '' : 's'}. Would you like to see ${
-      resultsPerPage > moreResults ? moreResults : resultsPerPage
-    } more? Answer with "yes" or "no".`;
   }
 
   async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
@@ -117,7 +116,7 @@ class MainHandler extends MessageHandler {
     return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
   }
 
-  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string, page = 1) {
+  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string, page = 1): Promise<void> {
     const {parsedArguments, rawCommand, commandType} = parsedCommand;
     switch (commandType) {
       case CommandType.HELP: {
