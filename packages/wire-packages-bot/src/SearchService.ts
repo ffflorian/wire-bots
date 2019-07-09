@@ -10,13 +10,6 @@ interface SearchResult {
 }
 
 class SearchService {
-  private readonly librariesIO: LibrariesIO;
-  private readonly resultsPerPage: number;
-  constructor(LIBRARIES_API_KEY: string) {
-    this.resultsPerPage = 10;
-    this.librariesIO = new LibrariesIO(LIBRARIES_API_KEY);
-  }
-
   private static formatData(projects: Project[]): string {
     return projects.reduce((prev, project) => {
       const {description, homepage, name, language, stars} = project;
@@ -29,6 +22,12 @@ class SearchService {
       const hasHomepage = homepage ? ` (${homepage})` : '';
       return `${prev}\n- **${name}**${hasBrackets}: ${description || ''}${hasHomepage}`;
     }, '');
+  }
+  private readonly librariesIO: LibrariesIO;
+  private readonly resultsPerPage: number;
+  constructor(LIBRARIES_API_KEY: string) {
+    this.resultsPerPage = 10;
+    this.librariesIO = new LibrariesIO(LIBRARIES_API_KEY);
   }
 
   async searchBower(query: string, page: number): Promise<SearchResult> {
