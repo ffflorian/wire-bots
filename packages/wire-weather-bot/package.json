@@ -16,8 +16,7 @@
     "typescript": "3.5.3"
   },
   "engines": {
-    "node": ">= 10.9",
-    "yarn": ">= 1"
+    "node": ">= 10.9"
   },
   "license": "MIT",
   "main": "dist/index.js",
