@@ -21,6 +21,9 @@
     "rimraf": "2.6.3",
     "typescript": "3.5.3"
   },
+  "engines": {
+    "node": ">= 10.9"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "name": "@ffflorian/wire-xkcd-bot",

@@ -1100,7 +1100,7 @@
 
 "@types/node@*", "@types/node@~12":
   version "12.6.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.6.tgz#831587377c35bb28fa33b6fe5f849a26a3f4a412"
+  resolved "https://registry.npmjs.org/@types/node/-/node-12.6.6.tgz#831587377c35bb28fa33b6fe5f849a26a3f4a412"
   integrity sha512-SMgj3x28MkJyHdWaMv/g/ca3LYDi5gR7O8mX0VKazvFOnmlDXctSEdd/8jfSqozjKFK1R9If1QZWkafX7yQTpA==
 
 "@types/node@11.12.0":
@@ -1162,7 +1162,7 @@
 
 "@wireapp/api-client@6.0.0":
   version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@wireapp/api-client/-/api-client-6.0.0.tgz#4ca47221128abf690de6f2ee878932a34e1e779e"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-6.0.0.tgz#4ca47221128abf690de6f2ee878932a34e1e779e"
   integrity sha512-PLjNvsqMtHvsWN/uRI0/xvoBiE67j9XNCEHJTZjPXkQGai+WoAOhVPgtm/BWtQod9tuS5Z+VxQYkKAVYA+QCWA==
   dependencies:
     "@types/node" "~10"
@@ -1180,7 +1180,7 @@
 
 "@wireapp/bot-api@4.5.12":
   version "4.5.12"
-  resolved "https://registry.yarnpkg.com/@wireapp/bot-api/-/bot-api-4.5.12.tgz#8a838f53a7c58fff8be49a460716fadcd180312c"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-4.5.12.tgz#8a838f53a7c58fff8be49a460716fadcd180312c"
   integrity sha512-J0d6mwi6xPoYWzk0w20nSWbknLjxHW2Gj+sJqTB9qXWpdP9il4u6CXYz5WHZwYnZuSBz5vbc0A/C2pCiy4BH2g==
   dependencies:
     "@types/long" "4.0.0"
@@ -1210,7 +1210,7 @@
 
 "@wireapp/core@12.17.7":
   version "12.17.7"
-  resolved "https://registry.yarnpkg.com/@wireapp/core/-/core-12.17.7.tgz#62bb2d3bd1f44e5ea7003f80df1d90825aa968f8"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-12.17.7.tgz#62bb2d3bd1f44e5ea7003f80df1d90825aa968f8"
   integrity sha512-HFK50yBvt5sjKR8Y+X3bSKesrKZQid5OkqVJXcBYYdGoIKKN/f9SbrMJa3aTRNUkGVfdGeEQhUXP8xUtFZAxoA==
   dependencies:
     "@types/long" "4.0.0"
@@ -1227,7 +1227,7 @@
 
 "@wireapp/cryptobox@11.4.4":
   version "11.4.4"
-  resolved "https://registry.yarnpkg.com/@wireapp/cryptobox/-/cryptobox-11.4.4.tgz#18377d3fd49cab64ba8499f68aa1a9899a61adf2"
+  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-11.4.4.tgz#18377d3fd49cab64ba8499f68aa1a9899a61adf2"
   integrity sha512-ToqVURs1nLguoEKshxuUWeBcwNCvWzROVYeafrHrYYiobQ3NaBjhjgpvDtPdu8BGCsm+AYP5cWFYJztII1n8iw==
   dependencies:
     "@types/node" "~10"
@@ -1253,7 +1253,7 @@
 
 "@wireapp/proteus@9.3.4":
   version "9.3.4"
-  resolved "https://registry.yarnpkg.com/@wireapp/proteus/-/proteus-9.3.4.tgz#74efd1e538cba5e603333ddaaa36c59905c64f5a"
+  resolved "https://registry.npmjs.org/@wireapp/proteus/-/proteus-9.3.4.tgz#74efd1e538cba5e603333ddaaa36c59905c64f5a"
   integrity sha512-jcSZoXcWIi8Uyd+xhn6MyZDdonMgTTZ/BMroba8lBMF6FzCWAQVTGu5TzPv2g0MFMsaE3vjrdXdg0BaR0hSQDQ==
   dependencies:
     "@types/chai" "4.1.7"
@@ -1586,7 +1586,7 @@ base@^0.11.1:
 
 bazinga64@5.5.4:
   version "5.5.4"
-  resolved "https://registry.yarnpkg.com/bazinga64/-/bazinga64-5.5.4.tgz#4cb97aa6d2d64b1c6d179c4e0d058fb97be20f87"
+  resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.5.4.tgz#4cb97aa6d2d64b1c6d179c4e0d058fb97be20f87"
   integrity sha512-oH6YtcgtVtoUHXJQ5GExZL9ZBW6aMlI5eYnPQ7JCrF2FeMu/XYZQQ35EJcjmspyVHRCA7TQnbNzpMUsxS4tV0A==
 
 bcrypt-pbkdf@^1.0.0:
@@ -3915,12 +3915,12 @@ libraries.io@1.2.9:
 
 libsodium-sumo@0.7.5:
   version "0.7.5"
-  resolved "https://registry.yarnpkg.com/libsodium-sumo/-/libsodium-sumo-0.7.5.tgz#0cd02ff2f59444c98d4bf9c9688b6533e2e41a67"
+  resolved "https://registry.npmjs.org/libsodium-sumo/-/libsodium-sumo-0.7.5.tgz#0cd02ff2f59444c98d4bf9c9688b6533e2e41a67"
   integrity sha512-dMFGn0cPpvwyU8/tpI9xe/6U5U8D/rVcAuc908bpL9e8LH2dPO0n3jNatOLLdmhc2RxmEAQ+3ArkTZI/c9XdCQ==
 
 libsodium-wrappers-sumo@0.7.5:
   version "0.7.5"
-  resolved "https://registry.yarnpkg.com/libsodium-wrappers-sumo/-/libsodium-wrappers-sumo-0.7.5.tgz#f3e48e08ee287514a0f30af9c807120357fe50eb"
+  resolved "https://registry.npmjs.org/libsodium-wrappers-sumo/-/libsodium-wrappers-sumo-0.7.5.tgz#f3e48e08ee287514a0f30af9c807120357fe50eb"
   integrity sha512-iKnBoRI6TagVZeD9lThftKRYYruwhNQY1g9AuM04OwA+kEy5LXTQPdy93clpnHp7AhMJ1V09mu57gmKYmgpSFA==
   dependencies:
     libsodium-sumo "0.7.5"
@@ -4750,7 +4750,7 @@ octokit-pagination-methods@^1.1.0:
 
 omggif@1.0.10:
   version "1.0.10"
-  resolved "https://registry.yarnpkg.com/omggif/-/omggif-1.0.10.tgz#ddaaf90d4a42f532e9e7cb3a95ecdd47f17c7b19"
+  resolved "https://registry.npmjs.org/omggif/-/omggif-1.0.10.tgz#ddaaf90d4a42f532e9e7cb3a95ecdd47f17c7b19"
   integrity sha512-LMJTtvgc/nugXj0Vcrrs68Mn2D1r0zf630VNtqtpI1FEO7e+O9FP4gqs9AcnBaSEeoHIPm28u6qgPR0oyEpGSw==
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
