@@ -98,6 +98,14 @@
     axios "0.19.0"
     http-status-codes "1.3.2"
 
+"@ffflorian/api-client@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@ffflorian/api-client/-/api-client-1.0.0.tgz#ea892139bbeffbd0f5f49533d27cbaf3a675f216"
+  integrity sha512-ALP6b7nEKrDqu3hFv+V43tbs6qZKmn1nAViXl50gM89QS/bWWXK3uvsWsTntRzNUjLMznGEJntHbWg4S+DRjag==
+  dependencies:
+    axios "0.19.0"
+    http-status-codes "1.3.2"
+
 "@ffflorian/jszip-cli@2.3.1":
   version "2.3.1"
   resolved "https://registry.npmjs.org/@ffflorian/jszip-cli/-/jszip-cli-2.3.1.tgz#01402e45b01820098c2232610aa0019dcd775d3c"
@@ -1105,11 +1113,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
   integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
 
-"@types/node@11.12.0":
-  version "11.12.0"
-  resolved "https://registry.npmjs.org/@types/node/-/node-11.12.0.tgz#ec5594728811dc2797e42396cfcdf786f2052c12"
-  integrity sha512-Lg00egj78gM+4aE0Erw05cuDbvX9sLJbaaPwwRtdCdAMnIudqrQZ0oZX98Ek0yiSK/A2nubHgJfvII/rTT2Dwg==
-
 "@types/node@^10.1.0", "@types/node@~10":
   version "10.14.12"
   resolved "https://registry.npmjs.org/@types/node/-/node-10.14.12.tgz#0eec3155a46e6c4db1f27c3e588a205f767d622f"
@@ -1557,14 +1560,6 @@ aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
-
-axios@0.18.0:
-  version "0.18.0"
-  resolved "https://registry.npmjs.org/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
-  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
-  dependencies:
-    follow-redirects "^1.3.0"
-    is-buffer "^1.1.5"
 
 axios@0.19.0, axios@^0.19.0:
   version "0.19.0"
@@ -2815,13 +2810,6 @@ follow-redirects@1.5.10:
   dependencies:
     debug "=3.1.0"
 
-follow-redirects@^1.3.0:
-  version "1.7.0"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
-  integrity sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==
-  dependencies:
-    debug "^3.2.6"
-
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3911,13 +3899,12 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libraries.io@1.2.9:
-  version "1.2.9"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-1.2.9.tgz#1b3bac0b083bdece53f2c69946b3a2bada9cb964"
-  integrity sha512-uHDLv97cjm0MCNL7+UkN37pEvdC5cL5glKocbpmL/3Fl7djOBam9MaynDokveouLE7GP/9+kMnoas51gtXt8LA==
+libraries.io@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-2.0.0.tgz#d0a31bbabb81464b4a33dad18ba1cd608e265b4b"
+  integrity sha512-iUnecIhYi+CuVtwM+AoEP33/W/ZMotJ0MR0My7DCWhtdqE1QI+ErA5ZS8vsqq81IfwtG5OFslmTNE0+RPRXlSA==
   dependencies:
-    "@types/node" "11.12.0"
-    axios "0.18.0"
+    "@ffflorian/api-client" "1.0.0"
 
 libsodium-sumo@0.7.5:
   version "0.7.5"
