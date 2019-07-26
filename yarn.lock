@@ -90,10 +90,10 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
-"@ffflorian/api-client@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.npmjs.org/@ffflorian/api-client/-/api-client-0.5.1.tgz#5816b7915c862f2d731490bee6464ecd266c78fb"
-  integrity sha512-08Ac7wErQV/FN0bZDEsl9luQK08LW+zLd2LYsszzwPHYX7Ab6Jdf3RRi9JoOH2g2FfOJDE/bHl02qP46yNgb2g==
+"@ffflorian/api-client@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@ffflorian/api-client/-/api-client-1.0.0.tgz#ea892139bbeffbd0f5f49533d27cbaf3a675f216"
+  integrity sha512-ALP6b7nEKrDqu3hFv+V43tbs6qZKmn1nAViXl50gM89QS/bWWXK3uvsWsTntRzNUjLMznGEJntHbWg4S+DRjag==
   dependencies:
     axios "0.19.0"
     http-status-codes "1.3.2"
@@ -120,12 +120,12 @@
   resolved "https://registry.npmjs.org/@ffflorian/tslint-config/-/tslint-config-0.4.0.tgz#beb10f7d47e43687eaa36651ec6e9d503464ce93"
   integrity sha512-+50sRtAO9CeRcSaFVgQ9dtsbFer2rN8jqx0bpDlhL6j2Tl/r/5MOi9af18qyZB/yRCwmj3DWOyUUn2pJjU0NXw==
 
-"@ffflorian/xkcdjs@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-1.5.1.tgz#80e1dd6d35b267b6e1fdbada9a306816f8e44f41"
-  integrity sha512-xxXvOxQGK+HeTWlBLhpDFto8mdNANjwCd8zx9GiBjenThN7x2jAT21mvFGXFpLkrCX/9mk1D4TlfWo54CC4Msw==
+"@ffflorian/xkcdjs@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.0.1.tgz#5f160c8b5dbf44ed10cfced2fc55bdef8f9feee3"
+  integrity sha512-WKH5Itg/kGhkBvG54yubTovO3ZPWE6F7BFZslzVbEDFEaJFpfohecEIcLUzAegBhfJTC/hUdFh/S5kz+LmwCRQ==
   dependencies:
-    "@ffflorian/api-client" "0.5.1"
+    "@ffflorian/api-client" "1.0.0"
     commander "2.20.0"
     fs-extra "8.1.0"
 
