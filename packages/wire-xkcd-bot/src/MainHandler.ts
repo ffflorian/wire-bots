@@ -15,16 +15,16 @@ interface Config {
 }
 
 class MainHandler extends MessageHandler {
-  private readonly logger: logdown.Logger;
-  private readonly xkcdService: XKCDService;
-  private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot.\n\nPlease also visit https://xkcd.com.`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;
       waitingForContent: boolean;
     };
   };
+  private readonly feedbackConversationId?: string;
+  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot.\n\nPlease also visit https://xkcd.com.`;
+  private readonly logger: logdown.Logger;
+  private readonly xkcdService: XKCDService;
 
   constructor({feedbackConversationId}: Config) {
     super();
@@ -38,49 +38,6 @@ class MainHandler extends MessageHandler {
 
     if (!this.feedbackConversationId) {
       this.logger.warn('You did not specify a feedback conversation ID and will not be able to receive feedback.');
-    }
-  }
-
-  async handleEvent(payload: PayloadBundle): Promise<void> {
-    switch (payload.type) {
-      case PayloadBundleType.TEXT: {
-        if (payload.conversation) {
-          const messageContent = payload.content as TextContent;
-          return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
-        }
-      }
-      case PayloadBundleType.CONNECTION_REQUEST: {
-        const connectRequest = payload.content as Connection;
-        if (payload.conversation && connectRequest.status !== ConnectionStatus.CANCELLED) {
-          return this.handleConnectionRequest(connectRequest.to, payload.conversation);
-        }
-      }
-    }
-  }
-
-  async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
-    const {commandType, parsedArguments, rawCommand} = CommandService.parseCommand(text);
-
-    switch (commandType) {
-      case CommandType.NO_COMMAND:
-      case CommandType.UNKNOWN_COMMAND: {
-        if (this.answerCache[conversationId]) {
-          const {type: cachedCommandType, waitingForContent} = this.answerCache[conversationId];
-          if (waitingForContent) {
-            await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
-            delete this.answerCache[conversationId];
-            return this.answer(conversationId, {commandType: cachedCommandType, parsedArguments, rawCommand}, senderId);
-          }
-        }
-        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
-      }
-      default: {
-        await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
-        if (this.answerCache[conversationId]) {
-          delete this.answerCache[conversationId];
-        }
-        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
-      }
     }
   }
 
@@ -222,6 +179,49 @@ class MainHandler extends MessageHandler {
   async handleConnectionRequest(userId: string, conversationId: string): Promise<void> {
     await this.sendConnectionResponse(userId, true);
     await this.sendText(conversationId, this.helpText);
+  }
+
+  async handleEvent(payload: PayloadBundle): Promise<void> {
+    switch (payload.type) {
+      case PayloadBundleType.TEXT: {
+        if (payload.conversation) {
+          const messageContent = payload.content as TextContent;
+          return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
+        }
+      }
+      case PayloadBundleType.CONNECTION_REQUEST: {
+        const connectRequest = payload.content as Connection;
+        if (payload.conversation && connectRequest.status !== ConnectionStatus.CANCELLED) {
+          return this.handleConnectionRequest(connectRequest.to, payload.conversation);
+        }
+      }
+    }
+  }
+
+  async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
+    const {commandType, parsedArguments, rawCommand} = CommandService.parseCommand(text);
+
+    switch (commandType) {
+      case CommandType.NO_COMMAND:
+      case CommandType.UNKNOWN_COMMAND: {
+        if (this.answerCache[conversationId]) {
+          const {type: cachedCommandType, waitingForContent} = this.answerCache[conversationId];
+          if (waitingForContent) {
+            await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
+            delete this.answerCache[conversationId];
+            return this.answer(conversationId, {commandType: cachedCommandType, parsedArguments, rawCommand}, senderId);
+          }
+        }
+        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
+      }
+      default: {
+        await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
+        if (this.answerCache[conversationId]) {
+          delete this.answerCache[conversationId];
+        }
+        return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
+      }
+    }
   }
 }
 

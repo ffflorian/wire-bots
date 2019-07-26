@@ -14,9 +14,6 @@ interface Config {
 }
 
 class MainHandler extends MessageHandler {
-  private readonly logger: logdown.Logger;
-  private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.\n\nSend me anything and I will send it right back!\n\nFurther available commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot.`;
   private readonly answerCache: {
     [conversationId: string]: {
       type: CommandType;
@@ -24,6 +21,9 @@ class MainHandler extends MessageHandler {
     };
   };
   private readonly confirmTypes: PayloadBundleType[];
+  private readonly feedbackConversationId?: string;
+  private readonly helpText = `**Hello!** 😎 This is Echo bot v${version} speaking.\n\nSend me anything and I will send it right back!\n\nFurther available commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot.`;
+  private readonly logger: logdown.Logger;
 
   constructor({feedbackConversationId}: Config) {
     super();
@@ -43,6 +43,41 @@ class MainHandler extends MessageHandler {
 
     if (!this.feedbackConversationId) {
       this.logger.warn('You did not specify a feedback conversation ID and will not be able to receive feedback.');
+    }
+  }
+
+  async answerText(conversationId: string, parsedCommand: ParsedCommand, senderId: string): Promise<void> {
+    const {originalMessage, parsedArguments, commandType} = parsedCommand;
+
+    switch (commandType) {
+      case CommandType.HELP: {
+        return this.sendText(conversationId, this.helpText);
+      }
+      case CommandType.UPTIME: {
+        return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
+      }
+      case CommandType.FEEDBACK: {
+        if (!this.feedbackConversationId) {
+          return this.sendText(conversationId, `Sorry, the developer did not specify a feedback channel.`);
+        }
+
+        if (!parsedArguments) {
+          this.answerCache[conversationId] = {
+            type: commandType,
+            waitingForContent: true,
+          };
+          return this.sendText(conversationId, 'What would you like to tell the developer?');
+        }
+
+        this.logger.info(`Sending feedback from "${senderId}" to "${this.feedbackConversationId}".`);
+
+        await this.sendText(this.feedbackConversationId, `Feedback from user "${senderId}":\n"${parsedArguments}"`);
+        delete this.answerCache[conversationId];
+        return this.sendText(conversationId, 'Thank you for your feedback.');
+      }
+      default: {
+        return this.sendText(conversationId, originalMessage);
+      }
     }
   }
 
@@ -146,41 +181,6 @@ class MainHandler extends MessageHandler {
           {commandType, originalMessage: text, parsedArguments, rawCommand},
           senderId
         );
-      }
-    }
-  }
-
-  async answerText(conversationId: string, parsedCommand: ParsedCommand, senderId: string): Promise<void> {
-    const {originalMessage, parsedArguments, commandType} = parsedCommand;
-
-    switch (commandType) {
-      case CommandType.HELP: {
-        return this.sendText(conversationId, this.helpText);
-      }
-      case CommandType.UPTIME: {
-        return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
-      }
-      case CommandType.FEEDBACK: {
-        if (!this.feedbackConversationId) {
-          return this.sendText(conversationId, `Sorry, the developer did not specify a feedback channel.`);
-        }
-
-        if (!parsedArguments) {
-          this.answerCache[conversationId] = {
-            type: commandType,
-            waitingForContent: true,
-          };
-          return this.sendText(conversationId, 'What would you like to tell the developer?');
-        }
-
-        this.logger.info(`Sending feedback from "${senderId}" to "${this.feedbackConversationId}".`);
-
-        await this.sendText(this.feedbackConversationId, `Feedback from user "${senderId}":\n"${parsedArguments}"`);
-        delete this.answerCache[conversationId];
-        return this.sendText(conversationId, 'Thank you for your feedback.');
-      }
-      default: {
-        return this.sendText(conversationId, originalMessage);
       }
     }
   }
