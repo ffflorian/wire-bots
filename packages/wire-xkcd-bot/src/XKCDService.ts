@@ -11,8 +11,8 @@ interface ComicResult extends ImageContent {
 }
 
 class XKCDService {
-  private readonly XKCD: XKCD;
   private readonly logger: logdown.Logger;
+  private readonly XKCD: XKCD;
 
   constructor() {
     this.XKCD = new XKCD();
@@ -22,11 +22,11 @@ class XKCDService {
     });
   }
 
-  async getRandomComic(): Promise<ComicResult> {
-    const xkcdResult = await this.XKCD.api.getRandom({withData: true});
-    this.logger.info(`Got random comic with data:`, xkcdResult);
+  async getComic(index: number): Promise<ComicResult> {
+    const xkcdResult = await this.XKCD.api.getByIndex(index, {withData: true});
+    this.logger.info(`Got comic by ID ${index} with data:`, xkcdResult);
 
-    const {alt: comment, data, num: index, title} = xkcdResult;
+    const {alt: comment, data, title} = xkcdResult;
     const imageMetaData = await ImageTools.parseImage(data);
 
     return {
@@ -52,11 +52,11 @@ class XKCDService {
     };
   }
 
-  async getComic(index: number): Promise<ComicResult> {
-    const xkcdResult = await this.XKCD.api.getByIndex(index, {withData: true});
-    this.logger.info(`Got comic by ID ${index} with data:`, xkcdResult);
+  async getRandomComic(): Promise<ComicResult> {
+    const xkcdResult = await this.XKCD.api.getRandom({withData: true});
+    this.logger.info(`Got random comic with data:`, xkcdResult);
 
-    const {alt: comment, data, title} = xkcdResult;
+    const {alt: comment, data, num: index, title} = xkcdResult;
     const imageMetaData = await ImageTools.parseImage(data);
 
     return {

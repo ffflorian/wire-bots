@@ -5,8 +5,8 @@ const moreResults = (totalResults = 1, page: number, resultsPerPage: number) =>
 
 interface SearchResult {
   moreResults: number;
-  resultsPerPage: number;
   result: string;
+  resultsPerPage: number;
 }
 
 class SearchService {
@@ -46,10 +46,10 @@ class SearchService {
     };
   }
 
-  async searchNpm(query: string, page: number): Promise<SearchResult> {
+  async searchCrates(query: string, page: number): Promise<SearchResult> {
     const {data, totalResults} = await this.librariesIO.api.project.search(query, {
       filter: {
-        platforms: ['npm'],
+        platforms: ['cargo'],
       },
       page,
       perPage: this.resultsPerPage,
@@ -62,10 +62,10 @@ class SearchService {
     };
   }
 
-  async searchCrates(query: string, page: number): Promise<SearchResult> {
+  async searchNpm(query: string, page: number): Promise<SearchResult> {
     const {data, totalResults} = await this.librariesIO.api.project.search(query, {
       filter: {
-        platforms: ['cargo'],
+        platforms: ['npm'],
       },
       page,
       perPage: this.resultsPerPage,
