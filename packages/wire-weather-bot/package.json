@@ -9,7 +9,7 @@
     "pm2": "3.5.1"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "2.3.1",
+    "@ffflorian/jszip-cli": "3.0.0",
     "@types/node": "~12",
     "cross-env": "5.2.0",
     "rimraf": "2.6.3",
