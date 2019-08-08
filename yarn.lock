@@ -1085,13 +1085,6 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/jpeg-js@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@types/jpeg-js/-/jpeg-js-0.3.0.tgz#5971f0aa50900194e9565711c265c10027385e89"
-  integrity sha512-S6bajx+UpnHzh/nFgGOJ8uvDCElV+eGvljDpJKHK2FW53erZxhX+CitbUFbrsmZi1h/I+DzvGp0MWyKl3dF1yw==
-  dependencies:
-    "@types/node" "*"
-
 "@types/long@4.0.0", "@types/long@^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/@types/long/-/long-4.0.0.tgz#719551d2352d301ac8b81db732acb6bdc28dbdef"
