@@ -36,7 +36,7 @@ class SearchService {
         platforms: ['bower'],
       },
       page,
-      perPage: this.resultsPerPage,
+      per_page: this.resultsPerPage,
     });
 
     return {
@@ -52,7 +52,7 @@ class SearchService {
         platforms: ['cargo'],
       },
       page,
-      perPage: this.resultsPerPage,
+      per_page: this.resultsPerPage,
     });
 
     return {
@@ -68,7 +68,7 @@ class SearchService {
         platforms: ['npm'],
       },
       page,
-      perPage: this.resultsPerPage,
+      per_page: this.resultsPerPage,
     });
 
     return {
