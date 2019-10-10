@@ -20,7 +20,7 @@
   "engines": {
     "node": ">= 10.9"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "main": "dist/index.js",
   "name": "@ffflorian/wire-packages-bot",
   "private": true,
