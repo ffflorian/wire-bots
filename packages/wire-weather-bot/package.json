@@ -2,7 +2,7 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
     "@wireapp/bot-api": "5.0.18",
-    "dotenv": "8.1.0",
+    "dotenv": "8.2.0",
     "logdown": "3.2.8",
     "moment": "2.24.0",
     "openweathermap-api-client": "1.0.3",
