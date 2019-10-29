@@ -1133,10 +1133,10 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-2.3.5.tgz#9da44ed75571999b65c37b60c9b2b88db54c585d"
   integrity sha512-SCcK7mvGi3+ZNz833RRjFIxrn4gI1PPR3NtuIS+6vMkvmsGjosqTJwRt5bAEFLRz+wtJMWv8+uOnZf2hi2QXTg==
 
-"@wireapp/api-client@8.0.0":
-  version "8.0.0"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-8.0.0.tgz#e36d78c17da0b9d0af98dc3dab66bec9dc73d8f7"
-  integrity sha512-9twFXcuvEwYfS1Hbnwp+zB+4Ny9TMhaP05M6+bW0ZGAMDFwL42bLd8GqagC8HPiPTUpWYc+hlDfUvt5MJjj9Aw==
+"@wireapp/api-client@8.0.1":
+  version "8.0.1"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-8.0.1.tgz#72227db1e2eb830317919c682779ad99628b159c"
+  integrity sha512-6ofcO4xomN5SZNDwjD7O7FHrop7qPqrWn7huirKwSO3kjwPO8Llk/fUDpi5dBcTqtK8aMM+b+2aMAwD5lvZB0Q==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.1"
@@ -1151,13 +1151,13 @@
     tough-cookie "3.0.1"
     ws "7.2.0"
 
-"@wireapp/bot-api@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-6.0.0.tgz#d3406163150f16613f493d4c95cdc38b30658975"
-  integrity sha512-SVSZraMsL0deNQKSwlICEW4teiz1RAQavsYLU50wYjli9GFj0WioEAHsfGecYwPRpyyvGm+h9SfT/hYpVraraw==
+"@wireapp/bot-api@6.0.2":
+  version "6.0.2"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-6.0.2.tgz#4a7696e0a9aad79c2e746eb171e10c3f8da7cc93"
+  integrity sha512-tSvV5GbFiuorFR/T1yyU0fFsWPZX5900frg+Hxl4LY9FKMhNJavh0gXYEavGAfdYxM7IbFQ0hovqUv41LcehMw==
   dependencies:
     "@types/long" "4.0.0"
-    "@wireapp/core" "14.0.0"
+    "@wireapp/core" "14.0.2"
     pure-uuid "1.5.7"
 
 "@wireapp/cbor@4.3.22":
@@ -1181,14 +1181,14 @@
     platform "1.3.5"
     url-search-params-polyfill "7.0.0"
 
-"@wireapp/core@14.0.0":
-  version "14.0.0"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-14.0.0.tgz#b9d1ceec5cdc770e2e6d604ff5e59735846a0067"
-  integrity sha512-/pXA6CsKfFZCmDu0c8s1Nh7Oipn/PeKjzzCIQRSMl2OtluzfHWHym9/CXuHBnF18X7bgSE4AXPu0KGWpcqKCqA==
+"@wireapp/core@14.0.2":
+  version "14.0.2"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-14.0.2.tgz#2c9fd013db4313dfccabbd0a4c23f86e3cb4e758"
+  integrity sha512-OY9CU0ddqS/4jWP9+kkk3juGPQzptgFt7Svmt22rfWoQzm0v2ASYqhWziuZ0u0f8ZxxBD/caKychGiP30sqyPQ==
   dependencies:
     "@types/long" "4.0.0"
     "@types/node" "~12"
-    "@wireapp/api-client" "8.0.0"
+    "@wireapp/api-client" "8.0.1"
     "@wireapp/cryptobox" "12.0.0"
     "@wireapp/protocol-messaging" "1.24.2"
     "@wireapp/store-engine" "4.0.0"
