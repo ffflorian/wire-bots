@@ -1,6 +1,6 @@
 import * as logdown from 'logdown';
 
-import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/commonjs/connection';
+import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/connection';
 import {MessageHandler} from '@wireapp/bot-api';
 import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {AssetContent, LocationContent, TextContent} from '@wireapp/core/dist/conversation/content/';
