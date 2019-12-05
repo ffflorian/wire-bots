@@ -15,7 +15,7 @@
     "cross-env": "6.0.3",
     "dotenv": "8.2.0",
     "rimraf": "3.0.0",
-    "typescript": "3.6.4"
+    "typescript": "3.7.3"
   },
   "engines": {
     "node": ">= 10.9"
