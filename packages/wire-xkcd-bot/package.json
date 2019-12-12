@@ -5,7 +5,7 @@
     "@wireapp/bot-api": "7.1.13",
     "dotenv": "8.2.0",
     "jpeg-js": "0.3.6",
-    "logdown": "3.2.8",
+    "logdown": "3.3.0",
     "moment": "2.24.0",
     "omggif": "1.0.10",
     "pm2": "4.2.1",
