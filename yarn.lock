@@ -112,14 +112,13 @@
   resolved "https://registry.npmjs.org/@ffflorian/tslint-config/-/tslint-config-0.7.0.tgz#1db6da16e17382e6b27e346dc4c699ba01112c2a"
   integrity sha512-mMeU+i7EHh+d8JvvpSIxEA2Tl/l/6ylfpYBoCCFnQ09mrMIQCIlbLcvWgut/I9Nz0/MsiHd2gxC4xDAJLOwskw==
 
-"@ffflorian/xkcdjs@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.1.0.tgz#91c3500586ca72a765c72a218d0db0caac5795d5"
-  integrity sha512-Y6JfahoUiQg9uIQWPnUc+ZkKHPb7z2O3hx8o+IYHcIafvZ/Riy3w3EycLHXWI6VbpGVO/xaq02sJjFStAkMBOw==
+"@ffflorian/xkcdjs@2.2.6":
+  version "2.2.6"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.6.tgz#6783f2a477ebfd0f3da93ba17b3936f0a04f5280"
+  integrity sha512-uChXU1lHgXCj44aGOOVszWHIhZbvKnWF+XJx4bqIHYttiA9zE1uS+JOApYLMYw+HxIQw2XG11ieYKqRJ1qsiWA==
   dependencies:
     axios "0.19.0"
-    commander "3.0.0"
-    fs-extra "8.1.0"
+    commander "4.0.1"
 
 "@lerna/add@3.19.0":
   version "3.19.0"
@@ -1945,15 +1944,15 @@ commander@2.15.1:
   resolved "https://registry.npmjs.org/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
   integrity sha512-VlfT9F3V0v+jr4yxPc5gg9s62/fIVWsd2Bk2iD435um1NlGMYdVCq+MjcXnhYq2icNOizHr1kK+5TI6H0Hy0ag==
 
-commander@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-3.0.0.tgz#0641ea00838c7a964627f04cddc336a2deddd60a"
-  integrity sha512-pl3QrGOBa9RZaslQiqnnKX2J068wcQw7j9AIaBQ9/JEp5RY6je4jKTImg0Bd+rpoONSe7GUFSgkxLeo17m3Pow==
-
 commander@3.0.2:
   version "3.0.2"
   resolved "https://registry.npmjs.org/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
   integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
+
+commander@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
+  integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
 
 commander@^2.12.1, commander@^2.20.0, commander@~2.20.0:
   version "2.20.0"
