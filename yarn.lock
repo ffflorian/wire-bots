@@ -119,13 +119,13 @@
   resolved "https://registry.npmjs.org/@ffflorian/tslint-config/-/tslint-config-0.7.1.tgz#a7958b77485d602dd8ce0bd594bf9ed7651c0461"
   integrity sha512-3m3cfjjksFpVUsU0JDqvilqJALre02Nk3SCgNpq6dIjcOpYb63DgBJzBSdPDfpKzjuMLoBm58l/b4gctDxoDtw==
 
-"@ffflorian/xkcdjs@2.2.6":
-  version "2.2.6"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.6.tgz#6783f2a477ebfd0f3da93ba17b3936f0a04f5280"
-  integrity sha512-uChXU1lHgXCj44aGOOVszWHIhZbvKnWF+XJx4bqIHYttiA9zE1uS+JOApYLMYw+HxIQw2XG11ieYKqRJ1qsiWA==
+"@ffflorian/xkcdjs@2.2.7":
+  version "2.2.7"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.7.tgz#27b417c9f69ec4dfa7f651a17641f20e7b4bd95c"
+  integrity sha512-ytbvcDQZcNK9amVPwl7/Rgo2h5+6qiDHcUvIt3WK6evf3G+Inq9rb4uApEE0Ki6LWkIAfdulOStbjGrT2VqtRA==
   dependencies:
-    axios "0.19.0"
-    commander "4.0.1"
+    axios "0.19.1"
+    commander "4.1.0"
 
 "@lerna/add@3.20.0":
   version "3.20.0"
@@ -2013,6 +2013,11 @@ commander@4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
   integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
+
+commander@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-4.1.0.tgz#545983a0603fe425bc672d66c9e3c89c42121a83"
+  integrity sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
 
 commander@^2.12.1, commander@^2.20.0, commander@~2.20.3:
   version "2.20.3"
