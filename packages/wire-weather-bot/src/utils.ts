@@ -1,6 +1,6 @@
 import * as moment from 'moment';
 
-const mapIconToEmoji = (weatherId: number): string => {
+export const mapIconToEmoji = (weatherId: number): string => {
   if (
     weatherId.toString().startsWith('2') ||
     weatherId === 900 ||
@@ -29,9 +29,7 @@ const mapIconToEmoji = (weatherId: number): string => {
   return '😎';
 };
 
-function formatUptime(uptime: number): string {
+export function formatUptime(uptime: number): string {
   const duration = moment.duration(uptime, 'seconds').asMilliseconds();
   return moment.utc(duration).format('HH:mm:ss');
 }
-
-export {formatUptime, mapIconToEmoji};

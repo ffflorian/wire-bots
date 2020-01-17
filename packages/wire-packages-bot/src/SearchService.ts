@@ -9,7 +9,7 @@ interface SearchResult {
   resultsPerPage: number;
 }
 
-class SearchService {
+export class SearchService {
   private static formatData(projects: Project[]): string {
     return projects.reduce((prev, project) => {
       const {description, homepage, name, language, stars} = project;
@@ -82,5 +82,3 @@ class SearchService {
     return '';
   }
 }
-
-export {SearchService};

@@ -10,7 +10,7 @@ interface ComicResult extends ImageContent {
   title: string;
 }
 
-class XKCDService {
+export class XKCDService {
   private readonly logger: logdown.Logger;
   private readonly XKCD: XKCD;
 
@@ -67,5 +67,3 @@ class XKCDService {
     };
   }
 }
-
-export {XKCDService};

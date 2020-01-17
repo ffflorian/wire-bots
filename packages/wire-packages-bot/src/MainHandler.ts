@@ -4,6 +4,7 @@ import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/connection'
 import {MessageHandler} from '@wireapp/bot-api';
 import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
+import {QuotableMessage} from '@wireapp/core/dist/conversation/message/OtrMessage';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {SearchService} from './SearchService';
 import {formatUptime} from './utils';
@@ -15,7 +16,7 @@ interface Config {
   librariesIOApiKey: string;
 }
 
-class MainHandler extends MessageHandler {
+export class MainHandler extends MessageHandler {
   private static morePagesText(moreResults: number, resultsPerPage: number): string {
     const isOne = moreResults === 1;
     return `\n\nThere ${isOne ? 'is' : 'are'} ${moreResults} more result${isOne ? '' : 's'}. Would you like to see ${
@@ -50,20 +51,27 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async answer(conversationId: string, parsedCommand: ParsedCommand, senderId: string, page = 1): Promise<void> {
+  async answer(
+    originalMessage: QuotableMessage,
+    conversationId: string,
+    parsedCommand: ParsedCommand,
+    senderId: string,
+    page = 1
+  ): Promise<void> {
     const {parsedArguments, rawCommand, commandType} = parsedCommand;
     switch (commandType) {
       case CommandType.HELP: {
-        return this.sendText(conversationId, this.helpText);
+        return this.sendReply(conversationId, originalMessage, this.helpText);
       }
       case CommandType.SERVICES: {
-        return this.sendText(
+        return this.sendReply(
           conversationId,
+          originalMessage,
           'Available services:\n- **/bower**\n- **/npm**\n- **/crates**\n- **/types**'
         );
       }
       case CommandType.UPTIME: {
-        return this.sendText(conversationId, `Current uptime: ${formatUptime(process.uptime())}`);
+        return this.sendReply(conversationId, originalMessage, `Current uptime: ${formatUptime(process.uptime())}`);
       }
       case CommandType.BOWER: {
         if (!parsedArguments) {
@@ -72,7 +80,7 @@ class MainHandler extends MessageHandler {
             type: CommandType.BOWER,
             waitingForContent: true,
           };
-          return this.sendText(conversationId, 'What would you like to search on Bower?');
+          return this.sendReply(conversationId, originalMessage, 'What would you like to search on Bower?');
         }
 
         await this.sendText(conversationId, `Searching for "${parsedArguments}" on Bower ...`);
@@ -83,7 +91,7 @@ class MainHandler extends MessageHandler {
           searchResult = await this.searchService.searchBower(parsedArguments, page);
         } catch (error) {
           this.logger.error(error);
-          return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
+          return this.sendReply(conversationId, originalMessage, 'Sorry, an error occured. Please try again later.');
         }
 
         const {moreResults, resultsPerPage} = searchResult;
@@ -100,7 +108,7 @@ class MainHandler extends MessageHandler {
         } else {
           delete this.answerCache[conversationId];
         }
-        return this.sendText(conversationId, result);
+        return this.sendReply(conversationId, originalMessage, result);
       }
       case CommandType.NPM: {
         if (!parsedArguments) {
@@ -109,7 +117,7 @@ class MainHandler extends MessageHandler {
             type: CommandType.NPM,
             waitingForContent: true,
           };
-          return this.sendText(conversationId, 'What would you like to search on npm?');
+          return this.sendReply(conversationId, originalMessage, 'What would you like to search on npm?');
         }
 
         await this.sendText(conversationId, `Searching for "${parsedArguments}" on npm ...`);
@@ -120,7 +128,7 @@ class MainHandler extends MessageHandler {
           searchResult = await this.searchService.searchNpm(parsedArguments, page);
         } catch (error) {
           this.logger.error(error);
-          return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
+          return this.sendReply(conversationId, originalMessage, 'Sorry, an error occured. Please try again later.');
         }
 
         const {moreResults, resultsPerPage} = searchResult;
@@ -137,7 +145,7 @@ class MainHandler extends MessageHandler {
         } else {
           delete this.answerCache[conversationId];
         }
-        return this.sendText(conversationId, result);
+        return this.sendReply(conversationId, originalMessage, result);
       }
       case CommandType.CRATES: {
         if (!parsedArguments) {
@@ -146,7 +154,7 @@ class MainHandler extends MessageHandler {
             type: CommandType.CRATES,
             waitingForContent: true,
           };
-          return this.sendText(conversationId, 'What would you like to search on crates.io?');
+          return this.sendReply(conversationId, originalMessage, 'What would you like to search on crates.io?');
         }
 
         await this.sendText(conversationId, `Searching for "${parsedArguments}" on crates.io ...`);
@@ -157,7 +165,7 @@ class MainHandler extends MessageHandler {
           searchResult = await this.searchService.searchCrates(parsedArguments, page);
         } catch (error) {
           this.logger.error(error);
-          return this.sendText(conversationId, 'Sorry, an error occured. Please try again later.');
+          return this.sendReply(conversationId, originalMessage, 'Sorry, an error occured. Please try again later.');
         }
 
         const {moreResults, resultsPerPage} = searchResult;
@@ -174,14 +182,18 @@ class MainHandler extends MessageHandler {
         } else {
           delete this.answerCache[conversationId];
         }
-        return this.sendText(conversationId, result);
+        return this.sendReply(conversationId, originalMessage, result);
       }
       case CommandType.TYPES: {
-        return this.sendText(conversationId, `Sorry, not implemented yet.`);
+        return this.sendReply(conversationId, originalMessage, `Sorry, not implemented yet.`);
       }
       case CommandType.FEEDBACK: {
         if (!this.feedbackConversationId) {
-          return this.sendText(conversationId, `Sorry, the developer did not specify a feedback channel.`);
+          return this.sendReply(
+            conversationId,
+            originalMessage,
+            `Sorry, the developer did not specify a feedback channel.`
+          );
         }
 
         if (!parsedArguments) {
@@ -190,15 +202,15 @@ class MainHandler extends MessageHandler {
             type: CommandType.FEEDBACK,
             waitingForContent: true,
           };
-          return this.sendText(conversationId, 'What would you like to tell the developer?');
+          return this.sendReply(conversationId, originalMessage, 'What would you like to tell the developer?');
         }
 
         await this.sendText(this.feedbackConversationId, `Feedback from user "${senderId}":\n"${parsedArguments}"`);
         delete this.answerCache[conversationId];
-        return this.sendText(conversationId, 'Thank you for your feedback.');
+        return this.sendReply(conversationId, originalMessage, 'Thank you for your feedback.');
       }
       case CommandType.UNKNOWN_COMMAND: {
-        return this.sendText(conversationId, `Sorry, I don't know the command "${rawCommand}" yet.`);
+        return this.sendReply(conversationId, originalMessage, `Sorry, I don't know the command "${rawCommand}" yet.`);
       }
     }
   }
@@ -213,7 +225,13 @@ class MainHandler extends MessageHandler {
       case PayloadBundleType.TEXT: {
         if (payload.conversation) {
           const messageContent = payload.content as TextContent;
-          return this.handleText(payload.conversation, messageContent.text, payload.id, payload.from);
+          return this.handleText(
+            payload as QuotableMessage,
+            payload.conversation,
+            messageContent.text,
+            payload.id,
+            payload.from
+          );
         }
       }
       case PayloadBundleType.CONNECTION_REQUEST: {
@@ -225,7 +243,13 @@ class MainHandler extends MessageHandler {
     }
   }
 
-  async handleText(conversationId: string, text: string, messageId: string, senderId: string): Promise<void> {
+  async handleText(
+    payload: QuotableMessage,
+    conversationId: string,
+    text: string,
+    messageId: string,
+    senderId: string
+  ): Promise<void> {
     const {commandType, parsedArguments, rawCommand} = CommandService.parseCommand(text);
 
     switch (commandType) {
@@ -233,7 +257,7 @@ class MainHandler extends MessageHandler {
         if (this.answerCache[conversationId]) {
           await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
           delete this.answerCache[conversationId];
-          return this.sendText(conversationId, 'Okay.');
+          return this.sendReply(conversationId, payload, 'Okay.');
         }
         break;
       }
@@ -242,6 +266,7 @@ class MainHandler extends MessageHandler {
           const {parsedArguments: cachedContent, type: cachedCommandType, page} = this.answerCache[conversationId];
           await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
           return this.answer(
+            payload,
             conversationId,
             {parsedArguments: cachedContent, commandType: cachedCommandType, rawCommand},
             senderId,
@@ -257,7 +282,12 @@ class MainHandler extends MessageHandler {
           if (waitingForContent) {
             await this.sendReaction(conversationId, messageId, ReactionType.LIKE);
             delete this.answerCache[conversationId];
-            return this.answer(conversationId, {parsedArguments, commandType: cachedCommandType, rawCommand}, senderId);
+            return this.answer(
+              payload,
+              conversationId,
+              {parsedArguments, commandType: cachedCommandType, rawCommand},
+              senderId
+            );
           }
         }
         return;
@@ -271,8 +301,6 @@ class MainHandler extends MessageHandler {
       }
     }
 
-    return this.answer(conversationId, {commandType, parsedArguments, rawCommand}, senderId);
+    return this.answer(payload, conversationId, {commandType, parsedArguments, rawCommand}, senderId);
   }
 }
-
-export {MainHandler};

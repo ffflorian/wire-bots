@@ -2,7 +2,7 @@ import * as logdown from 'logdown';
 import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
 import {mapIconToEmoji} from './utils';
 
-class WeatherService {
+export class WeatherService {
   private readonly logger: logdown.Logger;
 
   constructor(private readonly weatherAPI: WeatherAPI) {
@@ -72,5 +72,3 @@ class WeatherService {
     return `Current weather in **${cityName}, ${countryName}**: ${description}, ${temperature.toFixed(0)} °C. ${emoji}`;
   }
 }
-
-export {WeatherService};

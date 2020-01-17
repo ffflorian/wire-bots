@@ -14,7 +14,7 @@ export interface ParsedCommand {
   rawCommand: string;
 }
 
-enum CommandType {
+export enum CommandType {
   FEEDBACK,
   HELP,
   LATEST,
@@ -71,7 +71,7 @@ const basicCommands: BasicCommand[] = [
   },
 ];
 
-const CommandService = {
+export const CommandService = {
   formatCommands(): string {
     return basicCommands
       .sort((a, b) => a.command.localeCompare(b.command))
@@ -113,5 +113,3 @@ const CommandService = {
     };
   },
 };
-
-export {CommandService, CommandType};

@@ -19,7 +19,7 @@ interface AnswerCommand {
   type: CommandType;
 }
 
-enum CommandType {
+export enum CommandType {
   ANSWER_NO,
   ANSWER_YES,
   BOWER,
@@ -106,7 +106,7 @@ const basicCommands: BasicCommand[] = [
   },
 ];
 
-const CommandService = {
+export const CommandService = {
   formatCommands(): string {
     return basicCommands
       .sort((a, b) => a.command.localeCompare(b.command))
@@ -157,5 +157,3 @@ const CommandService = {
     };
   },
 };
-
-export {CommandService, CommandType};
