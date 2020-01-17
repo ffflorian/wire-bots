@@ -119,10 +119,10 @@
   resolved "https://registry.npmjs.org/@ffflorian/tslint-config/-/tslint-config-0.7.1.tgz#a7958b77485d602dd8ce0bd594bf9ed7651c0461"
   integrity sha512-3m3cfjjksFpVUsU0JDqvilqJALre02Nk3SCgNpq6dIjcOpYb63DgBJzBSdPDfpKzjuMLoBm58l/b4gctDxoDtw==
 
-"@ffflorian/xkcdjs@2.2.7":
-  version "2.2.7"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.7.tgz#27b417c9f69ec4dfa7f651a17641f20e7b4bd95c"
-  integrity sha512-ytbvcDQZcNK9amVPwl7/Rgo2h5+6qiDHcUvIt3WK6evf3G+Inq9rb4uApEE0Ki6LWkIAfdulOStbjGrT2VqtRA==
+"@ffflorian/xkcdjs@2.2.8":
+  version "2.2.8"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.8.tgz#21354f7e1a6c91a9dfc9a6bf606b2ba101a1d66e"
+  integrity sha512-Holm0GmwJY6Sx6oKe5ISZPOlb/Uo/v8zvrr3zcSR/HEkXfAxcn/G8FOrJ5LrfSN7yxe/hAT/RTkiCGQN9SW9Vw==
   dependencies:
     axios "0.19.1"
     commander "4.1.0"
