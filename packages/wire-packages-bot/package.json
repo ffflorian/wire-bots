@@ -15,6 +15,7 @@
     "cross-env": "6.0.3",
     "dotenv": "8.2.0",
     "rimraf": "3.0.0",
+    "ts-node": "8.6.2",
     "typescript": "3.7.5"
   },
   "engines": {
@@ -32,7 +33,7 @@
     "dist": "yarn clean && yarn build",
     "lint": "tslint -p tsconfig.json --fix",
     "start": "pm2 start && pm2 logs",
-    "start:dev": "cross-env NODE_ENV=development node dist/index.js",
+    "start:dev": "cross-env NODE_ENV=development ts-node src/index.ts",
     "test": "yarn dist && exit 0",
     "zip": "jszip-cli"
   },
