@@ -119,10 +119,10 @@
   resolved "https://registry.npmjs.org/@ffflorian/tslint-config/-/tslint-config-0.7.1.tgz#a7958b77485d602dd8ce0bd594bf9ed7651c0461"
   integrity sha512-3m3cfjjksFpVUsU0JDqvilqJALre02Nk3SCgNpq6dIjcOpYb63DgBJzBSdPDfpKzjuMLoBm58l/b4gctDxoDtw==
 
-"@ffflorian/xkcdjs@2.2.8":
-  version "2.2.8"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.8.tgz#21354f7e1a6c91a9dfc9a6bf606b2ba101a1d66e"
-  integrity sha512-Holm0GmwJY6Sx6oKe5ISZPOlb/Uo/v8zvrr3zcSR/HEkXfAxcn/G8FOrJ5LrfSN7yxe/hAT/RTkiCGQN9SW9Vw==
+"@ffflorian/xkcdjs@2.2.9":
+  version "2.2.9"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.2.9.tgz#cd7180f33b0b18c0c798bcd18930c149e66e851c"
+  integrity sha512-V9EW4rj9l0LDRzuzAKoLt8jB3Hq/7AUbCsmVrA4svPANRwWo/Vfz+qHm52ymUg7d7ogQHmQiClu3PhJmGiteIA==
   dependencies:
     axios "0.19.1"
     commander "4.1.0"
@@ -5638,8 +5638,9 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-"reconnecting-websocket@github:wireapp/reconnecting-websocket#96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378":
+reconnecting-websocket@wireapp/reconnecting-websocket#96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378:
   version "4.2.0"
+  uid "96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378"
   resolved "https://codeload.github.com/wireapp/reconnecting-websocket/tar.gz/96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378"
 
 redent@^1.0.0:
