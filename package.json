@@ -24,12 +24,10 @@
   "license": "GPL-3.0",
   "lint-staged": {
     "*.ts": [
-      "tslint --config tslint.json --project tsconfig.json --fix",
-      "git add"
+      "tslint --config tslint.json --project tsconfig.json --fix"
     ],
     "*.{json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "name": "wire-bots",
