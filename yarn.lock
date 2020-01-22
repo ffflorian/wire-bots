@@ -5169,10 +5169,10 @@ pm2-multimeter@^0.1.2:
   dependencies:
     charm "~0.1.1"
 
-pm2@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.npmjs.org/pm2/-/pm2-4.2.1.tgz#c4da5cbb7c04b5a8e08c1caaad638289a90eab76"
-  integrity sha512-y75VuMJmMoTgEMSveF4fQGbu3on4YkZXm5Mu4pPW1NlPgdD7yoWu8yfXzAKs94tKCIDrbL54Z5BfFBfUgmFSIw==
+pm2@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/pm2/-/pm2-4.2.3.tgz#a3de6679e9ec72ecb44fef0d41441552879846f9"
+  integrity sha512-aRTl8W6dmZ4S2hti1dX4Xvkpy/yIME1H5pMK0HEOpw1H33j4IAfdzScPoPLYaHeh1oL4biabGwxuyClOM8YUVQ==
   dependencies:
     "@pm2/agent" "^0.5.26"
     "@pm2/io" "^4.3.2"
@@ -5536,8 +5536,9 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-"reconnecting-websocket@github:wireapp/reconnecting-websocket#96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378":
+reconnecting-websocket@wireapp/reconnecting-websocket#96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378:
   version "4.2.0"
+  uid "96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378"
   resolved "https://codeload.github.com/wireapp/reconnecting-websocket/tar.gz/96ac796ae8c7a7d9d857f46ed39dbedd7b9ad378"
 
 redent@^1.0.0:
