@@ -3909,10 +3909,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libraries.io@2.2.3:
-  version "2.2.3"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-2.2.3.tgz#a2861f926909b725df232922ab29ad8142a2d7ce"
-  integrity sha512-IB4ALLM5rNUICAKodTh3AWQsFUSAOWW8x+GyG/vTWdj2FE5gfxdY+KCtPhnb6fmrl/1LPWi2XRKG0Wh8K9AzZA==
+libraries.io@2.2.4:
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-2.2.4.tgz#39ab536ac6d602e9f0bce0b5afbdbd5a15fafabd"
+  integrity sha512-LiTPgpPzOF0JAGbJp9Rn4drI1uZ0YHfudLEITGIDU/OXt/WT3r+0A4Hk4iYMUhucWCbNGORNiBf/DWjwFggXEg==
   dependencies:
     axios "0.19.1"
 
