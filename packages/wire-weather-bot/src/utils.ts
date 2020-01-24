@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import {formatDistance} from 'date-fns';
 
 export const mapIconToEmoji = (weatherId: number): string => {
   if (
@@ -30,6 +30,5 @@ export const mapIconToEmoji = (weatherId: number): string => {
 };
 
 export function formatUptime(uptime: number): string {
-  const duration = moment.duration(uptime, 'seconds').asMilliseconds();
-  return moment.utc(duration).format('HH:mm:ss');
+  return formatDistance(0, uptime * 1000, {includeSeconds: true})
 }
