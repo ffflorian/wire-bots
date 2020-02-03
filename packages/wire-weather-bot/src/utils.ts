@@ -30,5 +30,5 @@ export const mapIconToEmoji = (weatherId: number): string => {
 };
 
 export function formatUptime(uptime: number): string {
-  return formatDistance(0, uptime * 1000, {includeSeconds: true})
+  return formatDistance(0, uptime * 1000, {includeSeconds: true});
 }
