@@ -1557,14 +1557,14 @@ aws4@^1.8.0:
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
-axios@0.19.1, axios@^0.19.0:
+axios@0.19.1:
   version "0.19.1"
   resolved "https://registry.npmjs.org/axios/-/axios-0.19.1.tgz#8a6a04eed23dfe72747e1dd43c604b8f1677b5aa"
   integrity sha512-Yl+7nfreYKaLRvAvjNPkvfjnQHJM1yLBY3zhqAwcJSwR/6ETkanUgylgtIvkvz0xJ+p/vZuNw8X7Hnb7Whsbpw==
   dependencies:
     follow-redirects "1.5.10"
 
-axios@0.19.2:
+axios@0.19.2, axios@^0.19.0:
   version "0.19.2"
   resolved "https://registry.npmjs.org/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
@@ -3921,12 +3921,12 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libraries.io@2.2.4:
-  version "2.2.4"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-2.2.4.tgz#39ab536ac6d602e9f0bce0b5afbdbd5a15fafabd"
-  integrity sha512-LiTPgpPzOF0JAGbJp9Rn4drI1uZ0YHfudLEITGIDU/OXt/WT3r+0A4Hk4iYMUhucWCbNGORNiBf/DWjwFggXEg==
+libraries.io@2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-2.2.5.tgz#50919f749097136c0086887f9d97a3bc8486aef2"
+  integrity sha512-ntd2vS+l0/5twIeUhuHhlCaODTsMrgmEyovXLphNuY7yulBkj7zlxap6uuY5WdMSri7NpPlfeS4fNfAyZ4QvLQ==
   dependencies:
-    axios "0.19.1"
+    axios "0.19.2"
 
 libsodium-sumo@0.7.6:
   version "0.7.6"
