@@ -2,7 +2,7 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
     "@wireapp/bot-api": "7.4.8",
-    "date-fns": "2.9.0",
+    "date-fns": "2.10.0",
     "dotenv": "8.2.0",
     "logdown": "3.3.0",
     "pm2": "4.2.3"
