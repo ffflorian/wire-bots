@@ -12,7 +12,7 @@
     "@ffflorian/jszip-cli": "3.1.0",
     "@types/node": "~12",
     "@types/request": "2.48.4",
-    "cross-env": "7.0.0",
+    "cross-env": "7.0.1",
     "dotenv": "8.2.0",
     "rimraf": "3.0.2",
     "ts-node": "8.6.2",
