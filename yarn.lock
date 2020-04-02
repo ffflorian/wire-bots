@@ -1143,15 +1143,15 @@
   resolved "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-2.3.6.tgz#c880579e087d7a0db13777ff8af689f4ffc7b0d5"
   integrity sha512-wHNBMnkoEBiRAd3s8KTKwIuO9biFtTf0LehITzBhSco+HQI0xkXZbLOD55SW3Aqw3oUkHstkm5SPv58yaAdFPQ==
 
-"@wireapp/api-client@9.21.0":
-  version "9.21.0"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-9.21.0.tgz#d8b814c3c65f3e8f814029b3a0e6d5d50e4f72a6"
-  integrity sha512-HL/FktIZsG4TFJFXsXxYPSf7mdM02/OzdBN94khjMpe0WEt+i9fhKijQO0e5Yb+2w0nDro3Tl8kDxWDVDyd6AQ==
+"@wireapp/api-client@10.0.1":
+  version "10.0.1"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-10.0.1.tgz#67a8a009c35d2dc72b6440471c0c571f42f5c863"
+  integrity sha512-aoa2Ycv+9VZUT5rrfSyjIx9akQQzZucTP12OfFJn4V6zbA6dB9+nWu80kVBYSpGRA6BKOSvLKiXyuOi6vQmLdA==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "2.3.6"
-    "@wireapp/commons" "3.3.8"
+    "@wireapp/commons" "3.3.9"
     "@wireapp/priority-queue" "1.5.6"
     axios "0.19.2"
     logdown "3.3.1"
@@ -1160,14 +1160,14 @@
     tough-cookie "3.0.1"
     ws "7.2.3"
 
-"@wireapp/bot-api@7.7.1":
-  version "7.7.1"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.7.1.tgz#6e56c2dc0f86ea6ac9f9c18428f0021d66c73bbd"
-  integrity sha512-Ff4Qzp1L6aI7f7aR7mFNOHDPi8ui3XiSsFm1QB8i6OHdtA53ufT0OpBgfBOOSlydYz6DVrd2ZAK4yIKZj9OHSA==
+"@wireapp/bot-api@7.7.5":
+  version "7.7.5"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.7.5.tgz#5ffcf217ea67824586ad6febf8303688f4c92a63"
+  integrity sha512-cI09MJVXq5JP7XQ+49BwaDSUR90A3rl77sKYEc++r9+VmeMnnH8bhjksskJPS8qeybIChcU5L6bUjAHfhqtYzg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "*"
-    "@wireapp/core" "15.12.4"
+    "@wireapp/core" "16.0.1"
     pure-uuid "1.6.0"
 
 "@wireapp/cbor@4.5.9":
@@ -1175,41 +1175,41 @@
   resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.5.9.tgz#386cbc3d1da026755a10c7f655e85500d92c1b70"
   integrity sha512-GMCX1E5censs7cECyaMdjq1Tn+5uyTkkTvDldOr3961do3B45YV4Kvizqwe27F9589OTywf483uB5SolH1L/jw==
 
-"@wireapp/commons@3.3.8":
-  version "3.3.8"
-  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.3.8.tgz#0e8686c2e1c7256789df3d7f4ad2592df6c715cd"
-  integrity sha512-B+C9oNgMFi82Qq97mP+jebzdVR1lDlGrlHmXEUF4SkRWl67awxnXqlP1QXMNsZu988YEOVst0z174A7leSYMIg==
+"@wireapp/commons@3.3.9":
+  version "3.3.9"
+  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.3.9.tgz#3870679ac88a268bf0c8caa08597951833a62bc3"
+  integrity sha512-C9I8xIZk84T4yCrMALPsaXrMFklPvJeZ/qpL9sWkF+ib50d4kI4cm8qL+LDPy3BwAIhu9bss3kZ79ZJpHgA+BQ==
   dependencies:
     "@types/fs-extra" "8.1.0"
     "@types/node" "~12"
     "@types/platform" "1.3.2"
     ansi-regex "5.0.0"
-    fs-extra "8.1.0"
+    fs-extra "9.0.0"
     logdown "3.3.1"
     platform "1.3.5"
     url-search-params-polyfill "8.0.0"
 
-"@wireapp/core@15.12.4":
-  version "15.12.4"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-15.12.4.tgz#e18c8a86af318ec83383dd4d47c9ee3581800a3f"
-  integrity sha512-LB8pj0HoGvcRaOF6wZ1SZ2e0daMJPVc1UQ39aiTIPD8yvnoGjXfCK6QlVPBVSZPz7GSN+F6sAfpLikOnaDrOng==
+"@wireapp/core@16.0.1":
+  version "16.0.1"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.0.1.tgz#3be0949c0ebb6c694960d20fd39b13699f1ff88e"
+  integrity sha512-j+vUM4+xAZoM6rLjvw7X9nnn4YrOvqno4nhDQJGb5LoR7/vVe9S81+4fPrlXrZHvgXZFq70ceCGMBLYto2XsvQ==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "9.21.0"
-    "@wireapp/cryptobox" "12.1.14"
+    "@wireapp/api-client" "10.0.1"
+    "@wireapp/cryptobox" "12.1.15"
     "@wireapp/protocol-messaging" "1.25.4"
     "@wireapp/store-engine" "4.3.11"
     bazinga64 "5.6.10"
     hash.js "1.1.7"
     logdown "3.3.1"
-    protobufjs "6.8.8"
+    protobufjs "6.8.9"
     pure-uuid "1.6.0"
 
-"@wireapp/cryptobox@12.1.14":
-  version "12.1.14"
-  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.1.14.tgz#24e89f57aa68e6c31178eed9a7ef7c1682725e9b"
-  integrity sha512-axk0ODzYAhhMpLUeMoT46D8Ae8uNf64nEsJRA3DtHcjsn3GiqbaZ62osBrAPkYTXKdX0scMbYh9HWrzdI6sasg==
+"@wireapp/cryptobox@12.1.15":
+  version "12.1.15"
+  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.1.15.tgz#3a1e5b3761152671e61f2ddd3d772aa41b0e8816"
+  integrity sha512-cFdZQ22QsevNM40Sop4ftxQIz7jSPhvYU2d3Gy8s0P4PVRzXfnNwyTyfvfhnuLXzitcAEhcL/WIDKmYBS4cmzQ==
   dependencies:
     "@types/node" "~12"
     "@wireapp/lru-cache" "3.4.9"
@@ -1537,6 +1537,11 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
+at-least-node@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
+  integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 atob-lite@^2.0.0:
   version "2.0.0"
@@ -2924,6 +2929,16 @@ fs-extra@8.1.0, fs-extra@^8.1.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-9.0.0.tgz#b6afc31036e247b2466dc99c29ae797d5d4580a3"
+  integrity sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+  dependencies:
+    at-least-node "^1.0.0"
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^1.0.0"
+
 fs-minipass@^1.2.5:
   version "1.2.6"
   resolved "https://registry.npmjs.org/fs-minipass/-/fs-minipass-1.2.6.tgz#2c5cc30ded81282bfe8a0d7c7c1853ddeb102c07"
@@ -3826,6 +3841,15 @@ jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
+jsonfile@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/jsonfile/-/jsonfile-6.0.1.tgz#98966cba214378c8c84b82e085907b40bf614179"
+  integrity sha512-jR2b5v7d2vIOust+w3wtFKZIfpC2pnRmFAhAC/BuweZFQR8qZzxH1OyrQ10HmdVYiXWkYUqPVsz91cG7EL2FBg==
+  dependencies:
+    universalify "^1.0.0"
   optionalDependencies:
     graceful-fs "^4.1.6"
 
@@ -5319,6 +5343,25 @@ protobufjs@6.8.8:
     "@types/node" "^10.1.0"
     long "^4.0.0"
 
+protobufjs@6.8.9:
+  version "6.8.9"
+  resolved "https://registry.npmjs.org/protobufjs/-/protobufjs-6.8.9.tgz#0b1adbcdaa983d369c3d9108a97c814edc030754"
+  integrity sha512-j2JlRdUeL/f4Z6x4aU4gj9I2LECglC+5qR2TrWb193Tla1qfdaNQTZ8I27Pt7K0Ajmvjjpft7O3KWTGciz4gpw==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.0"
+    "@types/node" "^10.1.0"
+    long "^4.0.0"
+
 protocols@^1.1.0, protocols@^1.4.0:
   version "1.4.7"
   resolved "https://registry.npmjs.org/protocols/-/protocols-1.4.7.tgz#95f788a4f0e979b291ffefcf5636ad113d037d32"
@@ -6591,6 +6634,11 @@ universalify@^0.1.0:
   version "0.1.2"
   resolved "https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+
+universalify@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/universalify/-/universalify-1.0.0.tgz#b61a1da173e8435b2fe3c67d29b9adf8594bd16d"
+  integrity sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
 
 unpipe@1.0.0:
   version "1.0.0"
