@@ -3460,6 +3460,13 @@ ignore@^4.0.3:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
+imgflip.com@2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npmjs.org/imgflip.com/-/imgflip.com-2.2.2.tgz#114709e7a900570f16398340ec826558cf7ae6a9"
+  integrity sha512-5tkxAcp5qBPxwGphHRL2sEJxxU7EsEpbrL/CO0WWWwDYRl1D0eESsUBj1ZL87OBqSXKOGLJKcK6+Okm1GbXVpw==
+  dependencies:
+    axios "0.19.2"
+
 immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
