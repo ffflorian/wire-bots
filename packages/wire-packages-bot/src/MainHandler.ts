@@ -268,7 +268,7 @@ export class MainHandler extends MessageHandler {
           return this.answer(
             payload,
             conversationId,
-            {parsedArguments: cachedContent, commandType: cachedCommandType, rawCommand},
+            {commandType: cachedCommandType, parsedArguments: cachedContent, rawCommand},
             senderId,
             page + 1
           );
@@ -285,7 +285,7 @@ export class MainHandler extends MessageHandler {
             return this.answer(
               payload,
               conversationId,
-              {parsedArguments, commandType: cachedCommandType, rawCommand},
+              {commandType: cachedCommandType, parsedArguments, rawCommand},
               senderId
             );
           }

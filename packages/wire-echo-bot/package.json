@@ -29,7 +29,6 @@
     "clean": "rimraf dist",
     "deploy": "yarn dist && yarn zip && eb deploy -nh",
     "dist": "yarn clean && yarn build",
-    "lint": "tslint -p tsconfig.json --fix",
     "start": "pm2 start && pm2 logs",
     "start:dev": "cross-env NODE_ENV=development ts-node src/index.ts",
     "test": "yarn dist && exit 0",

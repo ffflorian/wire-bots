@@ -119,7 +119,7 @@ export class MainHandler extends MessageHandler {
       case PayloadBundleType.ASSET_IMAGE: {
         if (payload.conversation) {
           const messageContent = payload.content as AssetContent;
-          return this.handleImage(payload.conversation, messageContent, payload.id, payload.from);
+          return this.handleImage(payload.conversation, messageContent);
         }
       }
       case PayloadBundleType.LOCATION: {
@@ -140,12 +140,7 @@ export class MainHandler extends MessageHandler {
     }
   }
 
-  async handleImage(
-    conversationId: string,
-    messageContent: AssetContent,
-    messageId: string,
-    senderId: string
-  ): Promise<void> {
+  async handleImage(conversationId: string, messageContent: AssetContent): Promise<void> {
     const {original, uploaded} = messageContent;
     if (this.account && this.account.service && original && original.image && uploaded) {
       const imageBuffer = await this.account.service.conversation.getAsset(uploaded);

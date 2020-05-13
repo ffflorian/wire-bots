@@ -74,7 +74,7 @@ const basicCommands: BasicCommand[] = [
 export const CommandService = {
   formatCommands(): string {
     return basicCommands
-      .sort((a, b) => a.command.localeCompare(b.command))
+      .sort((commandA, commandB) => commandA.command.localeCompare(commandB.command))
       .reduce((prev, command) => {
         const {argumentName, command: commandName, description, parseArguments} = command;
         return `${prev}\n- **/${commandName}${
@@ -105,7 +105,10 @@ export const CommandService = {
         rawCommand: parsedCommand,
       };
     }
+
+    // eslint-disable-next-line no-magic-numbers
     logger.info(`No command found for "${message.length > 10 ? `${message.substr(0, 10)}...` : message}".`);
+
     return {
       commandType: CommandType.NO_COMMAND,
       parsedArguments: message,

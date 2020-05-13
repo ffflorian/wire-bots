@@ -78,7 +78,7 @@ export class SearchService {
     };
   }
 
-  async searchTypes(query: string): Promise<string> {
+  async searchTypes(): Promise<string> {
     return '';
   }
 }

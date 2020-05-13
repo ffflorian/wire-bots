@@ -172,7 +172,7 @@ export class MainHandler extends MessageHandler {
             return this.answer(
               payload,
               conversationId,
-              {parsedArguments, commandType: cachedCommandType, rawCommand},
+              {commandType: cachedCommandType, parsedArguments, rawCommand},
               senderId
             );
           }
