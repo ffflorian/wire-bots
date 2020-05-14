@@ -2,7 +2,7 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
     "@ffflorian/xkcdjs": "2.2.13",
-    "@wireapp/bot-api": "7.9.35",
+    "@wireapp/bot-api": "7.9.36",
     "date-fns": "2.13.0",
     "dotenv": "8.2.0",
     "jpeg-js": "0.4.0",
