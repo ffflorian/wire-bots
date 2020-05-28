@@ -1312,10 +1312,10 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@wireapp/api-client@11.19.0":
-  version "11.19.0"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.19.0.tgz#7f8b89b557ea15b570ea7fab3380ef5a324c7987"
-  integrity sha512-zi4pAdDYSj6XLOkYgfCjqxI5bDb0ZSJNSl+MWOXn79P00kDUOzBOf3Rmp296eWbU4Xrszuf/gSqaFSalSUnPVA==
+"@wireapp/api-client@11.19.1":
+  version "11.19.1"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.19.1.tgz#d2d186aafbb0f711d44fd88b003e585b6d53ce5d"
+  integrity sha512-nsCQb93g6tka+bCQ6An//+VBhsYFg0evdSv9suFa0eT5Cxj9iKOApxXSbkfFVW0c9Te1fSzh1ABQ9GStrFc1iA==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
@@ -1329,14 +1329,14 @@
     tough-cookie "4.0.0"
     ws "7.2.5"
 
-"@wireapp/bot-api@7.9.42":
-  version "7.9.42"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.9.42.tgz#a19a7e8a7527f002f418f025dcb37a7398cbf2f0"
-  integrity sha512-4vQdRTYQ2f3heQx4i5xczSgqxMTQxapuaGeT2Ld6xij1x+7dMP6Tmc1CDvMGOHzFqa+b5v/0Q9XFQHJVucjbxg==
+"@wireapp/bot-api@7.9.43":
+  version "7.9.43"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.9.43.tgz#2d0a9c5577bd797abd56fe150245605a8702a34c"
+  integrity sha512-jjgrUE8va6h6m4JOqMshJSk25kq9269sfwy3BVCPQ2hggWbIN5lXFNr/vD7gjz6gyLRWPwheOxSDrtdiyzz6Xw==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "*"
-    "@wireapp/core" "16.9.10"
+    "@wireapp/core" "16.9.11"
     pure-uuid "1.6.0"
 
 "@wireapp/cbor@4.6.6":
@@ -1358,33 +1358,33 @@
     platform "1.3.5"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@16.9.10":
-  version "16.9.10"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.9.10.tgz#c54eaf1e526920c8304bd1dbff8f6c0eba7d647f"
-  integrity sha512-phFBY4NJ5iBIKqRzz85ZPExW8h5gOEHjaopTj5dnmbU+FtrZdPra52qKFwJlQ90xB5U0CgyK4WDH1Sqv2dBWkA==
+"@wireapp/core@16.9.11":
+  version "16.9.11"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.9.11.tgz#ea0c811339b3c570eff273381f5d7b06a8fce7b9"
+  integrity sha512-+izXXBRA1R1WnIHBPQovwKpK+w1LpLkUmaGrZpwVHytukWMrMg2Yr6VnxgJEFHPsYRuTpeHWqOBDyKXrXJ/eXA==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "11.19.0"
-    "@wireapp/cryptobox" "12.2.10"
+    "@wireapp/api-client" "11.19.1"
+    "@wireapp/cryptobox" "12.2.11"
     "@wireapp/protocol-messaging" "1.25.4"
-    "@wireapp/store-engine" "4.5.4"
+    "@wireapp/store-engine" "4.5.5"
     bazinga64 "5.7.5"
     hash.js "1.1.7"
     logdown "3.3.1"
     protobufjs "6.8.9"
     pure-uuid "1.6.0"
 
-"@wireapp/cryptobox@12.2.10":
-  version "12.2.10"
-  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.2.10.tgz#a35f505f45dab147f2d4c9fee3af66a0f495abd0"
-  integrity sha512-VlROcwgaDR3EWDtnQI8kxsCbnpXqdPzMMZFcAV0dvEawv1htg77P8KO7Sdsv/YilnRW7npGSCUYe9ZnJOLzh/A==
+"@wireapp/cryptobox@12.2.11":
+  version "12.2.11"
+  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.2.11.tgz#bd06215da96d1831a4c2ee14feb581630d0fed07"
+  integrity sha512-+EWzZbMinOd1EJDKDCjCoFAGcDzH1orfYpMfAF3dWOLlytK/pmqgT4b+g8M9P5v3tIWNdIylcAzoG7vXx/iDvA==
   dependencies:
     "@types/node" "~12"
     "@wireapp/lru-cache" "3.6.6"
     "@wireapp/priority-queue" "1.6.3"
     "@wireapp/proteus" "9.8.8"
-    "@wireapp/store-engine" "4.5.4"
+    "@wireapp/store-engine" "4.5.5"
     bazinga64 "5.7.5"
     logdown "3.3.1"
 
@@ -1422,10 +1422,10 @@
   dependencies:
     protobufjs "6.8.8"
 
-"@wireapp/store-engine@4.5.4":
-  version "4.5.4"
-  resolved "https://registry.npmjs.org/@wireapp/store-engine/-/store-engine-4.5.4.tgz#96d29098eda606398967faecb4fe0ddfeb181f78"
-  integrity sha512-EjuMKCA0ovma0W765cqGQM+TVTvPlWGmVUuNwzlmfsBaaRhWoQkTKaD5+XxFj+bx9vHZnpshU8uDMsfdtP3xJg==
+"@wireapp/store-engine@4.5.5":
+  version "4.5.5"
+  resolved "https://registry.npmjs.org/@wireapp/store-engine/-/store-engine-4.5.5.tgz#71f83894181b5ef10b7cc3b1fc2b9ac251b24cb8"
+  integrity sha512-mU3/gj8fNY6LPZwG7BWtK63kmckn7nJTfeWJJ8F9Q6vMhqRHwNCIKeH5yt8AGmUjnSrsdNHy2qIh7EnD2IGSVQ==
   dependencies:
     "@types/node" "~12"
 
