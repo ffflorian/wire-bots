@@ -3,7 +3,7 @@
   "dependencies": {
     "@wireapp/bot-api": "7.9.44",
     "date-fns": "2.14.0",
-    "libraries.io": "2.2.9",
+    "libraries.io": "2.2.10",
     "logdown": "3.3.1",
     "pm2": "4.4.0",
     "request": "2.88.2"
