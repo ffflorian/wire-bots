@@ -2941,17 +2941,17 @@ eslint-plugin-jasmine@4.1.1:
   resolved "https://registry.npmjs.org/eslint-plugin-jasmine/-/eslint-plugin-jasmine-4.1.1.tgz#afdf8ca6a91e85041d9e0fb650af446874bf8852"
   integrity sha512-uS7kvt7RPUB/gLDwhJ/Ax0APrmkj7In8VJWkiZLYHafz2Ix74mMRJx82YZZ3zHRa/YOuTL+ig6dW/aKwdNzUuw==
 
-eslint-plugin-jsdoc@27.0.7:
-  version "27.0.7"
-  resolved "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-27.0.7.tgz#de1211c0e5b915f9f2dc13bc58dc19acf5d05d1a"
-  integrity sha512-pJKQ8Nby/bQ4VjMtYF26cVU5/jckpHIN5VYij61Ie3ZQIURySh1ThOoZX7IVBYNakpRxsrCwbGmMelsxbjivVg==
+eslint-plugin-jsdoc@28.5.1:
+  version "28.5.1"
+  resolved "https://registry.npmjs.org/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-28.5.1.tgz#5a95ee8705af389ba2062a1036be6077b5e62f3f"
+  integrity sha512-1XSWu8UnGwqO8mX3XKGofffL83VRt00ptq0m5OrTLFDN3At4x+/pJ8YHJONKhGC35TtjskcS9/RR6F9pjQ8c+w==
   dependencies:
     comment-parser "^0.7.5"
     debug "^4.1.1"
-    jsdoctypeparser "^6.1.0"
+    jsdoctypeparser "^7.0.0"
     lodash "^4.17.15"
     regextras "^0.7.1"
-    semver "^6.3.0"
+    semver "^7.3.2"
     spdx-expression-parse "^3.0.1"
 
 eslint-plugin-no-unsanitized@3.1.2:
@@ -4384,10 +4384,10 @@ jsbn@~0.1.0:
   resolved "https://registry.npmjs.org/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdoctypeparser@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/jsdoctypeparser/-/jsdoctypeparser-6.1.0.tgz#acfb936c26300d98f1405cb03e20b06748e512a8"
-  integrity sha512-UCQBZ3xCUBv/PLfwKAJhp6jmGOSLFNKzrotXGNgbKhWvz27wPsCsVeP7gIcHPElQw2agBmynAitXqhxR58XAmA==
+jsdoctypeparser@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/jsdoctypeparser/-/jsdoctypeparser-7.0.0.tgz#957192fbcb8c574240092cca4635383a6ed706eb"
+  integrity sha512-6vWPn5qSy+MbgCVjXsQKVkRywhs+IxFU7Chw72DKsWoGueYp6QX8eTc55+EA0yPGYfhmglb1gfi283asXirfGQ==
 
 jsesc@^2.5.1:
   version "2.5.2"
@@ -6598,7 +6598,7 @@ semver-regex@^2.0.0:
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
 
-semver@6.3.0, semver@^6.0.0, semver@^6.2.0, semver@^6.3.0:
+semver@6.3.0, semver@^6.0.0, semver@^6.2.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
