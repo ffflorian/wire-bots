@@ -1310,10 +1310,10 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@wireapp/api-client@11.20.1":
-  version "11.20.1"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.20.1.tgz#7d080bb71b76a4089122a3d14a0eaa4db1461dfa"
-  integrity sha512-bDvyOo/lxozo64Dr/mN/MDW8XTrzUt1bKmqh4/5E9t86fduX/n7TK13PJFhfGprKr0m2Yk3ZJZXYSPa0ijEtZg==
+"@wireapp/api-client@11.20.4":
+  version "11.20.4"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.20.4.tgz#8e90411ae28a78df2761441641f163c3fe8c03e3"
+  integrity sha512-OSdXvBDJmSIapzNbMWch8gq+IR+UiGNZyHPuUeoW8sCK4mYnWk6xZOw9576PcOJncXNSecfXc3/TaUZEQ9ScWg==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
@@ -1327,14 +1327,14 @@
     tough-cookie "4.0.0"
     ws "7.2.5"
 
-"@wireapp/bot-api@7.10.1":
-  version "7.10.1"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.10.1.tgz#e9da6cc2a6f078d8bbe5f181065f96189c5bff65"
-  integrity sha512-ilaMcDXAoVRdizmzIIv60zJJRYGvmDAjZnc1Xk9C51IstEWyLwgSFmDlW/iYcE7fh1Z5Ay0YwQ+We8t7P6x9uQ==
+"@wireapp/bot-api@7.10.4":
+  version "7.10.4"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.10.4.tgz#e12a8b1f669493eba6850ad15ad219e702001c0b"
+  integrity sha512-eJg1EENQDVtV+aJOHBq/h1JBuyYwXUAXcnwZtjSgIg4pLeykhZwnMWKtkiwkmbK0r/7oCvig0Ve8LSENB2GtBA==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "*"
-    "@wireapp/core" "16.10.1"
+    "@wireapp/core" "16.10.4"
     pure-uuid "1.6.0"
 
 "@wireapp/cbor@4.6.7":
@@ -1356,14 +1356,14 @@
     platform "1.3.5"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@16.10.1":
-  version "16.10.1"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.10.1.tgz#6963bee32fe84c97b30d7011e7a316e8805dee56"
-  integrity sha512-wivCBmsb13UGic5ZY/MNAeG+B/YZp36sQdAz6XSuXHFMGTygl7pqXkg1u1voPChEMI7ce+zSppvOGPx1s+Fwgw==
+"@wireapp/core@16.10.4":
+  version "16.10.4"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.10.4.tgz#0291466c736c5ea2aa198c36abb0693dd12a01a6"
+  integrity sha512-CO8XVq1OXlhhxo4MKZEP47Q8jCuF96RGXGkRjzrpyRQz0SoL5aRAmKW6Ega9wZKt/bLaO1h1KUL+K+AFpX/Hjg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "11.20.1"
+    "@wireapp/api-client" "11.20.4"
     "@wireapp/cryptobox" "12.2.12"
     "@wireapp/protocol-messaging" "1.25.4"
     "@wireapp/store-engine" "4.5.6"
