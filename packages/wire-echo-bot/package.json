@@ -1,7 +1,7 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
   "dependencies": {
-    "@wireapp/bot-api": "7.10.5",
+    "@wireapp/bot-api": "7.10.8",
     "date-fns": "2.14.0",
     "dotenv": "8.2.0",
     "logdown": "3.3.1",
