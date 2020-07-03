@@ -25,7 +25,7 @@ export class MainHandler extends MessageHandler {
     };
   };
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is weather bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-weather-bot`;
+  private readonly helpText = `**Hello!** 😎 This is weather bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/main/packages/wire-weather-bot`;
   private readonly logger: logdown.Logger;
   private readonly weatherService: WeatherService;
 

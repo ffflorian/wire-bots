@@ -28,7 +28,7 @@
   "main": "dist/index.js",
   "name": "@ffflorian/wire-xkcd-bot",
   "private": true,
-  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot",
+  "repository": "https://github.com/ffflorian/wire-bots/tree/main/packages/wire-xkcd-bot",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",

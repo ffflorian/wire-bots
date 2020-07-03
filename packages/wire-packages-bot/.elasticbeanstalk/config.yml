@@ -1,5 +1,5 @@
 branch-defaults:
-  master:
+  main:
     environment: wire-packages-bot
 deploy:
   artifact: dist/wire-packages-bot.zip

@@ -23,7 +23,7 @@ export class MainHandler extends MessageHandler {
     };
   };
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-xkcd-bot.\n\nPlease also visit https://xkcd.com.`;
+  private readonly helpText = `**Hello!** 😎 This is XKCD bot v${version} speaking.\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/main/packages/wire-xkcd-bot.\n\nPlease also visit https://xkcd.com.`;
   private readonly logger: logdown.Logger;
   private readonly xkcdService: XKCDService;
 

@@ -23,7 +23,7 @@
   "main": "dist/index.js",
   "name": "@ffflorian/wire-echo-bot",
   "private": true,
-  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-echo-bot",
+  "repository": "https://github.com/ffflorian/wire-bots/tree/main/packages/wire-echo-bot",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",

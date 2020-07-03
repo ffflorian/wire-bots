@@ -1,5 +1,5 @@
 branch-defaults:
-  master:
+  main:
     environment: wire-xkcd-bot
 deploy:
   artifact: dist/wire-xkcd-bot.zip

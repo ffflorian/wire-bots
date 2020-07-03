@@ -32,7 +32,7 @@ export class MainHandler extends MessageHandler {
     };
   };
   private readonly feedbackConversationId?: string;
-  private readonly helpText = `**Hello!** 😎 This is packages bot v${version} speaking.\nHere you can search for all the packages on Bower, npm, TypeSearch and crates.io. 📦\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/master/packages/wire-packages-bot`;
+  private readonly helpText = `**Hello!** 😎 This is packages bot v${version} speaking.\nHere you can search for all the packages on Bower, npm, TypeSearch and crates.io. 📦\n\nAvailable commands:\n${CommandService.formatCommands()}\n\nMore information about this bot: https://github.com/ffflorian/wire-bots/tree/main/packages/wire-packages-bot`;
   private readonly logger: logdown.Logger;
   private readonly searchService: SearchService;
 

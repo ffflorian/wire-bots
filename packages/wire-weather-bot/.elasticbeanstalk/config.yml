@@ -1,5 +1,5 @@
 branch-defaults:
-  master:
+  main:
     environment: wire-weather-bot
 deploy:
   artifact: dist/wire-weather-bot.zip

@@ -23,7 +23,7 @@
   "main": "dist/index.js",
   "name": "@ffflorian/wire-weather-bot",
   "private": true,
-  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-weather-bot",
+  "repository": "https://github.com/ffflorian/wire-bots/tree/main/packages/wire-weather-bot",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",
