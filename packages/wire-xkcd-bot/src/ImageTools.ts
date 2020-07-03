@@ -4,7 +4,7 @@ import * as logdown from 'logdown';
 import {ImageData as XKCDImageData} from '@ffflorian/xkcdjs';
 import * as JPEGReader from 'jpeg-js';
 import {GifReader as GIFReader} from 'omggif';
-import PNGReader = require('png.js');
+import PNGReader from 'png.js';
 
 const logger = logdown('wire-xkcd-bot/ImageTools', {
   logger: console,

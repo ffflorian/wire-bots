@@ -1,0 +1,43 @@
+{
+  "author": "Florian Keller <github@floriankeller.de>",
+  "dependencies": {
+    "@wireapp/bot-api": "7.9.16",
+    "axios": "0.19.2",
+    "date-fns": "2.12.0",
+    "dotenv": "8.2.0",
+    "imgflip.com": "2.2.2",
+    "jpeg-js": "0.4.0",
+    "logdown": "3.3.1",
+    "pm2": "4.4.0"
+  },
+  "devDependencies": {
+    "@ffflorian/jszip-cli": "3.1.0",
+    "@types/node": "~12",
+    "@types/omggif": "1.0.0",
+    "@types/png.js": "0.2.0",
+    "cross-env": "7.0.2",
+    "rimraf": "3.0.2",
+    "ts-node": "8.9.0",
+    "typescript": "3.8.3"
+  },
+  "engines": {
+    "node": ">= 10.9"
+  },
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "name": "@ffflorian/wire-imgflip-bot",
+  "private": true,
+  "repository": "https://github.com/ffflorian/wire-bots/tree/master/packages/wire-imgflip-bot",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "deploy": "yarn dist && yarn zip && eb deploy -nh",
+    "dist": "yarn clean && yarn build",
+    "lint": "tslint -p tsconfig.json --fix",
+    "start": "pm2 start && pm2 logs",
+    "start:dev": "cross-env NODE_ENV=development ts-node src/index.ts",
+    "test": "yarn dist && exit 0",
+    "zip": "jszip-cli"
+  },
+  "version": "1.0.0"
+}
