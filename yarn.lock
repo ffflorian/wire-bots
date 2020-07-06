@@ -190,10 +190,10 @@
     logdown "3.3.0"
     progress "2.0.3"
 
-"@ffflorian/prettier-config@0.0.6":
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.0.6.tgz#2417939d5c5c658e3f13783eb923fbdef3c78ff2"
-  integrity sha512-+CgETIi1bQ5SHmQ+aGABf1AUJwoEePTiYhYoFMEXz41c09z6ENymNnUdA9Hy6vrOxGs0sa2rLMCfir+6bufjKw==
+"@ffflorian/prettier-config@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.0.tgz#a0477aca8fba17f9eeb59da17f4667fae215ddfd"
+  integrity sha512-s55bVfNTEHmO+jdNIo6sMD7xdtiNFTWjmIjCFTnH31awMz9VGQ65cHQNKpjSufKpe/W4Kgm+LMEjvOM5WapKKQ==
 
 "@ffflorian/xkcdjs@2.2.18":
   version "2.2.18"
