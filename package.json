@@ -3,7 +3,7 @@
   "description": "My Wire bots using the Wire Bot API.",
   "devDependencies": {
     "@ffflorian/eslint-config": "0.6.1",
-    "@ffflorian/prettier-config": "0.1.0",
+    "@ffflorian/prettier-config": "0.1.1",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
     "babel-eslint": "10.1.0",
