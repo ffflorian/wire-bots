@@ -1,5 +1,5 @@
 {
-  "author": "Florian Keller <github@floriankeller.de>",
+  "author": "Florian Keller <git@ffflorian.de>",
   "dependencies": {
     "@wireapp/bot-api": "7.10.23",
     "date-fns": "2.15.0",

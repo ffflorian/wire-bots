@@ -1,5 +1,5 @@
 {
-  "author": "Florian Keller <github@floriankeller.de>",
+  "author": "Florian Keller <git@ffflorian.de>",
   "description": "My Wire bots using the Wire Bot API.",
   "devDependencies": {
     "@ffflorian/eslint-config": "0.6.1",
