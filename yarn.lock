@@ -1315,15 +1315,15 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@wireapp/api-client@11.21.5":
-  version "11.21.5"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.21.5.tgz#57b9cc02818963238450550422eba4156dd5c370"
-  integrity sha512-MYT4cXoLG/xP+aII0/5ZfBxVQl+A4YFflk1/V297ASrNpfWrIIUGSNAK26YydCvHBWpUmyCDqNpmN5iqojAzoQ==
+"@wireapp/api-client@11.21.8":
+  version "11.21.8"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.21.8.tgz#ab5d528e9d500757311ea18b3a70a033dd257c99"
+  integrity sha512-teYTDkCMtEtZBNIocRr2D1ZVL0sWBQFa2LDC8vdoAC7QSVfZimmj/3MWVgHV54ySMnKDiPkiOKRgzHpSMPdAEg==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "4.0.0"
-    "@wireapp/commons" "3.6.3"
+    "@wireapp/commons" "3.7.1"
     "@wireapp/priority-queue" "1.6.6"
     axios "0.19.2"
     logdown "3.3.1"
@@ -1332,13 +1332,13 @@
     tough-cookie "4.0.0"
     ws "7.3.1"
 
-"@wireapp/bot-api@7.10.26":
-  version "7.10.26"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.10.26.tgz#49d73a059bce502a702fb9decb3159401db234c9"
-  integrity sha512-+4c242WHpApA8tEAC+IJKijVFed2xKSfNWoZnTA+PKMCBOMp7RBoDApiHLhD9cBKjS8mICt9oK9pwMV05RjaRw==
+"@wireapp/bot-api@7.10.30":
+  version "7.10.30"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.10.30.tgz#abd0c69df491abb67bbc121dbf267eb4c149d388"
+  integrity sha512-zOPDobdki2QNqVsgPkZAuzRs1J8IJv0ZbspanawhUsXJ13A8qfiEqCvUR3AAhJctnBs4Qfh+9Vw6euMu5xjOrQ==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "16.10.25"
+    "@wireapp/core" "16.10.29"
     uuidjs "4.2.5"
 
 "@wireapp/cbor@4.6.10":
@@ -1346,10 +1346,10 @@
   resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.6.10.tgz#e95e9a0a3cd9b77fb8552267e46d79ee5aa0d8cd"
   integrity sha512-vc4XI+HSsmxl0VtPDOwkL83kQXxpy7lRnIypLgP/Fx9XX4e8/BKcKtIPhClkQYCWwFHVBFBvfnY7htgZr11HzQ==
 
-"@wireapp/commons@3.6.3":
-  version "3.6.3"
-  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.6.3.tgz#d02701ce7edb39e9e5ed37044c66c2af2947e976"
-  integrity sha512-UcEcTz+BkW5QD2yH3KPYX6QQa7BG4hyIBK9/aBb6ZtCu7YeaA5OUZkcf/Qh8trIASMCr/PM1x6MEpNwN3lpmiA==
+"@wireapp/commons@3.7.1":
+  version "3.7.1"
+  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.7.1.tgz#1158ffda706a8d30b0f3420ce608816c58c63d1b"
+  integrity sha512-l1apgc0fuS9iVQ4V7am1io43W2+kGkVT2du7bpu/5XypMsGviccwGX0u+3QJSK6WXvyxDTFg4gqI2290jU5R9w==
   dependencies:
     "@types/fs-extra" "8.1.0"
     "@types/node" "~12"
@@ -1357,17 +1357,17 @@
     ansi-regex "5.0.0"
     fs-extra "9.0.1"
     logdown "3.3.1"
-    platform "1.3.5"
+    platform "1.3.6"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@16.10.25":
-  version "16.10.25"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.10.25.tgz#10beb35a8b2a73a403bff6ae3865c2a40e6976a9"
-  integrity sha512-eSF9qFPy03lYiC4irbHeZ/i7dm+RuGpWHELsTmg62hghW/3MdrnVdpH6lbT0Dhzi+Qdq8wmcxRghi5F12auXFQ==
+"@wireapp/core@16.10.29":
+  version "16.10.29"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.10.29.tgz#a392cbc6cfd852e9e000eae3b286c796f6cd30be"
+  integrity sha512-P+dUlcCV3XVPfs5/v8ykHsGbG4zrGMv+s1afTS5V+FG1Quy17oKONvjSrY4PlEkOmKi2WJsRkH1nwIofUPXmAg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "11.21.5"
+    "@wireapp/api-client" "11.21.8"
     "@wireapp/cryptobox" "12.2.21"
     "@wireapp/protocol-messaging" "1.25.4"
     "@wireapp/store-engine" "4.5.8"
@@ -5846,10 +5846,10 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-platform@1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npmjs.org/platform/-/platform-1.3.5.tgz#fb6958c696e07e2918d2eeda0f0bc9448d733444"
-  integrity sha512-TuvHS8AOIZNAlE77WUDiR4rySV/VMptyMfcfeoMgs4P8apaZM3JrnbzBiixKUv+XR6i+BXrQh8WAnjaSPFO65Q==
+platform@1.3.6:
+  version "1.3.6"
+  resolved "https://registry.npmjs.org/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
+  integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
