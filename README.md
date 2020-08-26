@@ -1,4 +1,4 @@
-## wire-bots [![Build Status](https://github.com/ffflorian/wire-bots/workflows/Build/badge.svg)](https://github.com/ffflorian/wire-bots/actions/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/wire-bots)](https://dependabot.com)
+## wire-bots [![Build Status](https://github.com/ffflorian/wire-bots/workflows/Build/badge.svg)](https://github.com/ffflorian/wire-bots/actions/)
 
 My [Wire](https://wire.com) bots using the [Wire Bot API](https://npmjs.com/@wireapp/bot-api).
 
