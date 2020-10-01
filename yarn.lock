@@ -211,13 +211,13 @@
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
   integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
-"@ffflorian/xkcdjs@2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.3.1.tgz#4cd965966b033843ba8dd1bccf01d1e08afcadd6"
-  integrity sha512-Kfli1a1aYW51CV//GyxXR3a9h/ndg5CRJqjsql48vuA1jzG2kuFfTKFAmpG6SeqT/b/1qyqW8MBZKYZHHVA3Aw==
+"@ffflorian/xkcdjs@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-2.4.0.tgz#b58d7985b9c7f3680067ca4a1bfa733cf895e5bb"
+  integrity sha512-/GXiaW7+PjhqHJ996uE20P2ctNkKNJbfNY1r2CJ8bSdxwMryyGkXks/upx4oS44agfCI1R2OnjgzEHsyRYx7Ig==
   dependencies:
     axios "0.20.0"
-    commander "6.0.0"
+    commander "6.1.0"
 
 "@lerna/add@3.21.0":
   version "3.21.0"
@@ -2373,10 +2373,10 @@ commander@4.0.1:
   resolved "https://registry.npmjs.org/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
   integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
 
-commander@6.0.0, commander@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-6.0.0.tgz#2b270da94f8fb9014455312f829a1129dbf8887e"
-  integrity sha512-s7EA+hDtTYNhuXkTlhqew4txMZVdszBmKWSPEMxGr8ru8JXR7bLUFIAtPhcSuFdJQ0ILMxnJi8GkQL0yvDy/YA==
+commander@6.1.0, commander@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-6.1.0.tgz#f8d722b78103141006b66f4c7ba1e97315ba75bc"
+  integrity sha512-wl7PNrYWd2y5mp1OK/LhTlv8Ff4kQJQRXXAvF+uU/TPNiVJUxZLRYGj/B0y/lPGAVcSbJqH2Za/cvHmrPMC8mA==
 
 commander@~2.20.3:
   version "2.20.3"
