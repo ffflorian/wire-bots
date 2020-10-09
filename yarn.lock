@@ -1427,15 +1427,15 @@
     "@typescript-eslint/types" "4.0.0"
     eslint-visitor-keys "^2.0.0"
 
-"@wireapp/api-client@11.27.1":
-  version "11.27.1"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.27.1.tgz#8eb891c20e3b7aceb8fe0c5da3e11f2ddb99bf1b"
-  integrity sha512-XOVTNiV+v0R+T/lMNoRPGAohHFpdf6p43IMyoocHPpyLbvM+bdeu9ESYvkDzKp+dvgW1+WV5Ni/rbC1zQGeKcw==
+"@wireapp/api-client@11.27.3":
+  version "11.27.3"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.27.3.tgz#aacef8f46e4734b599103ef702f521f0cfcbbd5c"
+  integrity sha512-OCd2R1XvslzvPzMgOu60X3dsU9bVIqDcuIg3aEAuZtZuSsT12M+0ADyyrRebhQ7YOUKfaVHUS9Y96j6aBFPZ0Q==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "4.0.0"
-    "@wireapp/commons" "3.8.4"
+    "@wireapp/commons" "3.8.6"
     "@wireapp/priority-queue" "1.6.9"
     axios "0.20.0"
     logdown "3.3.1"
@@ -1444,24 +1444,24 @@
     tough-cookie "4.0.0"
     ws "7.3.1"
 
-"@wireapp/bot-api@7.11.19":
-  version "7.11.19"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.19.tgz#bb1032721738f60ed3717d32869d09b5e26ba0eb"
-  integrity sha512-Wmn0piqBgCmYz/uU59C44Yqahftck/sLtZAoLsRWvlQbZ9aDESCxInR7VlcwgvB9je8NCnBocMUGT/qSPYQ0oA==
+"@wireapp/bot-api@7.11.21":
+  version "7.11.21"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.21.tgz#adaec870f252874a273ebec6bee21a50bc02a5f5"
+  integrity sha512-GJBDPneBB/9x/BZ1Gk1sYIiDaDY3mDm/ypyqGz7EU+K1ai71tTv8l4NOv/EyMymna1VNUhCddQps4HbQCHZnng==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "16.12.19"
+    "@wireapp/core" "16.12.21"
     uuidjs "4.2.6"
 
-"@wireapp/cbor@4.6.13":
-  version "4.6.13"
-  resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.6.13.tgz#fcaae3eeffa428fa1d3fa0effa2393b87384d12f"
-  integrity sha512-BPXSAL9aFu6gKOHBQYSOx8ly7is58RXvsKMTtADm9uYR62+asWbmVAuHP24tPlP+cv4RIM+XI7qFYcfxoMWJzg==
+"@wireapp/cbor@4.6.14":
+  version "4.6.14"
+  resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.6.14.tgz#989b02856b377e14cc2407ecb868e0e00722210c"
+  integrity sha512-6NAoucNBAVFoE2V8bmDDEuNmMlDTFZ7xiUcy9FBxqwTtyRHgCgd5aYsr6SJeDpCjEruQUdoYeXhM9HA253lwxQ==
 
-"@wireapp/commons@3.8.4":
-  version "3.8.4"
-  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.8.4.tgz#ed8c5259f86e10d57edc7363863be0e51dbee572"
-  integrity sha512-c8NeGSE+Pq4yPoYHJHYcdQNY0SUdw8JQnb86y2MIKTSms9rP4qddhhTLbryFz6Ol0ksC1m1pKggZ44zEyTq4XQ==
+"@wireapp/commons@3.8.6":
+  version "3.8.6"
+  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-3.8.6.tgz#e68eb76a0b89eb968d6ec06c39daf3ab736acb8d"
+  integrity sha512-d2QNY9WY3egITgY9irVzi0fAhvDzCycd/pyE1XqXBaLchmIHEiD3/DpeFLqCxhzAFAtgmcUwOtTOEaC8pXd1Vg==
   dependencies:
     "@types/fs-extra" "8.1.0"
     "@types/node" "~12"
@@ -1472,40 +1472,40 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@16.12.19":
-  version "16.12.19"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.12.19.tgz#130abd92db111274566d28a1b87ae2ca8a74c2a4"
-  integrity sha512-QZ4oGFUZHx81UOfmkKZHhS2dWVHduAaHPXtd4IL9I5rBHwBVINu1j7wZyhRAEg3R1Xu4L79jGfKD2cjmoDZ34Q==
+"@wireapp/core@16.12.21":
+  version "16.12.21"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.12.21.tgz#e4abe2385e78bbe9553b4df019c92af6edd21457"
+  integrity sha512-U1owekr4idJeZoZeYYW4jknWl1zK2khxndTTuWz7xu9p3OaD5fo0cjzc52eMau2Qpq0vIYF+8Z/o+RN0Z6Q0Sw==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "11.27.1"
-    "@wireapp/cryptobox" "12.2.25"
+    "@wireapp/api-client" "11.27.3"
+    "@wireapp/cryptobox" "12.2.26"
     "@wireapp/protocol-messaging" "1.25.4"
-    "@wireapp/store-engine" "4.5.11"
-    bazinga64 "5.7.13"
+    "@wireapp/store-engine" "4.5.12"
+    bazinga64 "5.7.14"
     hash.js "1.1.7"
     logdown "3.3.1"
     protobufjs "6.10.1"
     uuidjs "4.2.6"
 
-"@wireapp/cryptobox@12.2.25":
-  version "12.2.25"
-  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.2.25.tgz#62a5ef2fabc6bec66d3f1f30670d5a14e631b28a"
-  integrity sha512-bXKRwycavq6bPK050yApSbKXJkglPkfgO2m5BAS3XbspCwutxv/zxbVW2ctF3+DIi67UBrnx6S40B0ssjDaZww==
+"@wireapp/cryptobox@12.2.26":
+  version "12.2.26"
+  resolved "https://registry.npmjs.org/@wireapp/cryptobox/-/cryptobox-12.2.26.tgz#317a93d2ef8203ac0130f16d09e965baf1caf4b5"
+  integrity sha512-S371k6Y7mqCmKbgzagOI4MF/AD/ILOJeq429rx5Qto306fhvG125PIcDoJPE+JGRVZnxljI4vKwSBB+p4f3DYA==
   dependencies:
     "@types/node" "~12"
-    "@wireapp/lru-cache" "3.7.2"
+    "@wireapp/lru-cache" "3.7.3"
     "@wireapp/priority-queue" "1.6.9"
-    "@wireapp/proteus" "9.8.17"
-    "@wireapp/store-engine" "4.5.11"
-    bazinga64 "5.7.13"
+    "@wireapp/proteus" "9.8.18"
+    "@wireapp/store-engine" "4.5.12"
+    bazinga64 "5.7.14"
     logdown "3.3.1"
 
-"@wireapp/lru-cache@3.7.2":
-  version "3.7.2"
-  resolved "https://registry.npmjs.org/@wireapp/lru-cache/-/lru-cache-3.7.2.tgz#59cf4c31aa2b35e478b7edb0ad8582a3955d0894"
-  integrity sha512-SRtO3jq3v3zR2r2+Y8KHi9fmnGnUQA3eyMcvj3Ks/6tdc/qA8J4GqsBuKvzg1n9LuOLzr3XiY0knm1Rl4eNjzw==
+"@wireapp/lru-cache@3.7.3":
+  version "3.7.3"
+  resolved "https://registry.npmjs.org/@wireapp/lru-cache/-/lru-cache-3.7.3.tgz#213510ec70d05fd474dc06ba7a9aa3fa01ae2127"
+  integrity sha512-eYrGRrjYsV51hbXBHtVc5ot6QgQrE1QNnT+yybfmVscyVjM0RtHJcTry3oeQIgv33d3RlDbsu5FlzfumBzaINg==
 
 "@wireapp/priority-queue@1.6.9":
   version "1.6.9"
@@ -1516,16 +1516,16 @@
     logdown "3.3.1"
     uuidjs "4.2.6"
 
-"@wireapp/proteus@9.8.17":
-  version "9.8.17"
-  resolved "https://registry.npmjs.org/@wireapp/proteus/-/proteus-9.8.17.tgz#7c8ffa569d843d7bb9748c40d6a6eb32e9492bf8"
-  integrity sha512-GHgBDkyUdvFrWdnYq7wac9mfsdcg69MSqnv2IcYoGNtJS7L/HxmYCPMQZOy0RJicBuqD9gsR+Fipvy3hyY7aEg==
+"@wireapp/proteus@9.8.18":
+  version "9.8.18"
+  resolved "https://registry.npmjs.org/@wireapp/proteus/-/proteus-9.8.18.tgz#a56a6520180ff93834d817e3031db07cf4c68990"
+  integrity sha512-ZCpK9NfwCao/0V9KzIefxcxX2ndJxkQMndzMWcs0FvlUWRuH2UShr+EqxpexIuECRGjSr8RjwipKxaPnAUJIgg==
   dependencies:
     "@types/chai" "4.2.12"
     "@types/ed2curve" "0.2.2"
     "@types/libsodium-wrappers-sumo" "0.7.4"
     "@types/node" "~12"
-    "@wireapp/cbor" "4.6.13"
+    "@wireapp/cbor" "4.6.14"
     ed2curve "0.3.0"
     libsodium-wrappers-sumo "0.7.8"
 
@@ -1536,10 +1536,10 @@
   dependencies:
     protobufjs "6.8.8"
 
-"@wireapp/store-engine@4.5.11":
-  version "4.5.11"
-  resolved "https://registry.npmjs.org/@wireapp/store-engine/-/store-engine-4.5.11.tgz#73e38ec9993196eb4a8b1d715fdac559c9b5d6be"
-  integrity sha512-/o6EZNtcTRDk63UCVdB0NIqEidw0g1uSVF52JZ8J89fsTaJRP6+9qCHx36fJ3GQNgkCkP1TQ6rfXhTfO3WtZRA==
+"@wireapp/store-engine@4.5.12":
+  version "4.5.12"
+  resolved "https://registry.npmjs.org/@wireapp/store-engine/-/store-engine-4.5.12.tgz#95e808ed22a179aa3b85db3f3d3809685e320e2e"
+  integrity sha512-bGkhGc1lHrhJ+QJ4o2DOiameSGPzibm1TqxfyMo98njr5nnasqYapSOtxKkEL58cBOBKuL2Q5hxqqUoLq81j+Q==
   dependencies:
     "@types/node" "~12"
 
@@ -1949,10 +1949,10 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
-bazinga64@5.7.13:
-  version "5.7.13"
-  resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.7.13.tgz#b1f685b4f7023e5085bfa275c8aad4a2b380ff8f"
-  integrity sha512-28fg37ByD++3FrQnGV9p1OLUiRiNNfx97928gpYgn+q8XcYhAs5KaEFWai8S8vU6VustZIXT2xHjFQKdCvNUcQ==
+bazinga64@5.7.14:
+  version "5.7.14"
+  resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.7.14.tgz#e248c06c61f7013498c2cc59b640f954933f4b02"
+  integrity sha512-iQGCVOliPhV0WD2Ez7UQwBtqouVXHdYF6SZi7JV6X+fhCWSMcMQXl4VEX43YYnwRgkkQuEVw7WBMZPb9W8oPWw==
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
