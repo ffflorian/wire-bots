@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
   process.env.NODE_DEBUG = '@wireapp/*,wire-echo-bot/*';
 }
 
-import {ClientType} from '@wireapp/api-client/dist/client';
+import {ClientType} from '@wireapp/api-client/src/client';
 import {Bot, BotConfig, BotCredentials} from '@wireapp/bot-api';
 import {MainHandler} from './MainHandler';
 

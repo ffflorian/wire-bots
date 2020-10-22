@@ -1,7 +1,7 @@
 import * as logdown from 'logdown';
 import {OwmApiClient as WeatherAPI} from 'openweathermap-api-client';
 
-import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/connection';
+import {Connection, ConnectionStatus} from '@wireapp/api-client/src/connection';
 import {MessageHandler} from '@wireapp/bot-api';
 import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
 import {TextContent} from '@wireapp/core/dist/conversation/content/';
