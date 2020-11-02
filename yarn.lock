@@ -211,12 +211,12 @@
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
   integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
-"@ffflorian/xkcdjs@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.0.0.tgz#4b91abc2c409ae66676e04485fa735aafbb2d46c"
-  integrity sha512-EURGIRw4Zv3LE8ijbWgAnSd66M0LzpG9tEXX54Kd9pxoVIzqzg5eAwD+gsOmuJ0rG2CRHaN8RBXBDbUCWCwZug==
+"@ffflorian/xkcdjs@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.0.1.tgz#c389cc3c8549e06739f05832003bc313ab65fc56"
+  integrity sha512-u5e+HKyvtBIfuQpKTLKf46MsWKCJGFNCuGum4OG+r6csbp4RRqDaAy5FfpHE0eYp2klgK9djnLhR5KmpeBwd+w==
   dependencies:
-    axios "0.20.0"
+    axios "0.21.0"
     commander "6.1.0"
 
 "@lerna/add@3.21.0":
@@ -1901,6 +1901,13 @@ axios@0.20.0:
   version "0.20.0"
   resolved "https://registry.npmjs.org/axios/-/axios-0.20.0.tgz#057ba30f04884694993a8cd07fa394cff11c50bd"
   integrity sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
+  dependencies:
+    follow-redirects "^1.10.0"
+
+axios@0.21.0:
+  version "0.21.0"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
   dependencies:
     follow-redirects "^1.10.0"
 
