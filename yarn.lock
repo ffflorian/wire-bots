@@ -1904,6 +1904,13 @@ axios@0.20.0:
   dependencies:
     follow-redirects "^1.10.0"
 
+axios@0.21.0:
+  version "0.21.0"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 axios@^0.18.0:
   version "0.18.1"
   resolved "https://registry.npmjs.org/axios/-/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
@@ -4792,12 +4799,12 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libraries.io@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.0.tgz#e1076e3bc666839a353dcac260ee790121e85b33"
-  integrity sha512-pGFmp8etl5xtpphJH+LTp+0vzGunNp9aaRXerQkGVvzaxOFyjQ0evRRiInUwPSrIJ5auTdxoQ7rXuxZ6ivOmfw==
+libraries.io@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.1.tgz#20e12a778b626edad0bb76fe22f885a02a051df4"
+  integrity sha512-xkUZi+I6s9v0BBEf5wV7Qw8ZAbvlCpOEzDLw3fc+w8no7wguRdS4mWCitFYmvgOMOzqdnS9UUm9ai6NFRNnS0A==
   dependencies:
-    axios "0.20.0"
+    axios "0.21.0"
 
 libsodium-sumo@^0.7.0:
   version "0.7.8"
