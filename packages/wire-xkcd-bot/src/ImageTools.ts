@@ -38,7 +38,7 @@ export async function parseImage(image: XKCDImageData): Promise<ImageContent> {
           height = png.getHeight();
           width = png.getWidth();
           logger.info(`Decoded image as PNG with size ${width}x${height}.`);
-          return resolve();
+          return resolve(undefined);
         });
       }).catch(error => logger.error('Failed to decode image as PNG.', error));
 
