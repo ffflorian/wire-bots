@@ -1,10 +1,10 @@
 import * as logdown from 'logdown';
 
-import {Connection, ConnectionStatus} from '@wireapp/api-client/dist/connection';
+import {Connection, ConnectionStatus} from '@wireapp/api-client/src/connection';
 import {MessageHandler} from '@wireapp/bot-api';
-import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/dist/conversation/';
-import {TextContent} from '@wireapp/core/dist/conversation/content/';
-import {QuotableMessage} from '@wireapp/core/dist/conversation/message/OtrMessage';
+import {PayloadBundle, PayloadBundleType, ReactionType} from '@wireapp/core/src/main/conversation/';
+import {TextContent} from '@wireapp/core/src/main/conversation/content/';
+import {QuotableMessage} from '@wireapp/core/src/main/conversation/message/OtrMessage';
 import {CommandService, CommandType, ParsedCommand} from './CommandService';
 import {formatUptime} from './utils';
 import {XKCDService} from './XKCDService';
