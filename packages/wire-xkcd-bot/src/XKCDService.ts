@@ -1,4 +1,4 @@
-import {ImageContent} from '@wireapp/core/dist/conversation/content/';
+import {ImageContent} from '@wireapp/core/src/main/conversation/content/';
 import * as ImageTools from './ImageTools';
 
 import {XKCD} from '@ffflorian/xkcdjs';

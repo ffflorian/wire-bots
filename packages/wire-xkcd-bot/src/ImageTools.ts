@@ -1,4 +1,4 @@
-import {ImageContent} from '@wireapp/core/dist/conversation/content/';
+import {ImageContent} from '@wireapp/core/src/main/conversation/content/';
 import * as logdown from 'logdown';
 
 import {ImageData as XKCDImageData} from '@ffflorian/xkcdjs';
