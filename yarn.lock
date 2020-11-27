@@ -1427,10 +1427,10 @@
     "@typescript-eslint/types" "4.0.0"
     eslint-visitor-keys "^2.0.0"
 
-"@wireapp/api-client@11.34.5":
-  version "11.34.5"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.34.5.tgz#fcfb55d51b403eb4fe50bc2de001bc7c6ab511c7"
-  integrity sha512-XUm3NueoZ7wQZbNA0+3rfEG0WBOtBNhA/kS6KOnE6u8Uz+qFjBZW3fc9bauD395oEdN+htJLFI1oOVtDZBBdFA==
+"@wireapp/api-client@11.34.6":
+  version "11.34.6"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-11.34.6.tgz#a2f20891b46a1682a95cef91cd0b5cc86148c86c"
+  integrity sha512-PQrAtjbXBcl+7sukgrV9vFZARJzZ7uz2DS6a1HO2vfXMjFwfGgKJ+NrZANOaWTW4Jk1yV91N8Y2y/SVL9VlDxg==
   dependencies:
     "@types/node" "~12"
     "@types/spark-md5" "3.0.2"
@@ -1445,13 +1445,13 @@
     tough-cookie "4.0.0"
     ws "7.3.1"
 
-"@wireapp/bot-api@7.11.70":
-  version "7.11.70"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.70.tgz#c9be6dfb62b51380edb12ba5fd0fbb52e7a79243"
-  integrity sha512-NXCJMEdizmAV3GnVK7gT4TeYjouoURN+SqzyFDxp7v0Y4qzQ4H4A20iiay/sRfBLx+F0Wa8IpHEbfXmGz7Y+vA==
+"@wireapp/bot-api@7.11.71":
+  version "7.11.71"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.71.tgz#a8ddece0164593543761be1c4c16572b1ac6409d"
+  integrity sha512-xMScFGqUySvrh0BVme9lKuqHW36BJbnBc6G3CVKcDXUbwoPQM8p/qCM/nL0FTDdzdmZ2acfiVfAYVM1Xar7Lcw==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "16.12.68"
+    "@wireapp/core" "16.12.69"
     uuidjs "4.2.6"
 
 "@wireapp/cbor@4.6.22":
@@ -1473,14 +1473,14 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@16.12.68":
-  version "16.12.68"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.12.68.tgz#582a5541da0c80fc82e535130334d662d10ef50f"
-  integrity sha512-G53CSxoITsgFAge+ZCXQs5xVOXw4IltvfqQWHvK7nTZJyyXNVBkG88ZbEoSPmwMtlDd4Bg0rATaxGZVA1Duz9A==
+"@wireapp/core@16.12.69":
+  version "16.12.69"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-16.12.69.tgz#2930332f0865613d2c41a8cac996f2593245bd5d"
+  integrity sha512-gsP8/8R7GDTdQ64eAXwCGj9v6ft2hEBM5dJ+mBw93vtyhQ5lotBX3Cdze9agWi1R0VEn6BBlZdxP2+7tWbxnGg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~12"
-    "@wireapp/api-client" "11.34.5"
+    "@wireapp/api-client" "11.34.6"
     "@wireapp/cryptobox" "12.2.41"
     "@wireapp/protocol-messaging" "1.25.4"
     "@wireapp/store-engine" "4.5.19"
