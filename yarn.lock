@@ -4796,12 +4796,12 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libraries.io@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.1.tgz#20e12a778b626edad0bb76fe22f885a02a051df4"
-  integrity sha512-xkUZi+I6s9v0BBEf5wV7Qw8ZAbvlCpOEzDLw3fc+w8no7wguRdS4mWCitFYmvgOMOzqdnS9UUm9ai6NFRNnS0A==
+libraries.io@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.2.tgz#20bcaebb397ecabb1bfbb67541b78b7815d8e04d"
+  integrity sha512-8WAawc5ZuruTrtcJ/Zx+QUGD8q+yaFKk1isgiP8m07tRZ1OZSWqmzHPucaXA5HCKEmLaaVoBQf+QS1SP+JJ58Q==
   dependencies:
-    axios "0.21.0"
+    axios "0.21.1"
 
 libsodium-sumo@^0.7.0:
   version "0.7.8"
