@@ -1417,15 +1417,15 @@
     "@typescript-eslint/types" "4.0.0"
     eslint-visitor-keys "^2.0.0"
 
-"@wireapp/api-client@12.1.2":
-  version "12.1.2"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-12.1.2.tgz#d921f01a2bf08695e90be728478b04094aac3d7a"
-  integrity sha512-mZ+1kTAeHYa2aLFfw6Xk8OKGzzrPgtU6nc6jg40aeni3PquByqXM2Iu0gruDeLLemHLRLFQmZf5yaWofsje6mA==
+"@wireapp/api-client@12.1.3":
+  version "12.1.3"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-12.1.3.tgz#cf3c18afbe0b8675ea2f61485c7a57b10fa3f95c"
+  integrity sha512-SmrETZC+BwmlGpni6jhabW1JzHvdQroWX8V00UaEfL5tl8VirUs/Qo7QKE0EamOv889A0FxNVv9KxQVRmMVUyg==
   dependencies:
     "@types/node" "~14"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "4.0.0"
-    "@wireapp/commons" "4.0.0"
+    "@wireapp/commons" "4.0.1"
     "@wireapp/priority-queue" "1.6.19"
     "@wireapp/protocol-messaging" "1.27.1"
     axios "0.21.1"
@@ -1436,13 +1436,13 @@
     tough-cookie "4.0.0"
     ws "7.4.2"
 
-"@wireapp/bot-api@7.11.90":
-  version "7.11.90"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.90.tgz#67d09e7d74f166e020c4c9fd890c34bfb2d872a7"
-  integrity sha512-84ngY2LTQUiJp/RlOGUL/CPPh++OQeyicEf+eFXv7XyRbAN/+IzikW9is0taoe+HvH6E5oIR2Wph8F2cAOtbYg==
+"@wireapp/bot-api@7.11.91":
+  version "7.11.91"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.91.tgz#72caece50c97d286ce6c6f29aa42d06dab470b51"
+  integrity sha512-k26P/vNr29ZTUqGUsPGOw0xeRR3z0uu/d8OuP8TYgN882SW1OmmjNwDOSW4UnuwV6i2VOkyCWZ0lfAKUkh91jw==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.0.9"
+    "@wireapp/core" "17.0.10"
     uuidjs "4.2.6"
 
 "@wireapp/cbor@4.6.25":
@@ -1450,10 +1450,10 @@
   resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.6.25.tgz#3061ff44ba47adadc21f8e62c4197ec094b261f8"
   integrity sha512-e8Jy1NGybOrJ/EOQ5AcypJi6EbsDicWCtIGvRxn9ngMPFvXScEQYHPGqQ7IF64pO2n7xXWtMjRM3tn0+7qeYOg==
 
-"@wireapp/commons@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-4.0.0.tgz#a77546546f65fdfc97280466ba737aafe683258e"
-  integrity sha512-KGvUROp1tWNwn7LVZPGBBhOScZ9aPIh9qgJGqDZ8lGgi/3nes5Cg5lBQwOnfOqbsjaKrTku4zPb/wrAV7r3YPg==
+"@wireapp/commons@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-4.0.1.tgz#d8912d562706312411cfd1cc3045bddbbb82aa21"
+  integrity sha512-ipKH8fRWTrThhubJgIPnj6QWd31vFhTFd9TnqEhZWwYmlhZZXySVPqk++SE8/xTFFwVDzBk6zDym5lokpfU6PA==
   dependencies:
     "@types/fs-extra" "9.0.6"
     "@types/node" "~14"
@@ -1464,14 +1464,14 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@17.0.9":
-  version "17.0.9"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.0.9.tgz#ca2edd1007b11d744abb3bcdcffbf14ed52ff28a"
-  integrity sha512-4J+4D9gIJiFJLl3cjWgrwgULE1+MY29ejFp0xUabgbnStV2V8nVx7vuYQoaXDy9sNWLzBfFxhI0M2GnAuobjwA==
+"@wireapp/core@17.0.10":
+  version "17.0.10"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.0.10.tgz#1c992f49fa8d1bc599d3fad06586044e6b462dd5"
+  integrity sha512-LhAZHRhUXDeBfu09qcAKD10wy+xInenUpkw4SEH9cssrgcDLJzP8tzeEAMfqrdC+9hc7Y88cyMD75BLYIMfiUw==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
-    "@wireapp/api-client" "12.1.2"
+    "@wireapp/api-client" "12.1.3"
     "@wireapp/cryptobox" "12.2.47"
     "@wireapp/protocol-messaging" "1.28.0"
     "@wireapp/store-engine" "4.5.23"
