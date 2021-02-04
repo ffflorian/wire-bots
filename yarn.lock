@@ -1436,13 +1436,13 @@
     tough-cookie "4.0.0"
     ws "7.4.2"
 
-"@wireapp/bot-api@7.11.92":
-  version "7.11.92"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.92.tgz#e893c7ec656975573b89a58c8bcb4cfc4d2ed057"
-  integrity sha512-e6QzmyYGO9N157hROVV44GfBWEBYrupcmNM5/x8JeGYjh5zlxysdyITit5c3STR+ddOjDpZrwThyQUXV3xuC3g==
+"@wireapp/bot-api@7.11.93":
+  version "7.11.93"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.11.93.tgz#fde01cb5635146b886033ed22fcef99559389ddf"
+  integrity sha512-bl5b5Xk7uCI3Hu0eM+TjzoBnJJtJMy0NaPjhSOFcf8aI9C47LAJO4C0cq4t9H2vaB7CqcXau0qTkHHDm31xTAA==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.0.11"
+    "@wireapp/core" "17.0.12"
     uuidjs "4.2.7"
 
 "@wireapp/cbor@4.6.25":
@@ -1464,17 +1464,15 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.0"
 
-"@wireapp/core@17.0.11":
-  version "17.0.11"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.0.11.tgz#03b0238b97c87b13b139cb3685032e48f0ad3be4"
-  integrity sha512-sOjpIVwKXJO/llx+QQzO9aoSxrwtuCrfic43VKdlCmxKxGondjlYi6VLd5yXIJzo7PUuTd1rVMGJIL6UMgzyCw==
+"@wireapp/core@17.0.12":
+  version "17.0.12"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.0.12.tgz#af4961d67922806e2e6377aa267069c381ae72e1"
+  integrity sha512-K3uhtySksXkHKi6rciQRsxGmiMtAqlDfUCccL3w8u5FRvJm15XrYmkLi26/gwfqgyIbkX8KOlL5/wOTTp5Qwow==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
     "@wireapp/api-client" "12.1.4"
     "@wireapp/cryptobox" "12.2.48"
-    "@wireapp/protocol-messaging" "1.28.0"
-    "@wireapp/store-engine" "4.5.24"
     bazinga64 "5.7.25"
     hash.js "1.1.7"
     http-status-codes "2.1.4"
