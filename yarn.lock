@@ -4215,10 +4215,10 @@ libnpmpublish@^4.0.0:
     semver "^7.1.3"
     ssri "^8.0.0"
 
-libraries.io@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.3.tgz#1c6efe63ebeb3b9ad941bf9772393accfbe97650"
-  integrity sha512-nG+JUDtv8GvFxs74T8hP+iriKa+VAepiAtnWC5L1q9hwvTJCxNO6ryvtG1E+/qx1n6/cpQUsZf467domM41lIw==
+libraries.io@3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/libraries.io/-/libraries.io-3.0.4.tgz#f7d5add4d6fc4892736c2d85342eef1c7917d54a"
+  integrity sha512-IIQrYL9Dmm2pwnplFn2E/S+DHuQVNpJpmYbUAI/Z27fZu2fHirKwS3NXI1XLyntdut7XBDN1rU7JEMT7AXyTrQ==
   dependencies:
     axios "0.21.1"
 
