@@ -1,7 +1,7 @@
 {
   "author": "Florian Imdahl <git@ffflorian.de>",
   "dependencies": {
-    "@wireapp/bot-api": "7.11.119",
+    "@wireapp/bot-api": "7.11.120",
     "date-fns": "2.20.2",
     "libraries.io": "3.0.4",
     "logdown": "3.3.1",
