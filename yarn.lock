@@ -1154,6 +1154,11 @@
   resolved "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
+"@tokenizer/token@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/@tokenizer/token/-/token-0.1.1.tgz#f0d92c12f87079ddfd1b29f614758b9696bc29e3"
+  integrity sha512-XO6INPbZCxdprl+9qa/AAbFFOMzzwqYxpjPgLICrMD6C2FCw6qfJOPcBk6JqqPLSaZ/Qx87qn4rpPmPMwaAK6w==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -1168,6 +1173,11 @@
   version "1.1.1"
   resolved "https://registry.npmjs.org/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/debug@^4.1.5":
+  version "4.1.5"
+  resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
+  integrity sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
 
 "@types/fs-extra@9.0.11":
   version "9.0.11"
@@ -1254,6 +1264,14 @@
   version "0.2.0"
   resolved "https://registry.npmjs.org/@types/png.js/-/png.js-0.2.0.tgz#f90f5d538e4d608f32ddfc2921b575942277edb9"
   integrity sha512-kWk8O9xsadi6vb1VOtywB1GvczzSb7VJxS/Ib6FPI0CfFyMu3ehUh4/fZ9ZzRXO7VkmqhhDKmTNfmfRhWs2wXQ==
+
+"@types/readable-stream@^2.3.9":
+  version "2.3.9"
+  resolved "https://registry.npmjs.org/@types/readable-stream/-/readable-stream-2.3.9.tgz#40a8349e6ace3afd2dd1b6d8e9b02945de4566a9"
+  integrity sha512-sqsgQqFT7HmQz/V5jH1O0fvQQnXAJO46Gg9LRO/JPfjmVmGUlcx831TZZO3Y3HtWhIkzf3kTsNT0Z0kzIhIvZw==
+  dependencies:
+    "@types/node" "*"
+    safe-buffer "*"
 
 "@types/request@2.48.5":
   version "2.48.5"
@@ -1368,10 +1386,10 @@
     "@typescript-eslint/types" "4.23.0"
     eslint-visitor-keys "^2.0.0"
 
-"@wireapp/api-client@12.18.0":
-  version "12.18.0"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-12.18.0.tgz#d3aac84eecff5525f0c8cd07522c998b8c639c2d"
-  integrity sha512-5RiwZdnY/DvO63w08JgeFoGPYoc6cn6HNfXRd6H5MUymtDtceXMYq/gnOdxr1LD6epXKxDUdYcC12Pp5wZ5w4Q==
+"@wireapp/api-client@12.18.2":
+  version "12.18.2"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-12.18.2.tgz#f309d6833a5ba1130fcdcd4b99b0d67536002be1"
+  integrity sha512-QakeIXvnw7thzBlumory+1WtJm2pYtg8IAAjKI/+MlXQ+nvHfDjzBl7qrFpK/8hoHSy3Nciz2vcfIwvpkGo+JQ==
   dependencies:
     "@types/node" "~14"
     "@types/spark-md5" "3.0.2"
@@ -1388,13 +1406,14 @@
     tough-cookie "4.0.0"
     ws "7.4.5"
 
-"@wireapp/bot-api@7.13.0":
-  version "7.13.0"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.13.0.tgz#8a092b60a0aea0031a0313677539fdb6f327d447"
-  integrity sha512-WsxjWfrFwa9Ot9svjBPLIrgaRdC9A6RWFQJo6yUbtlVRJWzMSWEu+OTf7/IVoZ7MZfj1n2wXbYG66U84UV1fkA==
+"@wireapp/bot-api@7.15.1":
+  version "7.15.1"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.15.1.tgz#426cb2a43d01ea530168f05926e818073a5a5a1d"
+  integrity sha512-KDeVmFGYi680gLfjD6gLWBhgal9IXrj0s/QzZwA2HcyVyelk5+FwDfYz0DKUGN0Cc3c/avNlPjdjfnDOF12tEQ==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.8.0"
+    "@wireapp/core" "17.8.2"
+    file-type "16.4.0"
     uuidjs "4.2.8"
 
 "@wireapp/cbor@4.7.1":
@@ -1416,16 +1435,16 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.1"
 
-"@wireapp/core@17.8.0":
-  version "17.8.0"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.8.0.tgz#41eb3aa03c11b775a2fbb8bb1c89c41d624ea46c"
-  integrity sha512-Q9tyJpDqZ47ZioPo54DHVHN6OJKgm5j8HDx+axI9Pp8aoWaVDUi2taZ8R075UBgGCwS6ekaM/Kq5X1jAqgMTdA==
+"@wireapp/core@17.8.2":
+  version "17.8.2"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.8.2.tgz#a72b9fadf5d01940b03f7c1eec3eb1d67972d169"
+  integrity sha512-/OKsz1CJBpcMdPZcZUHRSyIl/fGaveCFMT5M320TWufXMUrQ2yDzo6IZ7DjPTo9m8ML0WuRVebh6h1BhgY40Wg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
-    "@wireapp/api-client" "12.18.0"
+    "@wireapp/api-client" "12.18.2"
     "@wireapp/cryptobox" "12.5.9"
-    bazinga64 "5.9.0"
+    bazinga64 "5.9.1"
     hash.js "1.1.7"
     http-status-codes "2.1.4"
     logdown "3.3.1"
@@ -1811,10 +1830,10 @@ bazinga64@5.7.33:
   resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.7.33.tgz#09f17c5cdf9c38fbbac931f0d1b3d2359071d84b"
   integrity sha512-lJVZgVUvGcZoUBBnK+aUBCKhWbOOX8UmaZgV3UZSTFFncjDtduuJp7XFgqsxnyqgw7Jn7cG4n0C1X8xjHUyvXw==
 
-bazinga64@5.9.0:
-  version "5.9.0"
-  resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.9.0.tgz#3d7ed978910f8b79c52447baa37c799d9711b171"
-  integrity sha512-qGWWJwiokZkGTnN8cPJzd0eNPC8mTRk0UZ0PDlOjwanbk/U8tBqaB7X/s6hNDILhf722MzNApYC2rNz0IQZvMw==
+bazinga64@5.9.1:
+  version "5.9.1"
+  resolved "https://registry.npmjs.org/bazinga64/-/bazinga64-5.9.1.tgz#d0b32c6b6513e9171884f8873ed7fbf42463b71d"
+  integrity sha512-0oEDVsalHbCHqfUqKpOhMAf588dnQKiuFZ93jbCIDqSfhUU/QKZFNedkiTsBzhP6tsUtLkLjWLC4vZ19va5zxg==
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
@@ -3063,6 +3082,16 @@ file-entry-cache@^6.0.1:
   dependencies:
     flat-cache "^3.0.4"
 
+file-type@16.4.0:
+  version "16.4.0"
+  resolved "https://registry.npmjs.org/file-type/-/file-type-16.4.0.tgz#464197e44bd94a452d77b09085d977ae0dad2df4"
+  integrity sha512-MDAkwha3wHg11Lp++2T3Gu347eC/DB4r7nYj6iZaf1l7UhGBh2746QKxg0BWC8w2dJsxUEmH8KvLueX+GthN2w==
+  dependencies:
+    readable-web-to-node-stream "^3.0.0"
+    strtok3 "^6.0.3"
+    token-types "^2.0.0"
+    typedarray-to-buffer "^3.1.5"
+
 file-uri-to-path@2:
   version "2.0.0"
   resolved "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-2.0.0.tgz#7b415aeba227d575851e0a5b0c640d7656403fba"
@@ -3654,6 +3683,11 @@ iconv-lite@^0.6.2:
   integrity sha512-2y91h5OpQlolefMPmUlivelittSWy0rP+oYVpn6A7GwVHNE8AWzoYOBNmlwks3LobaJxgHCYZAnyNo2GgpNRNQ==
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
+
+ieee754@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
+  integrity sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==
 
 ignore-walk@^3.0.3:
   version "3.0.3"
@@ -5406,6 +5440,11 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+peek-readable@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.npmjs.org/peek-readable/-/peek-readable-3.1.3.tgz#932480d46cf6aa553c46c68566c4fb69a82cd2b1"
+  integrity sha512-mpAcysyRJxmICBcBa5IXH7SZPvWkcghm6Fk8RekoS3v+BpbSzlZzuWbMx+GXrlUwESi9qHar4nVEZNMKylIHvg==
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -5909,7 +5948,7 @@ readable-stream@^2.0.6, readable-stream@~2.3.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@^3.0.0:
+readable-stream@^3.0.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -5917,6 +5956,14 @@ readable-stream@^3.0.0:
     inherits "^2.0.3"
     string_decoder "^1.1.1"
     util-deprecate "^1.0.1"
+
+readable-web-to-node-stream@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/readable-web-to-node-stream/-/readable-web-to-node-stream-3.0.1.tgz#3f619b1bc5dd73a4cfe5c5f9b4f6faba55dff845"
+  integrity sha512-4zDC6CvjUyusN7V0QLsXVB7pJCD9+vtrM9bYDRv6uBQ+SKfx36rp5AFNPRgh9auKRul/a1iFZJYXcCbwRL+SaA==
+  dependencies:
+    "@types/readable-stream" "^2.3.9"
+    readable-stream "^3.6.0"
 
 readdir-scoped-modules@^1.0.0:
   version "1.1.0"
@@ -6135,15 +6182,15 @@ rxjs@^6.6.7:
   dependencies:
     tslib "^1.9.0"
 
+safe-buffer@*, safe-buffer@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
+
 safe-buffer@^5.0.1, safe-buffer@^5.1.2:
   version "5.2.0"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.0.tgz#b74daec49b1148f88c64b68d49b1e815c1f2f519"
   integrity sha512-fZEwUGbVl7kouZs1jCdMLdt95hdIv0ZeHg6L7qPeciMZhZ+/gdesW4wgTARkrFWEpspjEATAzUGPG8N2jJiwbg==
-
-safe-buffer@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
-  integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
@@ -6619,6 +6666,15 @@ strong-log-transformer@^2.1.0:
     minimist "^1.2.0"
     through "^2.3.4"
 
+strtok3@^6.0.3:
+  version "6.0.8"
+  resolved "https://registry.npmjs.org/strtok3/-/strtok3-6.0.8.tgz#c839157f615c10ba0f4ae35067dad9959eeca346"
+  integrity sha512-QLgv+oiXwXgCgp2PdPPa+Jpp4D9imK9e/0BsyfeFMr6QL6wMVqoVn9+OXQ9I7MZbmUzN6lmitTJ09uwS2OmGcw==
+  dependencies:
+    "@tokenizer/token" "^0.1.1"
+    "@types/debug" "^4.1.5"
+    peek-readable "^3.1.3"
+
 supports-color@6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/supports-color/-/supports-color-6.0.0.tgz#76cfe742cf1f41bb9b1c29ad03068c05b4c0e40a"
@@ -6744,6 +6800,14 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
+
+token-types@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/token-types/-/token-types-2.1.1.tgz#bd585d64902aaf720b8979d257b4b850b4d45c45"
+  integrity sha512-wnQcqlreS6VjthyHO3Y/kpK/emflxDBNhlNUPfh7wE39KnuDdOituXomIbyI79vBtF0Ninpkh72mcuRHo+RG3Q==
+  dependencies:
+    "@tokenizer/token" "^0.1.1"
+    ieee754 "^1.2.1"
 
 tough-cookie@4.0.0:
   version "4.0.0"
