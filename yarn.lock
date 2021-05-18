@@ -152,10 +152,10 @@
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
   integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
-"@ffflorian/xkcdjs@3.0.5":
-  version "3.0.5"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.0.5.tgz#40271bb52e2820faaf3f7765a4e5dc68f4af8c48"
-  integrity sha512-dMuxsmtnEuhXGqPASBYwUayEcRypsOH8jR1Rbl+XxjkaRnQYs3IRdUeqO16lc5ixM4XIS9sMlLp6T6oqHLP9wA==
+"@ffflorian/xkcdjs@3.0.6":
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.0.6.tgz#8c551efa13e82a4dc98829068fcfaa636595d02f"
+  integrity sha512-fd0nlS3FQktZKxMO/X5NdmKz1n+oSNYR+lWYlUZpftcoWLW0u7zaSH14pd9xxrPBsHkU8LUvbK9QlNO9zF40hA==
   dependencies:
     axios "0.21.1"
     commander "7.2.0"
