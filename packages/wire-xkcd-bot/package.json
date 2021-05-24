@@ -18,7 +18,7 @@
     "@types/png.js": "0.2.0",
     "cross-env": "7.0.3",
     "rimraf": "3.0.2",
-    "ts-node": "9.1.1",
+    "ts-node": "10.0.0",
     "typescript": "4.2.4"
   },
   "engines": {
