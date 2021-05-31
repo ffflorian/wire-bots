@@ -3,7 +3,7 @@
   "dependencies": {
     "@ffflorian/xkcdjs": "3.0.6",
     "@wireapp/bot-api": "7.15.19",
-    "date-fns": "2.21.3",
+    "date-fns": "2.22.1",
     "dotenv": "10.0.0",
     "jpeg-js": "0.4.3",
     "logdown": "3.3.1",
