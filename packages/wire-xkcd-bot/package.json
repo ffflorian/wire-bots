@@ -15,7 +15,7 @@
     "@ffflorian/jszip-cli": "3.1.0",
     "@types/node": "~14",
     "@types/omggif": "1.0.2",
-    "@types/png.js": "0.2.0",
+    "@types/png.js": "0.2.1",
     "cross-env": "7.0.3",
     "rimraf": "3.0.2",
     "ts-node": "10.1.0",
