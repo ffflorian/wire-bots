@@ -1,0 +1,7 @@
+{
+  "entries": ["../../.npmrc", ".ebextensions", "dist", "ecosystem.config.js", "package.json"],
+  "force": true,
+  "mode": "add",
+  "outputEntry": "dist/wire-wire-bamboohr-bot.zip",
+  "quiet": true
+}

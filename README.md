@@ -8,3 +8,4 @@ My [Wire](https://wire.com) bots using the [Wire Bot API](https://npmjs.com/@wir
 - [wire-packages-bot](./packages/wire-packages-bot/)
 - [wire-weather-bot](./packages/wire-weather-bot/)
 - [wire-echo-bot](./packages/wire-echo-bot/)
+- [wire-bamboohr-bot](./packages/wire-bamboohr-bot/)

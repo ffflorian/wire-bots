@@ -1,0 +1,39 @@
+{
+  "author": "Florian Imdahl <git@ffflorian.de>",
+  "dependencies": {
+    "@wireapp/bot-api": "7.16.14",
+    "bamboohr.com": "1.1.2",
+    "date-fns": "2.23.0",
+    "dotenv": "10.0.0",
+    "logdown": "3.3.1",
+    "pm2": "5.1.0"
+  },
+  "devDependencies": {
+    "@ffflorian/jszip-cli": "3.1.0",
+    "@types/libsodium-wrappers-sumo": "0.7.5",
+    "@types/node": "~16",
+    "cross-env": "7.0.3",
+    "rimraf": "3.0.2",
+    "ts-node": "10.1.0",
+    "typescript": "4.3.5"
+  },
+  "engines": {
+    "node": ">= 10.9"
+  },
+  "license": "GPL-3.0",
+  "main": "dist/index.js",
+  "name": "@ffflorian/wire-bamboohr-bot",
+  "private": true,
+  "repository": "https://github.com/ffflorian/wire-bots/tree/main/packages/wire-bamboohr-bot",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "deploy": "yarn dist && yarn zip && eb deploy -nh",
+    "dist": "yarn clean && yarn build",
+    "start": "pm2 start && pm2 logs",
+    "start:dev": "cross-env NODE_ENV=development ts-node src/index.ts",
+    "test": "yarn dist && exit 0",
+    "zip": "jszip-cli"
+  },
+  "version": "1.0.0"
+}

@@ -3,6 +3,11 @@
     "outDir": "dist",
     "rootDir": "src"
   },
+  "ts-node": {
+    "compilerOptions": {
+      "rootDir": "."
+    }
+  },
   "exclude": ["dist", "node_modules"],
   "extends": "../../tsconfig.json"
 }

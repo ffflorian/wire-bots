@@ -1,0 +1,12 @@
+branch-defaults:
+  main:
+    environment: wire-bamboohr-bot
+deploy:
+  artifact: dist/wire-bamboohr-bot.zip
+global:
+  application_name: WireBots
+  default_platform: Node.js
+  default_region: eu-west-1
+  profile: florian
+  sc: git
+  workspace_type: Application
