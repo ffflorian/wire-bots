@@ -152,13 +152,13 @@
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
   integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
-"@ffflorian/xkcdjs@3.0.6":
-  version "3.0.6"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.0.6.tgz#8c551efa13e82a4dc98829068fcfaa636595d02f"
-  integrity sha512-fd0nlS3FQktZKxMO/X5NdmKz1n+oSNYR+lWYlUZpftcoWLW0u7zaSH14pd9xxrPBsHkU8LUvbK9QlNO9zF40hA==
+"@ffflorian/xkcdjs@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.1.0.tgz#9b118849c0f8df5caf0ac1b154e9eda7a849c1dc"
+  integrity sha512-pBlr/+VOvGWHhZlHIKhvfwnfqBvNp2khJeiZHruP3ifHOC8+gBO0QFECyboqecqNOYOpovoUXnzwCkNOgxTzLQ==
   dependencies:
     axios "0.21.1"
-    commander "7.2.0"
+    commander "8.1.0"
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -2247,7 +2247,12 @@ commander@4.0.1:
   resolved "https://registry.npmjs.org/commander/-/commander-4.0.1.tgz#b67622721785993182e807f4883633e6401ba53c"
   integrity sha512-IPF4ouhCP+qdlcmCedhxX4xiGBPyigb8v5NeUp+0LyhwLgxMqyp3S0vl7TAPfS/hiP7FC3caI/PB9lTmP8r1NA==
 
-commander@7.2.0, commander@^7.2.0:
+commander@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-8.1.0.tgz#db36e3e66edf24ff591d639862c6ab2c52664362"
+  integrity sha512-mf45ldcuHSYShkplHHGKWb4TrmwQadxOn7v4WuhDJy0ZVoY5JFajaRDKD0PNe5qXzBX0rhovjTnP6Kz9LETcuA==
+
+commander@^7.2.0:
   version "7.2.0"
   resolved "https://registry.npmjs.org/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
