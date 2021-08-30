@@ -113,7 +113,7 @@ export class MainHandler extends MessageHandler {
           try {
             comicResult = await this.xkcdService.getComic(Number(parsedArguments));
           } catch (error) {
-            if (error.message.includes('404')) {
+            if ((error as Error).message.includes('404')) {
               return this.sendReply(
                 conversationId,
                 originalMessage,
