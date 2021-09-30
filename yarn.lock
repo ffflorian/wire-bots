@@ -1431,15 +1431,15 @@
     "@typescript-eslint/types" "4.31.2"
     eslint-visitor-keys "^2.0.0"
 
-"@wireapp/api-client@13.9.0":
-  version "13.9.0"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-13.9.0.tgz#f4bd4648ff43b1a823335e07cc0a3bcdef3a1e57"
-  integrity sha512-GdxpXkKgxEN77luLPN8wjAhzMPzYCP+BWLtTC+zg6EpmgQFMIxP+SIWJp6Gs9smqmEC8b6tw8wysfvU9vF0deA==
+"@wireapp/api-client@13.9.2":
+  version "13.9.2"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-13.9.2.tgz#fa038952744d426292e2e3ffdaeabe2a10563294"
+  integrity sha512-gw7bm3jh2eoIXSE5ZrBtYIpBpnFntJSwTCvtap1tyaPoJOwPJsW7UQ6N5t46AQ3OGVRhBR7+p68NuGax7Vbfxw==
   dependencies:
     "@types/node" "~14"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "4.0.1"
-    "@wireapp/commons" "4.2.12"
+    "@wireapp/commons" "4.2.13"
     "@wireapp/priority-queue" "1.6.37"
     "@wireapp/protocol-messaging" "1.35.0"
     axios "0.21.4"
@@ -1451,13 +1451,13 @@
     tough-cookie "4.0.0"
     ws "7.5.3"
 
-"@wireapp/bot-api@7.17.16":
-  version "7.17.16"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.17.16.tgz#71943e5b21bdeedbd6346bc25fd1888ef7fd9de1"
-  integrity sha512-8nddNtgEDsokrUEWI2Zhd6wGYEdfu/EGFdOcmSBxvBrZ3pN3oIrT4uNZIKWlYtOzUV4g+7ypL4KuCDP2fxdnOA==
+"@wireapp/bot-api@7.17.18":
+  version "7.17.18"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.17.18.tgz#a7db8c907f463df2c53a3340b298aa650c22a6b7"
+  integrity sha512-W3lLnher2lo90AIHRGWJu5z2VyEgNXaPORfXJ0FXxCqwLzN9d10kyiCFFPv7x9g0yaZ445mLfSiGJq46EGQovw==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.16.5"
+    "@wireapp/core" "17.16.7"
     file-type "16.5.2"
     uuidjs "4.2.8"
 
@@ -1466,28 +1466,28 @@
   resolved "https://registry.npmjs.org/@wireapp/cbor/-/cbor-4.7.2.tgz#cf890cbd1af6f684fd06c704e96b3186bd0672f3"
   integrity sha512-SfWI1pfwPLpYDC2gkQIOtVFA51x1LFbWoZ5qPp9wit5l3x1CWIpmGK3g1F06XXJn/HeRHJawwp28pzzH58h2iQ==
 
-"@wireapp/commons@4.2.12":
-  version "4.2.12"
-  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-4.2.12.tgz#2121cd9e40fa6252d18e18830f615d90e80e74c4"
-  integrity sha512-wbSpRUkdTgOs/F8tazPqo3iBjp/5xTA4VY44MOQW7c8hMZuVxJbENrJW6w8ZbipiaJO3jXsYS01cXF2TfIvLdA==
+"@wireapp/commons@4.2.13":
+  version "4.2.13"
+  resolved "https://registry.npmjs.org/@wireapp/commons/-/commons-4.2.13.tgz#a2b8d51ecd0604cb714c6281256608a476c7f86e"
+  integrity sha512-9iCXslLrc78Duu7h+ciGxSswzqeXN1zfPrDhOkaMVoqIDLJ0MjUHlZMOqq8eL7Sdiq/J00YUN419OVFs77+kKQ==
   dependencies:
     "@types/fs-extra" "9.0.12"
     "@types/node" "~14"
     "@types/platform" "1.3.4"
-    ansi-regex "5.0.0"
+    ansi-regex "5.0.1"
     fs-extra "10.0.0"
     logdown "3.3.1"
     platform "1.3.6"
     url-search-params-polyfill "8.1.1"
 
-"@wireapp/core@17.16.5":
-  version "17.16.5"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.16.5.tgz#c07eb65b7b2a9fd136d7b4a8da701582f1e77c65"
-  integrity sha512-RC3mQ6nO8jVqgVPfe2WQIS0592mQKZuTTHJgcTXW4b0ZSiUizEbhdvu4DVnPayx4UULGl/wSIiirhEQLIa2Hyg==
+"@wireapp/core@17.16.7":
+  version "17.16.7"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.16.7.tgz#5b5fd1f13e73d6bf604884e1c54c899c0189709a"
+  integrity sha512-G1LmD5cWHqvboHeZdUSgMIqLbWLefE1nu7nOCl47BUUtzEzgekInf0gSoGVBCzheOb3czdOj6cPixbdM5brI/w==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
-    "@wireapp/api-client" "13.9.0"
+    "@wireapp/api-client" "13.9.2"
     "@wireapp/cryptobox" "12.7.1"
     bazinga64 "5.9.7"
     hash.js "1.1.7"
@@ -1668,10 +1668,10 @@ ansi-escapes@^4.2.1, ansi-escapes@^4.3.0:
   dependencies:
     type-fest "^0.11.0"
 
-ansi-regex@5.0.0, ansi-regex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
-  integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
+ansi-regex@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz#082cb2c89c9fe8659a311a53bd6a4dc5301db304"
+  integrity sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -1687,6 +1687,11 @@ ansi-regex@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
   integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
+
+ansi-regex@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
+  integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
 
 ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
