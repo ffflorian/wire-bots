@@ -140,12 +140,12 @@
   resolved "https://registry.npmjs.org/@ffflorian/eslint-config/-/eslint-config-0.8.1.tgz#5ddccb495d8cfbde81489ae72f3d0baf2103b450"
   integrity sha512-sHkTnnK1RFC8PDhJW6TZ8poYOS6UShGsnNcDE/DKmFyXDiq9hYZ4ASXPcRdEJnyTte6Nj2rfvWGfPjw+lLuqSQ==
 
-"@ffflorian/jszip-cli@3.1.5":
-  version "3.1.5"
-  resolved "https://registry.npmjs.org/@ffflorian/jszip-cli/-/jszip-cli-3.1.5.tgz#bb3b027498d8a4749c87e84945d193f765eb88e7"
-  integrity sha512-axCqXgagsmvlfueXPPHJcNlcX4dSjigZ1kRmYR/vJ2q1sCQlbF4yO3Ev+ltVzKlHCPlt0Qxkw+qOZwc2YyYrlg==
+"@ffflorian/jszip-cli@3.1.6":
+  version "3.1.6"
+  resolved "https://registry.npmjs.org/@ffflorian/jszip-cli/-/jszip-cli-3.1.6.tgz#eba79c377c0f6d9b51f48bdaf73d02d53b05b37b"
+  integrity sha512-x1FOCxlrD53cvkVLJtk25VXvDaxmr2/cDlNHvDWKHcE8uaJrduPLs+JXEbgnRMQygJWEvb5KYiz9clc9am0w5Q==
   dependencies:
-    commander "8.1.0"
+    commander "8.2.0"
     cosmiconfig "7.0.1"
     fs-extra "10.0.0"
     jszip "3.7.1"
@@ -2246,6 +2246,11 @@ commander@8.1.0:
   version "8.1.0"
   resolved "https://registry.npmjs.org/commander/-/commander-8.1.0.tgz#db36e3e66edf24ff591d639862c6ab2c52664362"
   integrity sha512-mf45ldcuHSYShkplHHGKWb4TrmwQadxOn7v4WuhDJy0ZVoY5JFajaRDKD0PNe5qXzBX0rhovjTnP6Kz9LETcuA==
+
+commander@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-8.2.0.tgz#37fe2bde301d87d47a53adeff8b5915db1381ca8"
+  integrity sha512-LLKxDvHeL91/8MIyTAD5BFMNtoIwztGPMiM/7Bl8rIPmHCZXRxmSWr91h57dpOpnQ6jIUqEWdXE/uBYMfiVZDA==
 
 commander@^7.2.0:
   version "7.2.0"
