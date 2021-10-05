@@ -12,7 +12,7 @@
     "png.js": "0.2.1"
   },
   "devDependencies": {
-    "@ffflorian/jszip-cli": "3.1.5",
+    "@ffflorian/jszip-cli": "3.1.6",
     "@types/node": "~16",
     "@types/omggif": "1.0.2",
     "@types/png.js": "0.2.1",
