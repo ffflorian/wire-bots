@@ -1469,13 +1469,13 @@
     tough-cookie "4.0.0"
     ws "7.5.3"
 
-"@wireapp/bot-api@7.17.55":
-  version "7.17.55"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.17.55.tgz#089062efbf984d95c88fe3fa60cc5275ed59e5ee"
-  integrity sha512-kAPx3I/0AplnJNmVj2/BHKcL9eRcq+diYjycygq9L7mkV5wDttibE7o43Lyup/R5AhLGqsHUjlHaJVV3X6cPKA==
+"@wireapp/bot-api@7.17.57":
+  version "7.17.57"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.17.57.tgz#5dfe4564b100c70d504fe281bab3ef7ef2e8a259"
+  integrity sha512-ERksMBDP8UtyJIBQbawWDR4tMGOth173kejOH4PzpYHbCunZPTT3UvzQrlRxqUH51osTPnWi9RdlND3QgK60qA==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.29.0"
+    "@wireapp/core" "17.31.0"
     file-type "16.5.2"
     uuidjs "4.2.8"
 
@@ -1498,10 +1498,10 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.1"
 
-"@wireapp/core@17.29.0":
-  version "17.29.0"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.29.0.tgz#f896798ee4bf2244190763b78a9721056a126d14"
-  integrity sha512-337PTlS+FwWfzxbOeTAocah8g76NW9IpECUEM0N1sphRkBM04bzHiToaggXo68ErIpzeOfy1kQVkColUqTH6rg==
+"@wireapp/core@17.31.0":
+  version "17.31.0"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.31.0.tgz#545994932f8308a628a413bfa6040ff3ffed9e1b"
+  integrity sha512-rBjNnV72D21P4jW03qe0YLYqHjfdzMTXRDznDOTE9e7XeR4T9orvPpPomNZBdn5eQfRK6LNphI5JHBv7mXHbgg==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
