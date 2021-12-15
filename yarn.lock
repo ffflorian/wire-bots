@@ -1449,17 +1449,17 @@
     "@typescript-eslint/types" "5.2.0"
     eslint-visitor-keys "^3.0.0"
 
-"@wireapp/api-client@15.11.1":
-  version "15.11.1"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-15.11.1.tgz#449cf613c83c32fd32002d20cdfdab4fe869e165"
-  integrity sha512-mu0ddXy8jOfpZROooEIHaa8WaujBD6TOv3RkncAk+Th3YT+JrFIeq2Q0RHRD5yWkFMlQY76sJv9cuv7X3RLbdQ==
+"@wireapp/api-client@16.1.0":
+  version "16.1.0"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-16.1.0.tgz#ea4ab8453253c1f30789ac216e59811a011122a4"
+  integrity sha512-Hr3apMyww0Pv383aQEOmKpgmrOlWiHvJ/mqqgXi4hIy9bNu6j+FosQdppKdwLF5TU05mjCAg3KMQpOyQK/tpwQ==
   dependencies:
     "@types/node" "~14"
     "@types/spark-md5" "3.0.2"
     "@types/tough-cookie" "4.0.1"
     "@wireapp/commons" "4.2.13"
     "@wireapp/priority-queue" "1.6.37"
-    "@wireapp/protocol-messaging" "1.35.0"
+    "@wireapp/protocol-messaging" "1.36.0"
     axios "0.21.4"
     axios-retry "3.1.9"
     http-status-codes "2.1.4"
@@ -1469,13 +1469,13 @@
     tough-cookie "4.0.0"
     ws "7.5.3"
 
-"@wireapp/bot-api@7.17.68":
-  version "7.17.68"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-7.17.68.tgz#774914cc4735a9a44309be060a03740ace287a9e"
-  integrity sha512-xQ5vQ2bn6JXDL3tt30tVGMPT1OKwzAFD28sd+VncNyv/mlKKlc83+MR1F/03cADNuqV0v2bv79F6YQDmkCbhjg==
+"@wireapp/bot-api@10.0.4":
+  version "10.0.4"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-10.0.4.tgz#f227c2c2a464663fd008ea16f8c16c5fbdb205ec"
+  integrity sha512-8owzFIf0O8m9TXxyE1eZ/kFAbeGtBTZI/ROXE0Luv+wgefkW279X7rgip1v7EX7adJd+CHqmhFhBjwXkFBGdpA==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "17.34.0"
+    "@wireapp/core" "20.1.1"
     file-type "16.5.2"
     uuidjs "4.2.8"
 
@@ -1498,14 +1498,14 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.1"
 
-"@wireapp/core@17.34.0":
-  version "17.34.0"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-17.34.0.tgz#8ec2768ffdc307dcc069b6e703f3bedb85c52828"
-  integrity sha512-NA1uXbOSyJoD1VA1mNwREiuXlWRTWDKrk6dTugNVjstQ+SwA256ajknF2LvoiwULbuN9tgXH8dKb+PDNyrHj2w==
+"@wireapp/core@20.1.1":
+  version "20.1.1"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-20.1.1.tgz#1811ebd24e5a80c249583679b7dc930be2eae7c4"
+  integrity sha512-DiuKUnJLpQkwth83n6zejMghiBJxrjDAYoWts0zBDXMnZHLvsBaRsPwPwgJOgoFlzbMMMTia1TL6e2LgJHb34A==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
-    "@wireapp/api-client" "15.11.1"
+    "@wireapp/api-client" "16.1.0"
     "@wireapp/cryptobox" "12.7.1"
     bazinga64 "5.10.0"
     hash.js "1.1.7"
@@ -1556,10 +1556,10 @@
     "@wireapp/cbor" "4.7.2"
     libsodium-wrappers-sumo "0.7.9"
 
-"@wireapp/protocol-messaging@1.35.0":
-  version "1.35.0"
-  resolved "https://registry.npmjs.org/@wireapp/protocol-messaging/-/protocol-messaging-1.35.0.tgz#2d45f67bdd00f31383f93b23dcf636b4278ca673"
-  integrity sha512-RsgREb74npIOMKac2Q5oUgLT6noqKY7Tze+TdWJ3dX/gxp5Oid4mOcaCm5jKJb94K7MxhBo/E+jE6FzZiWWYQg==
+"@wireapp/protocol-messaging@1.36.0":
+  version "1.36.0"
+  resolved "https://registry.npmjs.org/@wireapp/protocol-messaging/-/protocol-messaging-1.36.0.tgz#3d4bd0bca3df9d4193ac9851d02129a274408dfb"
+  integrity sha512-g/znuDIHWerJh9vS86bkWmBRDgMqLfKq3nPGgvpDm+0tRMyhRKW4y6wB5j4DLlEY2nLyl6WsH+uP/BLV55vObQ==
   dependencies:
     protobufjs "6.10.2"
 
