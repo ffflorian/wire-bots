@@ -1449,10 +1449,10 @@
     "@typescript-eslint/types" "5.2.0"
     eslint-visitor-keys "^3.0.0"
 
-"@wireapp/api-client@16.5.2":
-  version "16.5.2"
-  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-16.5.2.tgz#2c8acc0e4d5cb80f1db45322caa3ef3cab3a9ecf"
-  integrity sha512-Zkuw/j6josINzifgjDY40ZZ0Rxkg1tqK29O/gRb2pSyW8x8qMSwV8+bfloBhBCQ0okyw0P1oQGmTCqAvlpza4Q==
+"@wireapp/api-client@16.6.0":
+  version "16.6.0"
+  resolved "https://registry.npmjs.org/@wireapp/api-client/-/api-client-16.6.0.tgz#6b2a398b4e91a9b4d63e4c8e47bd637b0eceda70"
+  integrity sha512-qO3qNqebCNi0sRVsAP4zdwelBOWUkC24ifk3WOHfR/5rlz2023ZCddjLDaZA4N/YrsYU7yHPfDVpIMzHxxwGtQ==
   dependencies:
     "@types/node" "~14"
     "@types/spark-md5" "3.0.2"
@@ -1469,13 +1469,13 @@
     tough-cookie "4.0.0"
     ws "7.5.3"
 
-"@wireapp/bot-api@10.0.16":
-  version "10.0.16"
-  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-10.0.16.tgz#65830570e98d61b0bdbb905a325e272c3705afd2"
-  integrity sha512-nn0ximKy2M5DJtXC4YF8BqwQ2ovSzl2rDMUqNAAB7Sw9JqQgeCD6gI+g7otwRdVlL1Taf0wpo5vcNtO0WtHq0A==
+"@wireapp/bot-api@10.0.19":
+  version "10.0.19"
+  resolved "https://registry.npmjs.org/@wireapp/bot-api/-/bot-api-10.0.19.tgz#46bc55a389a73f4819cd6761e6b407540c68088d"
+  integrity sha512-ZZnc5TwiDFV2i9550swnFGBsN5NgGYpB/ut7S8TZZMqy8bgBsx4zcOYrB8ems2ej7bRtn5Z9/M7pWPRFYEtCMQ==
   dependencies:
     "@types/node" "*"
-    "@wireapp/core" "20.6.2"
+    "@wireapp/core" "20.7.2"
     file-type "16.5.2"
     uuidjs "4.2.8"
 
@@ -1498,14 +1498,14 @@
     platform "1.3.6"
     url-search-params-polyfill "8.1.1"
 
-"@wireapp/core@20.6.2":
-  version "20.6.2"
-  resolved "https://registry.npmjs.org/@wireapp/core/-/core-20.6.2.tgz#4215df911b2a277f6bb0d43e200f155114994475"
-  integrity sha512-AyHkHxd2GV4BdtPfUtnwt0fC7zlnIfggZfNWAjDEgG9rsBaPhvuhj6QOaYgng1tidVZdvNMMe0dFpGndbDOl7w==
+"@wireapp/core@20.7.2":
+  version "20.7.2"
+  resolved "https://registry.npmjs.org/@wireapp/core/-/core-20.7.2.tgz#8aaf94959b4727a4198c162fbdca707d8f2e456b"
+  integrity sha512-ZlgN4oWdgHTVwSkPP3GAnC0DhdXPXD/jqseEAb0FEckXmTPFfYZoSUgcZbPS9gKPYWrCuOKQyFBa6LoW64MCKw==
   dependencies:
     "@types/long" "4.0.1"
     "@types/node" "~14"
-    "@wireapp/api-client" "16.5.2"
+    "@wireapp/api-client" "16.6.0"
     "@wireapp/cryptobox" "12.7.1"
     bazinga64 "5.10.0"
     hash.js "1.1.7"
