@@ -4,7 +4,7 @@
     "@ffflorian/xkcdjs": "3.1.1",
     "@wireapp/bot-api": "10.0.22",
     "date-fns": "2.28.0",
-    "dotenv": "14.2.0",
+    "dotenv": "14.3.2",
     "jpeg-js": "0.4.3",
     "logdown": "3.3.1",
     "omggif": "1.0.10",
