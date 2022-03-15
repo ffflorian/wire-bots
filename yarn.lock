@@ -157,13 +157,13 @@
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
   integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
-"@ffflorian/xkcdjs@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.1.1.tgz#7c8fad6513796ce9aa6926db5ebde3229025cb7a"
-  integrity sha512-uGZGpiaaui2VZnDZZ9nrqdxbEbOJShR6uo8iyz3FdeTeji2Z1QLSL93Sa9WouxBIDMTL6DJpCEjBoyP175r45A==
+"@ffflorian/xkcdjs@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/@ffflorian/xkcdjs/-/xkcdjs-3.2.0.tgz#c91c6bb1d57c8e0450b4c22f014d2a0d529e10fc"
+  integrity sha512-uqbPpY5y1s0TH/Pd+j59BJXOOPTLHA0ihQGLN7gXcJ/Mm/rpg0cnxUeF3Z/8ijI1UwAs/LKYjVk9t+nB/egKMw==
   dependencies:
-    axios "0.24.0"
-    commander "8.3.0"
+    axios "0.26.1"
+    commander "9.0.0"
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1914,6 +1914,13 @@ axios@0.24.0:
   dependencies:
     follow-redirects "^1.14.4"
 
+axios@0.26.1:
+  version "0.26.1"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.26.1.tgz#1ede41c51fcf51bbbd6fd43669caaa4f0495aaa9"
+  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+  dependencies:
+    follow-redirects "^1.14.8"
+
 axios@^0.18.0:
   version "0.18.1"
   resolved "https://registry.npmjs.org/axios/-/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
@@ -2321,7 +2328,12 @@ commander@8.2.0:
   resolved "https://registry.npmjs.org/commander/-/commander-8.2.0.tgz#37fe2bde301d87d47a53adeff8b5915db1381ca8"
   integrity sha512-LLKxDvHeL91/8MIyTAD5BFMNtoIwztGPMiM/7Bl8rIPmHCZXRxmSWr91h57dpOpnQ6jIUqEWdXE/uBYMfiVZDA==
 
-commander@8.3.0, commander@^8.3.0:
+commander@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
+  integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
+
+commander@^8.3.0:
   version "8.3.0"
   resolved "https://registry.npmjs.org/commander/-/commander-8.3.0.tgz#4837ea1b2da67b9c616a67afbb0fafee567bca66"
   integrity sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==
@@ -3364,6 +3376,11 @@ follow-redirects@^1.14.4:
   version "1.14.6"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
   integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
+
+follow-redirects@^1.14.8:
+  version "1.14.9"
+  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
+  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
 
 forever-agent@~0.6.1:
   version "0.6.1"
