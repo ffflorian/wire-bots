@@ -2,7 +2,7 @@
   "author": "Florian Imdahl <git@ffflorian.de>",
   "dependencies": {
     "@ffflorian/xkcdjs": "3.2.0",
-    "@wireapp/bot-api": "10.0.28",
+    "@wireapp/bot-api": "11.0.18",
     "date-fns": "2.28.0",
     "dotenv": "16.0.0",
     "jpeg-js": "0.4.3",
